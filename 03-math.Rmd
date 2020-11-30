@@ -1,0 +1,89 @@
+# Doing the math {#maths}
+
+LaTeX provides powerful tools for typesetting mathematics, such as this equation:
+
+$$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$
+
+To render the equation above, you include this in your tex file:
+
+```tex
+     \[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+```
+
+## Equations
+You can probably work out how most of this creates the formula, but it won't be obvious that the \verb|\[| and  \verb|\]| symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used `\(` and `\)` instead to enclose the formula it would appear in-line, like this: $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$. It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in [COMP11120 Mathematical Techniques for Computer Science](https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/) in your first year and [COMP26120 Algorithms and Imperative Programming](https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/) in your second year.
+
+Here's another example, taken from computer graphics, it's a local illumination model incorporating ambient, diffuse and specular reflection by multiple lights:
+
+
+\[ I = k_a I_a + \sum_{i=1}^M {\frac{{I_p}_i}{d'_i}} [ k_d(\hat{N}\cdot\hat{L_i}) + k_s(\hat{R_i}\cdot\hat{V})^n] \]
+
+We write this in LaTeX as follows:
+
+```tex
+    \[ I = k_a I_a + \sum_{i=1}^M { \frac{{I_p}_i}{d'_i} }
+    [ k_d(\hat{N} \cdot \hat{L_i})
+    + k_s(\hat{R_i} \cdot \hat{V})^n] \]
+```
+
+Try to match the LaTeX commands with the formula displayed above. You'll see lots of curly brackets, and this example illustrates their two uses in LaTeX. The first is to provide an argument to a command; for example `\hat{N}` means apply the `\hat` command to $N$', which creates $\hat{N}$, the vector $N$ with a little hat on.
+
+The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see $\sum_{i=1}^M$, which creates a summation sign and its lower and upper limits: \( \sum_{i=1}^{M} \). We wrap the lower bound, `i=1` in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing `\sum_i=1^M`, LaTeX would then produce $\sum_i=1^M$, which is not at all what we want (even LaTeX can't always know what we really want).
+
+## Matrices
+If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation
+
+\[ T_1 = \left[
+ \begin{array}{cccc}
+ \cos \theta & -\sin \theta & 0 & \delta \\
+ \sin \theta  & \cos \theta & 0 & \epsilon \\
+ 0 & 0 & 1 & \eta \\
+ \alpha & \beta & \gamma & 1
+ \end{array}
+ \right] \]
+
+ we can use the following
+
+ ```tex
+    \[ T_1 = \left[
+     \begin{array}{cccc}
+     \cos \theta & -\sin \theta & 0 & \delta \\
+     \sin \theta  & \cos \theta & 0 & \epsilon \\
+     0 & 0 & 1 & \eta \\
+     \alpha & \beta & \gamma & 1
+     \end{array}
+     \right] \]
+ ```
+
+In the LaTeX code, `\left[` means ‘big opening square bracket please’; `{cccc}` means ‘an array with 4 columns please, with the items in each column centred’; `&` means ‘start a new column’; and `\\` means ‘start a new row’. You’ll notice that LaTeX knows about greek letters; it knows about most standard maths symbols too, and also the ways they’re usually used.
+
+There are some symbols that you might need (for example `\therefore`, which produces the usual three dots symbol ∴) that are not part of standard LaTeX. Many such symbols are provided by the `amssymb` package of symbols compiled by the American Mathematical Society. Details of the many symbols provided by this package can be found online. To use these extra symbols, you need to have `\usepackage{amssymb}` in your document preamble.
+
+LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
+[en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or books such as the *Guide to LaTeX* by  Helmut Kopka and Patrick W. Daly. [@kopka]
+
+
+## Exercise three: maths
+
+Now for an exercise that involves some mathematics. Create a file `maths.tex` which typesets the following piece of text and mathematics:
+
+There are many positive integer solutions to the equation
+
+$$ x^2 + y^2 =  z^2 $$
+
+which can be rewritten as
+
+$$ z = \sqrt{x^2 + y^2} $$
+
+For example $(3,4, 5)$ or $(5,12,13)$. Such solutions are called *Pythagorean triples*.
+
+However, for higher powers the situation is very different, and we have:-
+
+**Theorem: Fermat-Wiles**
+For all natural numbers $n ≥ 3$, there are no integers $x,y,z$ satisfying the equation:
+
+$$ x^n + y^n = z^n $$
+
+## Conclusion
+
+We've briefly looked at typesetting mathematics in LaTeX, in the next chapter we'll look at collaborative authoring with overleaf.

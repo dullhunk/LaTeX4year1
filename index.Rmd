@@ -1,0 +1,39 @@
+---
+title: "Getting started with LaTeX"
+author: "Duncan Hull"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: dullhunk/latex4year1
+description: "A resource for getting started with LaTeX"
+---
+
+# Written communciation with LaTeX
+
+This document is designed to help you get started with using LaTeX, it supports the labs for the first year undergraduate course in Computer Science, [COMP101](https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus).
+
+```{r latexproject-fig, echo = FALSE, fig.align = "center", out.width = "90%", fig.cap='The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  '}
+knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")
+```
+
+LaTeX is a document preparation system for high-quality typesetting. [@latexproject] It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf).
+
+## Not a word processor
+
+LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is sepereated from the contents (HTML).
+
+Reading this LaTeX guide and doing the exercises will enable you to:
+
+1. Create a simple document in pdf using LaTeX
+1. Illustrate a document with figures and cross references
+1. Typeset some mathematics
+1. Save and share LaTeX documents using overleaf
+1. Create a CV using LaTeX templates in overleaf
+1. Extend your knowledge of LaTeX and know where to find out more
+
+## Acknowledgements
+This document is a revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.

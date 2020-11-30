@@ -1,0 +1,147 @@
+# Cross referencing, illustrating and citing {#figref}
+
+LaTeX has simple but powerful tools to allow you to cross reference, illustrate and cite sources in your documents.
+
+## Cross referencing
+
+LaTeX allows you to cross-reference almost anything in the document, which includes sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
+
+```{r eval=FALSE}
+\label{mymarker}
+```
+
+at the point in the document you want to refer to, and then use the command:
+```{r eval=FALSE}
+\ref{mymarker}
+```
+
+when you want to use the reference. Obviously you replace the text `mymarker` with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
+
+```tex
+\documentclass[a4paper]{article}
+\begin{document}
+\section{Turing Machines: The Simplest Computers}
+\label{sec:simplest}
+Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term \textit{computation}. No only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.
+
+\section{Alan Turing}
+The Turing machines described in section \ref{sec:simplest} are named after Alan Turing.
+\end{document}
+```
+
+## Illustrating your documents
+
+A document without figures, images, picture and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
+
+```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
+knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
+```
+
+Including figures and pictures in your document is straightforward. You do it like this:
+
+```tex
+\begin{figure}
+\includegraphics[width=10cm]{images/turing.jpg}
+\caption{Turing machines are named after Alan Turing}
+\label{figure:turing}
+\end{figure}
+```
+
+
+The command `\includegraphics{}` gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The `\begin{figure}` and `\end{figure}` code wraps up whatever picture you’re including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This floating of figures can sometimes result in the figure ending up in a place you didn’t expect, but in most cases LaTeX will make the most sensible choice. It’s possible to employ finer control over figure placement, but that’s beyond the scope of this guide.
+
+The `\includegraphics` command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command `usepackage` in the document preamble, in between the `documentclass` and the `begin {document}`.
+
+```tex
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\begin{document}
+```
+
+## Exercise two: figures {#ex2}
+Create a document image.tex, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
+
+
+## Citations and footnotes
+
+Footnotes^[Like this one which is a footnote about footnotes. Very meta.] can be added to a document with `\footnote{}`
+
+```tex
+\footnote{This is a footnote}
+```
+You can cite sources such as websites, books or journal articles in your document using the `\cite` command.
+
+```tex
+\cite{turing}
+```
+The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX. BibTeX gives provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] look like this:
+
+```tex
+@Book{turingomnibus,
+  title = {The New Turing Omnibus: Sixty-six excursions in Computer Science},
+  author = {A. K. Dewdney},
+  publisher = {Henry Holt},
+  address = {New York},
+  year = {2001},
+  isbn = {9780805071665},
+  url = {https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665}
+}
+```
+and articles^[BibTeX entries for journal articles can be automatically generated from unique identifiers known as digital object identifiers, see https://doi2bib.org for example. This saves you the hassle of typing them in by hand.] look like this:
+
+```tex
+@article{turing,
+  doi = {10.1112/plms/s2-42.1.230},
+  url = {https://doi.org/10.1112/plms/s2-42.1.230},
+  year = {1937},
+  publisher = {Wiley},
+  volume = {s2-42},
+  number = {1},
+  pages = {230--265},
+  author = {Alan Turing},
+  title = {On Computable Numbers, with an Application to the Entscheidungsproblem},
+  journal = {Proceedings of the London Mathematical Society}
+}
+```
+
+For web references you can use misc
+
+```tex
+@misc{googlescholar,
+  author       = {Anon},
+  title        = {Alan Turing Google Scholar page},
+  url          = {https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ},
+  year         = {2020},
+}
+```
+
+If we wanted to create the text:
+
+“You can find Alan Turing's publications in Google scholar. [@googlescholar]
+This includes his paper on the Entscheidungsproblem published in 1937. [@turing]”
+
+We would need the following in our tex file:
+
+```tex
+You can find Alan Turing's publications in Google scholar. \cite{googlescholar}
+This includes his paper on the Entscheidungsproblem published in 1937. \cite{turing}
+```
+
+To generate the bibliography you'll need to add these two lines
+
+```tex
+\bibliographystyle{natbib}
+\bibliography{latex}
+```
+and when you compile you need to run pdflatex before and after running bibtex.
+
+```tex
+pdflatex turing.tex
+bibtex turing.bib
+pdflatex turing.tex
+pdflatex turing.tex
+```
+
+
+## Conclusion {#fingconc}
+You have cross referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.

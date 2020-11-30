@@ -1,0 +1,751 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Getting started with LaTeX},
+  pdfauthor={Duncan Hull},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Getting started with LaTeX}
+\author{Duncan Hull}
+\date{2020-11-30}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{written-communciation-with-latex}{%
+\chapter{Written communciation with LaTeX}\label{written-communciation-with-latex}}
+
+This document is designed to help you get started with using LaTeX, it supports the labs for the first year undergraduate course in Computer Science, \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus}{COMP101}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/1000px-LaTeX_project_logo_bird.svg} 
+
+}
+
+\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  }\label{fig:latexproject-fig}
+\end{figure}
+
+LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf).
+
+\hypertarget{not-a-word-processor}{%
+\section{Not a word processor}\label{not-a-word-processor}}
+
+LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is sepereated from the contents (HTML).
+
+Reading this LaTeX guide and doing the exercises will enable you to:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Create a simple document in pdf using LaTeX
+\item
+  Illustrate a document with figures and cross references
+\item
+  Typeset some mathematics
+\item
+  Save and share LaTeX documents using overleaf
+\item
+  Create a CV using LaTeX templates in overleaf
+\item
+  Extend your knowledge of LaTeX and know where to find out more
+\end{enumerate}
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+This document is a revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
+
+\hypertarget{simples}{%
+\chapter{Simple LaTeX documents}\label{simples}}
+
+We'll start by creating a simple LaTeX document.
+
+\hypertarget{shortest}{%
+\section{The shortest document possible}\label{shortest}}
+
+Open up your favourite editor, enter the following text, then save it as a file called \texttt{turing.tex}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[a4paper]\{}\ExtensionTok{article}\NormalTok{\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\NormalTok{Computational excursions}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+To turn this into a PDF we need to use a LaTeX compiler, we're going to use pdflatex, though several other compeilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The pdflatex compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# compile turing.tex}
+\NormalTok{pdflatex turing.tex}
+\CommentTok{\# open the pdf output}
+\NormalTok{xdg}\OperatorTok{{-}}\NormalTok{open turing.pdf}
+\end{Highlighting}
+\end{Shaded}
+
+The first command outputs a pdf file from your TeX input using the pdflatex compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary file and a log file which can be helpful for debugging the compilation of more complicated documents:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# files created on compilation}
+\NormalTok{turing.tex}
+\NormalTok{turing.pdf}
+\NormalTok{turing.aux}
+\NormalTok{turing.log}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{longer}{%
+\section{A longer LaTeX document}\label{longer}}
+
+Our turing.tex file is a very simple document, so let's add some sections and fill them out a bit:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[a4paper]\{}\ExtensionTok{article}\NormalTok{\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Algorithms: Cooking Up Programs\}}
+\NormalTok{A program specifies in the }\FunctionTok{\textbackslash{}textbf}\NormalTok{\{exact syntax\} of some programming language the computation one expects a computer to perform. The syntax is precise and unforgiving. The slightest error in the program as written may cause the computation to be in error or may halt altogether. The reason for this situation seems paradoxical on the surface: It is relatively easy to design a system that converts rigid syntax to computations; it is much harder to design a system that tolerates mistakes or accepts a broader range of program descriptions.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Finite automata: The Black Box\}}
+\NormalTok{It occasionally happens in industrial, military or educational settings that one is presented with a piece of electronic hardware whose exact function is uncertain or unknown. One way of discovering how the device works is to take it apart, piece by piece, and deduce its function by analysing the components and their interconnections. This is not always possible, however, nor is it always necessary. Given that the mystery machine has both input and output facilities, it may be possible to discover what it does without ever taking it apart. Since its appearance gives no clue about its function, we call it a }\FunctionTok{\textbackslash{}textit}\NormalTok{\{black box\}.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Systems of Logic: Boolean Bases\}}
+\NormalTok{In an age of computers and automation, almost every electronic device one can name incorporates at least one boolean function. For example, many current models of automobile will emit a high{-}pitched whine, buzz or other disturbing noise until their drivers fasten their seat belts. Such a device realises a boolean function of two variables.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Simulation: The Monte Carlo method\}}
+\NormalTok{In the quest to understand the many systems that comprise the modern world we turn increasingly to computer simulation. Whether the system is natural or artificial, frequently one or more of its components have such complex behaviour that the only feasible approach to approximating such behaviour is to assume that it is random.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Gödel\textquotesingle{}s Theorem: Limits on Logic\}}
+\NormalTok{In the early 1930\textquotesingle{}s, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete\textquotesingle{}\textquotesingle{} {-} that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Can machines think?\}}
+\NormalTok{Turing addressed the question \textasciigrave{}\textasciigrave{}Can machines think?\textquotesingle{}\textquotesingle{} in his 1950 paper }\FunctionTok{\textbackslash{}textit}\NormalTok{\{Computing machinery and intelligence\}.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{But what is LaTeX good for?\}}
+\NormalTok{We\textquotesingle{}re using this }\FunctionTok{\textbackslash{}LaTeX\textbackslash{} }\NormalTok{document to demonstrate some of its key strengths that you will find useful during and after University:}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\}}
+\FunctionTok{\textbackslash{}item}\NormalTok{ LaTeX can quickly create pdf files}
+\FunctionTok{\textbackslash{}item}\NormalTok{ LaTeX uses professional typesetting}
+\FunctionTok{\textbackslash{}item}\NormalTok{ LaTeX documents can be more legible, clear, and visually appealing to the reader than those created with word processing software}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}.
+
+\hypertarget{exercise-one-document}{%
+\section{Exercise one: document}\label{exercise-one-document}}
+
+Cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
+
+Now, at the top of your document after the \textbackslash begin\{document\} line and before the command defining the first section, add the following commands, each on their own line:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}title}\NormalTok{\{The New Turing Ominbus\}}
+\FunctionTok{\textbackslash{}author}\NormalTok{\{A. K. Dewdney\}}
+\FunctionTok{\textbackslash{}maketitle}
+\FunctionTok{\textbackslash{}tableofcontents}
+\FunctionTok{\textbackslash{}newpage}
+\end{Highlighting}
+\end{Shaded}
+
+The \texttt{title}, \texttt{author}, \texttt{tableofcontents} and \texttt{newpage} commands are self-explanatory. The \texttt{maketitle} automatically generates a date Your table of contents won't be created until you run pdflatex \textbf{twice}. You need to process the source twice because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# remember to run pdflatex twice for the table of contents}
+\NormalTok{pdlfatex turing.tex}
+\NormalTok{pdflatex turing.tex}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{bold-italic-lists-and-quotes}{%
+\section{Bold, italic, lists and quotes}\label{bold-italic-lists-and-quotes}}
+
+Here's a few points to note about the text above:
+
+\begin{itemize}
+\tightlist
+\item
+  Notice how bold and italic formatting are created using textbf and textit
+\item
+  Notice how lists are created using enumerate and item
+\item
+  Notice that curved open quotation (`` - looks like 66) and close quotation marks ('' - looks like 99) are different characters. Look carefully at the quotes around the phrase ``Can machines think?'' in the excerpt above in section \protect\hyperlink{longer}{longer}.
+\end{itemize}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+You've created a basic document in LaTeX and we've introduced some of its advntages:
+
+\begin{itemize}
+\tightlist
+\item
+  LaTeX can quickly create pdf files
+\item
+  LaTeX uses professional typesetting
+\item
+  LaTeX documents can be more legible, clear, and visually appealing to the reader that those created with word processing software
+\end{itemize}
+
+Next we'll look at adding some cross-references, figures and citations.
+
+\hypertarget{figref}{%
+\chapter{Cross referencing, illustrating and citing}\label{figref}}
+
+LaTeX has simple but powerful tools to allow you to cross reference, illustrate and cite sources in your documents.
+
+\hypertarget{cross-referencing}{%
+\section{Cross referencing}\label{cross-referencing}}
+
+LaTeX allows you to cross-reference almost anything in the document, which includes sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}label\{mymarker\}}
+\end{Highlighting}
+\end{Shaded}
+
+at the point in the document you want to refer to, and then use the command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}ref\{mymarker\}}
+\end{Highlighting}
+\end{Shaded}
+
+when you want to use the reference. Obviously you replace the text \texttt{mymarker} with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[a4paper]\{}\ExtensionTok{article}\NormalTok{\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Turing Machines: The Simplest Computers\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{sec:simplest}\NormalTok{\}}
+\NormalTok{Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term }\FunctionTok{\textbackslash{}textit}\NormalTok{\{computation\}. No only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Alan Turing\}}
+\NormalTok{The Turing machines described in section }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{sec:simplest}\NormalTok{\} are named after Alan Turing.}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{illustrating-your-documents}{%
+\section{Illustrating your documents}\label{illustrating-your-documents}}
+
+A document without figures, images, picture and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/Alan_Turing_Aged_16} 
+
+}
+
+\caption{Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)}\label{fig:turing-fig}
+\end{figure}
+
+Including figures and pictures in your document is straightforward. You do it like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}includegraphics}\NormalTok{[width=10cm]\{}\ExtensionTok{images/turing.jpg}\NormalTok{\}}
+\FunctionTok{\textbackslash{}caption}\NormalTok{\{Turing machines are named after Alan Turing\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{figure:turing}\NormalTok{\}}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+The command \texttt{\textbackslash{}includegraphics\{\}} gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The \texttt{\textbackslash{}begin\{figure\}} and \texttt{\textbackslash{}end\{figure\}} code wraps up whatever picture you're including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This floating of figures can sometimes result in the figure ending up in a place you didn't expect, but in most cases LaTeX will make the most sensible choice. It's possible to employ finer control over figure placement, but that's beyond the scope of this guide.
+
+The \texttt{\textbackslash{}includegraphics} command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command \texttt{usepackage} in the document preamble, in between the \texttt{documentclass} and the \texttt{begin\ \{document\}}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[a4paper]\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ex2}{%
+\section{Exercise two: figures}\label{ex2}}
+
+Create a document image.tex, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
+
+\hypertarget{citations-and-footnotes}{%
+\section{Citations and footnotes}\label{citations-and-footnotes}}
+
+Footnotes\footnote{Like this one which is a footnote about footnotes. Very meta.} can be added to a document with \texttt{\textbackslash{}footnote\{\}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}footnote}\NormalTok{\{This is a footnote\}}
+\end{Highlighting}
+\end{Shaded}
+
+You can cite sources such as websites, books or journal articles in your document using the \texttt{\textbackslash{}cite} command.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX. BibTeX gives provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} look like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{@Book\{turingomnibus,}
+\NormalTok{  title = \{The New Turing Omnibus: Sixty{-}six excursions in Computer Science\},}
+\NormalTok{  author = \{A. K. Dewdney\},}
+\NormalTok{  publisher = \{Henry Holt\},}
+\NormalTok{  address = \{New York\},}
+\NormalTok{  year = \{2001\},}
+\NormalTok{  isbn = \{9780805071665\},}
+\NormalTok{  url = \{https://en.wikipedia.org/wiki/Special:BookSources?isbn=978{-}0805071665\}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+and articles\footnote{BibTeX entries for journal articles can be automatically generated from unique identifiers known as digital object identifiers, see \url{https://doi2bib.org} for example. This saves you the hassle of typing them in by hand.} look like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{@article\{turing,}
+\NormalTok{  doi = \{10.1112/plms/s2{-}42.1.230\},}
+\NormalTok{  url = \{https://doi.org/10.1112/plms/s2{-}42.1.230\},}
+\NormalTok{  year = \{1937\},}
+\NormalTok{  publisher = \{Wiley\},}
+\NormalTok{  volume = \{s2{-}42\},}
+\NormalTok{  number = \{1\},}
+\NormalTok{  pages = \{230{-}{-}265\},}
+\NormalTok{  author = \{Alan Turing\},}
+\NormalTok{  title = \{On Computable Numbers, with an Application to the Entscheidungsproblem\},}
+\NormalTok{  journal = \{Proceedings of the London Mathematical Society\}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+For web references you can use misc
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{@misc\{googlescholar,}
+\NormalTok{  author       = \{Anon\},}
+\NormalTok{  title        = \{Alan Turing Google Scholar page\},}
+\NormalTok{  url          = \{https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ\},}
+\NormalTok{  year         = \{2020\},}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+If we wanted to create the text:
+
+``You can find Alan Turing's publications in Google scholar. \citep{googlescholar}
+This includes his paper on the Entscheidungsproblem published in 1937. \citep{turing}''
+
+We would need the following in our tex file:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{You can find Alan Turing\textquotesingle{}s publications in Google scholar. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{googlescholar}\NormalTok{\}}
+\NormalTok{This includes his paper on the Entscheidungsproblem published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+To generate the bibliography you'll need to add these two lines
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}bibliographystyle}\NormalTok{\{}\ExtensionTok{natbib}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}bibliography}\NormalTok{\{}\ExtensionTok{latex}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+and when you compile you need to run pdflatex before and after running bibtex.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pdflatex turing.tex}
+\NormalTok{bibtex turing.bib}
+\NormalTok{pdflatex turing.tex}
+\NormalTok{pdflatex turing.tex}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fingconc}{%
+\section{Conclusion}\label{fingconc}}
+
+You have cross referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.
+
+\hypertarget{maths}{%
+\chapter{Doing the math}\label{maths}}
+
+LaTeX provides powerful tools for typesetting mathematics, such as this equation:
+
+\[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+
+To render the equation above, you include this in your tex file:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+     \SpecialStringTok{\textbackslash{}[ x = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{{-}b }\SpecialCharTok{\textbackslash{}pm}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}sqrt}\SpecialStringTok{\{b\^{}2{-}4ac\}\}\{2a\} \textbackslash{}]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{equations}{%
+\section{Equations}\label{equations}}
+
+You can probably work out how most of this creates the formula, but it won't be obvious that the \verb|\[| and \verb|\]| symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/}{COMP11120 Mathematical Techniques for Computer Science} in your first year and \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/}{COMP26120 Algorithms and Imperative Programming} in your second year.
+
+Here's another example, taken from computer graphics, it's a local illumination model incorporating ambient, diffuse and specular reflection by multiple lights:
+
+\[ I = k_a I_a + \sum_{i=1}^M {\frac{{I_p}_i}{d'_i}} [ k_d(\hat{N}\cdot\hat{L_i}) + k_s(\hat{R_i}\cdot\hat{V})^n] \]
+
+We write this in LaTeX as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \SpecialStringTok{\textbackslash{}[ I = k\_a I\_a + }\SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{i=1\}\^{}M \{ }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{\{I\_p\}\_i\}\{d\textquotesingle{}\_i\} \}}
+\SpecialStringTok{    [ k\_d(}\SpecialCharTok{\textbackslash{}hat}\SpecialStringTok{\{N\} }\SpecialCharTok{\textbackslash{}cdot}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}hat}\SpecialStringTok{\{L\_i\})}
+\SpecialStringTok{    + k\_s(}\SpecialCharTok{\textbackslash{}hat}\SpecialStringTok{\{R\_i\} }\SpecialCharTok{\textbackslash{}cdot}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}hat}\SpecialStringTok{\{V\})\^{}n] \textbackslash{}]}
+\end{Highlighting}
+\end{Shaded}
+
+Try to match the LaTeX commands with the formula displayed above. You'll see lots of curly brackets, and this example illustrates their two uses in LaTeX. The first is to provide an argument to a command; for example \texttt{\textbackslash{}hat\{N\}} means apply the \texttt{\textbackslash{}hat} command to \(N\)', which creates \(\hat{N}\), the vector \(N\) with a little hat on.
+
+The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see \(\sum_{i=1}^M\), which creates a summation sign and its lower and upper limits: \(\sum_{i=1}^{M}\). We wrap the lower bound, \texttt{i=1} in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing \texttt{\textbackslash{}sum\_i=1\^{}M}, LaTeX would then produce \(\sum_i=1^M\), which is not at all what we want (even LaTeX can't always know what we really want).
+
+\hypertarget{matrices}{%
+\section{Matrices}\label{matrices}}
+
+If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation
+
+\[ T_1 = \left[
+ \begin{array}{cccc}
+ \cos \theta & -\sin \theta & 0 & \delta \\
+ \sin \theta  & \cos \theta & 0 & \epsilon \\
+ 0 & 0 & 1 & \eta \\
+ \alpha & \beta & \gamma & 1
+ \end{array}
+ \right] \]
+
+we can use the following
+
+\begin{Shaded}
+\begin{Highlighting}[]
+   \SpecialStringTok{\textbackslash{}[ T\_1 = }\SpecialCharTok{\textbackslash{}left}\SpecialStringTok{[}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}begin}\SpecialStringTok{\{array\}\{cccc\}}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& {-}}\SpecialCharTok{\textbackslash{}sin}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& 0 \& }\SpecialCharTok{\textbackslash{}delta}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}sin}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{  \& }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& 0 \& }\SpecialCharTok{\textbackslash{}epsilon}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{    0 \& 0 \& 1 \& }\SpecialCharTok{\textbackslash{}eta}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{ \& }\SpecialCharTok{\textbackslash{}beta}\SpecialStringTok{ \& }\SpecialCharTok{\textbackslash{}gamma}\SpecialStringTok{ \& 1}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}end}\SpecialStringTok{\{array\}}
+\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}right}\SpecialStringTok{] \textbackslash{}]}
+\end{Highlighting}
+\end{Shaded}
+
+In the LaTeX code, \texttt{\textbackslash{}left{[}} means `big opening square bracket please'; \texttt{\{cccc\}} means `an array with 4 columns please, with the items in each column centred'; \texttt{\&} means `start a new column'; and \texttt{\textbackslash{}\textbackslash{}} means `start a new row'. You'll notice that LaTeX knows about greek letters; it knows about most standard maths symbols too, and also the ways they're usually used.
+
+There are some symbols that you might need (for example \texttt{\textbackslash{}therefore}, which produces the usual three dots symbol ∴) that are not part of standard LaTeX. Many such symbols are provided by the \texttt{amssymb} package of symbols compiled by the American Mathematical Society. Details of the many symbols provided by this package can be found online. To use these extra symbols, you need to have \texttt{\textbackslash{}usepackage\{amssymb\}} in your document preamble.
+
+LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
+\href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{en.wikibooks.org/wiki/LaTeX/Mathematics} or books such as the \emph{Guide to LaTeX} by Helmut Kopka and Patrick W. Daly. \citep{kopka}
+
+\hypertarget{exercise-3-maths}{%
+\section{Exercise 3: maths}\label{exercise-3-maths}}
+
+Now for an exercise that involves some mathematics. Create a file \texttt{maths.tex} which typesets the following piece of text and mathematics:
+
+There are many positive integer solutions to the equation
+
+\[ x^2 + y^2 =  z^2 \]
+
+which can be rewritten as
+
+\[ z = \sqrt{x^2 + y^2} \]
+
+For example \((3,4, 5)\) or \((5,12,13)\). Such solutions are called \emph{Pythagorean triples}.
+
+However, for higher powers the situation is very different, and we have:-
+
+\textbf{Theorem: Fermat-Wiles}
+For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying the equation:
+
+\[ x^n + y^n = z^n \]
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+We've briefly looked at typesetting mathematics in LaTeX, in the next chapter we'll look at collaborative authoring with overleaf.
+
+\hypertarget{overleaf}{%
+\chapter{Collaborative editing with overleaf}\label{overleaf}}
+
+If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you'll need to share your TeX on a server. Overleaf (\href{https://www.overleaf.com/}{overleaf.com}) allows you to do this, and is shown in the screenshot in Figure \ref{fig:overleaf-fig}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Overleaf_v2_editing_page} 
+
+}
+
+\caption{A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side}\label{fig:overleaf-fig}
+\end{figure}
+
+Overleaf has two features which are useful
+
+\begin{itemize}
+\tightlist
+\item
+  Your documents are saved the cloud
+\item
+  Packages, class files and compilers are also in the cloud, saving you time installing things
+\item
+  Templates are provided for common types of documents
+\end{itemize}
+
+\hypertarget{exercise-four-overleaf}{%
+\section{Exercise four: overleaf}\label{exercise-four-overleaf}}
+
+Overleaf exercise:
+1. Login to \href{https://www.overleaf.com/}{overleaf.com}
+2. Create and save a simple document using the tutorial at \href{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}{overleaf.com/learn/how-to/Creating\_a\_document\_in\_Overleaf}
+3. Note that you could store your TeX source in a git repository if you wanted to
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX has been around since In the next chapter we will create a CV using templates provided by overleaf.
+
+\hypertarget{cv}{%
+\chapter{Your curriculum vitae}\label{cv}}
+
+You'll write many documents at University, but there is one document that is \textbf{really} seriously important in a potentially life-changing way. Your curriculum vitae\footnote{or curriculum vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/jake-ryan} 
+
+}
+
+\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? There are many other templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
+\end{figure}
+
+Creating a professional document is especially important when you write your CV, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
+
+\begin{itemize}
+\tightlist
+\item
+  how your CV looks, it's typesetting, layout and style
+\item
+  the content of your CV, what you've done and how you describe it
+\item
+  the quality and clarity of your written communication
+\item
+  the editing, what you've decided to leave in and out of your CV
+\end{itemize}
+
+By opportunities we mean immediate ones within the next 12 months as well as those further in the future. Those opportunities might include:
+
+\begin{itemize}
+\tightlist
+\item
+  Spring insights during easter next year\footnote{see e.g.~\url{https://www.ratemyplacement.co.uk/insights}}
+\item
+  Summer internships next year or during subsequent summers\footnote{see where can I look for jobs? \url{https://waggle.cs.manchester.ac.uk/waggle/search}}
+\item
+  Year long placements in your penultimate year, if you're considering doing \href{http://studentnet.cs.manchester.ac.uk/employment/placement/}{industrial experience}
+\item
+  Graduate jobs or graduate schemes
+\item
+  Postgraduate study or research via masters or PhD
+\end{itemize}
+
+So it is well worth investing a bit of your time to create version 1.0 of your CV. It's never too early to make a start.
+
+\hypertarget{exercise-five-your-cv}{%
+\section{Exercise five: your CV}\label{exercise-five-your-cv}}
+
+Create a basic CV which describes your story including:
+
+\begin{itemize}
+\tightlist
+\item
+  your education, including University
+\item
+  your experience, voluntary, paid or otherwise
+\item
+  your projects: personal, technical and non-technical
+\end{itemize}
+
+You can do this using the ready-made templates at \url{https://www.overleaf.com/gallery/tagged/cv}
+
+\hypertarget{debug-your-cv}{%
+\section{Debug your CV}\label{debug-your-cv}}
+
+As you progress through University, it is a good idea to keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
+\item
+  Are there any spelling mistakes, typos and grammar? Don't just rely on a spellchecker, they can't detect everything
+\item
+  Does it look good, decent layout, easy on the eye?
+\item
+  Does it fit comfortably on preferably one (Résumé) or two pages (CV) only?
+\item
+  Is it in reverse chronological order? Most important (usually recent) things first?
+\item
+  Have you talked about what you have actually done using prominent verbs, rather than just what you think you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
+\item
+  Have you mentioned things you are studying now and throughout the year, not just courses you have finished?
+\item
+  Have you quantified and provided evidence for the claims you make?
+\item
+  Is it robot proof? Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}. What feedback do the robots give you?
+\item
+  Find out more in the \emph{Debug your CV} guide at \href{http://git.io/mycv}{git.io/mycv}
+\end{enumerate}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Your CV is a \emph{really} important document. We recommend you start working on it sooner rather than later and get feedback from as many different people as you reasonably can.
+
+  \bibliography{book.bib}
+
+\end{document}

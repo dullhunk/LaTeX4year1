@@ -1,0 +1,53 @@
+# Your curriculum vitae {#cv}
+
+You'll write many documents at University, but there is one document that is **really** seriously important in a potentially life-changing way. Your curriculum vitae^[or curriculum vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
+
+```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? There are many other templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'}
+knitr::include_graphics("images/jake-ryan.jpg")
+```
+
+Creating a professional looking CV is especially important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
+
+* how your CV looks, it's typesetting, layout and style
+* the content of your CV, what you've done and how you describe it
+* the quality and clarity of your written communication
+* the editing, what you've decided to leave in and leave out of your CV
+
+By opportunities we mean immediate ones within the next 12 months as well as those further in the future. Those opportunities might include:
+
+* Spring insights during easter next year^[see e.g. https://www.ratemyplacement.co.uk/insights]
+* Summer internships next year or during subsequent summers^[see where can I look for jobs? https://waggle.cs.manchester.ac.uk/waggle/search]
+* Year long placements in your penultimate year, if you're considering doing [industrial experience](http://studentnet.cs.manchester.ac.uk/employment/placement/)
+* Graduate jobs or graduate schemes
+* Postgraduate study or research via masters or PhD
+
+So it is well worth investing a bit of your time to create version 1.0 of your CV. It's never too early to make a start.
+
+## Exercise five: your CV
+
+Create a basic CV which describes your story including:
+
+* your education, including University
+* your experience, voluntary, paid or otherwise
+* your projects: personal, technical and non-technical
+
+You can do this using the ready-made templates at https://www.overleaf.com/gallery/tagged/cv
+
+## Debug your CV
+As you progress through University, it is a good idea to keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.
+
+1. Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
+1. Are there any spelling mistakes, typos and grammar? Don't just rely on a spellchecker, they can't detect everything
+1. Does it look good, decent layout, easy on the eye?
+1. Does it fit comfortably on preferably one (Résumé) or two pages (CV) only?
+1. Is it in reverse chronological order? Most important (usually recent) things first?
+1. Have you talked about what you have actually done using prominent verbs, rather than just what you think you know? See [git.io/verbsfirst](http://git.io/verbsfirst) for examples
+1. Have you mentioned things you are studying now and throughout the year, not just courses you have finished?
+1. Have you quantified and provided evidence for the claims you make?
+1. Is it robot proof? Feed it through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/). What feedback do the robots give you?
+1. Find out more in the *Debug your CV* guide at [git.io/mycv](http://git.io/mycv)
+
+
+## Conclusion
+
+Your CV is a *really* important document. We recommend you start working on it sooner rather than later and get feedback from as many different people as you reasonably can.

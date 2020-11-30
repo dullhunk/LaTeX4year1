@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Cross referencing, illustrating and citing | Getting started with LaTeX</title>
+  <meta name="description" content="A resource for getting started with LaTeX" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Cross referencing, illustrating and citing | Getting started with LaTeX" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A resource for getting started with LaTeX" />
+  <meta name="github-repo" content="dullhunk/latex4year1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Cross referencing, illustrating and citing | Getting started with LaTeX" />
+  
+  <meta name="twitter:description" content="A resource for getting started with LaTeX" />
+  
+
+<meta name="author" content="Duncan Hull" />
+
+
+<meta name="date" content="2020-11-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="simples.html"/>
+<link rel="next" href="maths.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Home</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Written communciation with LaTeX</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> Not a word processor</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i><b>1.2</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="simples.html"><a href="simples.html"><i class="fa fa-check"></i><b>2</b> Simple LaTeX documents</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="simples.html"><a href="simples.html#shortest"><i class="fa fa-check"></i><b>2.1</b> The shortest document possible</a></li>
+<li class="chapter" data-level="2.2" data-path="simples.html"><a href="simples.html#longer"><i class="fa fa-check"></i><b>2.2</b> A longer LaTeX document</a></li>
+<li class="chapter" data-level="2.3" data-path="simples.html"><a href="simples.html#exercise-one-document"><i class="fa fa-check"></i><b>2.3</b> Exercise one: document</a></li>
+<li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-lists-and-quotes"><i class="fa fa-check"></i><b>2.4</b> Bold, italic, lists and quotes</a></li>
+<li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#conclusion"><i class="fa fa-check"></i><b>2.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="figref.html"><a href="figref.html"><i class="fa fa-check"></i><b>3</b> Cross referencing, illustrating and citing</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="figref.html"><a href="figref.html#cross-referencing"><i class="fa fa-check"></i><b>3.1</b> Cross referencing</a></li>
+<li class="chapter" data-level="3.2" data-path="figref.html"><a href="figref.html#illustrating-your-documents"><i class="fa fa-check"></i><b>3.2</b> Illustrating your documents</a></li>
+<li class="chapter" data-level="3.3" data-path="figref.html"><a href="figref.html#ex2"><i class="fa fa-check"></i><b>3.3</b> Exercise two: figures</a></li>
+<li class="chapter" data-level="3.4" data-path="figref.html"><a href="figref.html#citations-and-footnotes"><i class="fa fa-check"></i><b>3.4</b> Citations and footnotes</a></li>
+<li class="chapter" data-level="3.5" data-path="figref.html"><a href="figref.html#fingconc"><i class="fa fa-check"></i><b>3.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="maths.html"><a href="maths.html"><i class="fa fa-check"></i><b>4</b> Doing the math</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="maths.html"><a href="maths.html#equations"><i class="fa fa-check"></i><b>4.1</b> Equations</a></li>
+<li class="chapter" data-level="4.2" data-path="maths.html"><a href="maths.html#matrices"><i class="fa fa-check"></i><b>4.2</b> Matrices</a></li>
+<li class="chapter" data-level="4.3" data-path="maths.html"><a href="maths.html#exercise-3-maths"><i class="fa fa-check"></i><b>4.3</b> Exercise 3: maths</a></li>
+<li class="chapter" data-level="4.4" data-path="simples.html"><a href="simples.html#conclusion"><i class="fa fa-check"></i><b>4.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="overleaf.html"><a href="overleaf.html"><i class="fa fa-check"></i><b>5</b> Collaborative editing with overleaf</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="overleaf.html"><a href="overleaf.html#exercise-four-overleaf"><i class="fa fa-check"></i><b>5.1</b> Exercise four: overleaf</a></li>
+<li class="chapter" data-level="5.2" data-path="simples.html"><a href="simples.html#conclusion"><i class="fa fa-check"></i><b>5.2</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>6</b> Your curriculum vitae</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="cv.html"><a href="cv.html#exercise-five-your-cv"><i class="fa fa-check"></i><b>6.1</b> Exercise five: your CV</a></li>
+<li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#debug-your-cv"><i class="fa fa-check"></i><b>6.2</b> Debug your CV</a></li>
+<li class="chapter" data-level="6.3" data-path="simples.html"><a href="simples.html#conclusion"><i class="fa fa-check"></i><b>6.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Getting started with LaTeX</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figref" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Cross referencing, illustrating and citing</h1>
+<p>LaTeX has simple but powerful tools to allow you to cross reference, illustrate and cite sources in your documents.</p>
+<div id="cross-referencing" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Cross referencing</h2>
+<p>LaTeX allows you to cross-reference almost anything in the document, which includes sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="figref.html#cb7-1"></a>\label{mymarker}</span></code></pre></div>
+<p>at the point in the document you want to refer to, and then use the command:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="figref.html#cb8-1"></a>\ref{mymarker}</span></code></pre></div>
+<p>when you want to use the reference. Obviously you replace the text <code>mymarker</code> with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb9-1"><a href="figref.html#cb9-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
+<span id="cb9-2"><a href="figref.html#cb9-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb9-3"><a href="figref.html#cb9-3"></a><span class="kw">\section</span>{Turing Machines: The Simplest Computers}</span>
+<span id="cb9-4"><a href="figref.html#cb9-4"></a><span class="kw">\label</span>{<span class="ex">sec:simplest</span>}</span>
+<span id="cb9-5"><a href="figref.html#cb9-5"></a>Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term <span class="fu">\textit</span>{computation}. No only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.</span>
+<span id="cb9-6"><a href="figref.html#cb9-6"></a></span>
+<span id="cb9-7"><a href="figref.html#cb9-7"></a><span class="kw">\section</span>{Alan Turing}</span>
+<span id="cb9-8"><a href="figref.html#cb9-8"></a>The Turing machines described in section <span class="kw">\ref</span>{<span class="ex">sec:simplest</span>} are named after Alan Turing.</span>
+<span id="cb9-9"><a href="figref.html#cb9-9"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+</div>
+<div id="illustrating-your-documents" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Illustrating your documents</h2>
+<p>A document without figures, images, picture and graphs is pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.1</a>, for example.</p>
+<div class="figure" style="text-align: center"><span id="fig:turing-fig"></span>
+<img src="images/Alan_Turing_Aged_16.jpg" alt="Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)" width="40%" />
+<p class="caption">
+Figure 3.1: Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons <a href="https://w.wiki/oZx">w.wiki/oZx</a>
+</p>
+</div>
+<p>Including figures and pictures in your document is straightforward. You do it like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb10-1"><a href="figref.html#cb10-1"></a><span class="kw">\begin</span>{<span class="ex">figure</span>}</span>
+<span id="cb10-2"><a href="figref.html#cb10-2"></a><span class="bu">\includegraphics</span>[width=10cm]{<span class="ex">images/turing.jpg</span>}</span>
+<span id="cb10-3"><a href="figref.html#cb10-3"></a><span class="fu">\caption</span>{Turing machines are named after Alan Turing}</span>
+<span id="cb10-4"><a href="figref.html#cb10-4"></a><span class="kw">\label</span>{<span class="ex">figure:turing</span>}</span>
+<span id="cb10-5"><a href="figref.html#cb10-5"></a><span class="kw">\end</span>{<span class="ex">figure</span>}</span></code></pre></div>
+<p>The command <code>\includegraphics{}</code> gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The <code>\begin{figure}</code> and <code>\end{figure}</code> code wraps up whatever picture you’re including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This floating of figures can sometimes result in the figure ending up in a place you didn’t expect, but in most cases LaTeX will make the most sensible choice. It’s possible to employ finer control over figure placement, but that’s beyond the scope of this guide.</p>
+<p>The <code>\includegraphics</code> command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command <code>usepackage</code> in the document preamble, in between the <code>documentclass</code> and the <code>begin {document}</code>.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb11-1"><a href="figref.html#cb11-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
+<span id="cb11-2"><a href="figref.html#cb11-2"></a><span class="bu">\usepackage</span>{<span class="ex">graphicx</span>}</span>
+<span id="cb11-3"><a href="figref.html#cb11-3"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span></code></pre></div>
+</div>
+<div id="ex2" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Exercise two: figures</h2>
+<p>Create a document image.tex, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.</p>
+</div>
+<div id="citations-and-footnotes" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Citations and footnotes</h2>
+<p>Footnotes<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> can be added to a document with <code>\footnote{}</code></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb12-1"><a href="figref.html#cb12-1"></a><span class="fu">\footnote</span>{This is a footnote}</span></code></pre></div>
+<p>You can cite sources such as websites, books or journal articles in your document using the <code>\cite</code> command.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb13-1"><a href="figref.html#cb13-1"></a><span class="kw">\cite</span>{<span class="ex">turing</span>}</span></code></pre></div>
+<p>The citations themselves can be stored in a separate <code>*.bib file</code> using a format called BibTeX. BibTeX gives provides citation types so books<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> look like this:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb14-1"><a href="figref.html#cb14-1"></a>@Book{turingomnibus,</span>
+<span id="cb14-2"><a href="figref.html#cb14-2"></a>  title = {The New Turing Omnibus: Sixty-six excursions in Computer Science},</span>
+<span id="cb14-3"><a href="figref.html#cb14-3"></a>  author = {A. K. Dewdney},</span>
+<span id="cb14-4"><a href="figref.html#cb14-4"></a>  publisher = {Henry Holt},</span>
+<span id="cb14-5"><a href="figref.html#cb14-5"></a>  address = {New York},</span>
+<span id="cb14-6"><a href="figref.html#cb14-6"></a>  year = {2001},</span>
+<span id="cb14-7"><a href="figref.html#cb14-7"></a>  isbn = {9780805071665},</span>
+<span id="cb14-8"><a href="figref.html#cb14-8"></a>  url = {https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665}</span>
+<span id="cb14-9"><a href="figref.html#cb14-9"></a>}</span></code></pre></div>
+<p>and articles<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> look like this:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb15-1"><a href="figref.html#cb15-1"></a>@article{turing,</span>
+<span id="cb15-2"><a href="figref.html#cb15-2"></a>  doi = {10.1112/plms/s2-42.1.230},</span>
+<span id="cb15-3"><a href="figref.html#cb15-3"></a>  url = {https://doi.org/10.1112/plms/s2-42.1.230},</span>
+<span id="cb15-4"><a href="figref.html#cb15-4"></a>  year = {1937},</span>
+<span id="cb15-5"><a href="figref.html#cb15-5"></a>  publisher = {Wiley},</span>
+<span id="cb15-6"><a href="figref.html#cb15-6"></a>  volume = {s2-42},</span>
+<span id="cb15-7"><a href="figref.html#cb15-7"></a>  number = {1},</span>
+<span id="cb15-8"><a href="figref.html#cb15-8"></a>  pages = {230--265},</span>
+<span id="cb15-9"><a href="figref.html#cb15-9"></a>  author = {Alan Turing},</span>
+<span id="cb15-10"><a href="figref.html#cb15-10"></a>  title = {On Computable Numbers, with an Application to the Entscheidungsproblem},</span>
+<span id="cb15-11"><a href="figref.html#cb15-11"></a>  journal = {Proceedings of the London Mathematical Society}</span>
+<span id="cb15-12"><a href="figref.html#cb15-12"></a>}</span></code></pre></div>
+<p>For web references you can use misc</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb16-1"><a href="figref.html#cb16-1"></a>@misc{googlescholar,</span>
+<span id="cb16-2"><a href="figref.html#cb16-2"></a>  author       = {Anon},</span>
+<span id="cb16-3"><a href="figref.html#cb16-3"></a>  title        = {Alan Turing Google Scholar page},</span>
+<span id="cb16-4"><a href="figref.html#cb16-4"></a>  url          = {https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ},</span>
+<span id="cb16-5"><a href="figref.html#cb16-5"></a>  year         = {2020},</span>
+<span id="cb16-6"><a href="figref.html#cb16-6"></a>}</span></code></pre></div>
+<p>If we wanted to create the text:</p>
+<p>“You can find Alan Turing’s publications in Google scholar. <span class="citation">(Anon <a href="#ref-googlescholar" role="doc-biblioref">2020</a><a href="#ref-googlescholar" role="doc-biblioref">a</a>)</span>
+This includes his paper on the Entscheidungsproblem published in 1937. <span class="citation">(Turing <a href="#ref-turing" role="doc-biblioref">1937</a>)</span>”</p>
+<p>We would need the following in our tex file:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="figref.html#cb17-1"></a>You can find Alan Turing&#39;s publications in Google scholar. <span class="kw">\cite</span>{<span class="ex">googlescholar</span>}</span>
+<span id="cb17-2"><a href="figref.html#cb17-2"></a>This includes his paper on the Entscheidungsproblem published in 1937. <span class="kw">\cite</span>{<span class="ex">turing</span>}</span></code></pre></div>
+<p>To generate the bibliography you’ll need to add these two lines</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb18-1"><a href="figref.html#cb18-1"></a><span class="bu">\bibliographystyle</span>{<span class="ex">natbib</span>}</span>
+<span id="cb18-2"><a href="figref.html#cb18-2"></a><span class="bu">\bibliography</span>{<span class="ex">latex</span>}</span></code></pre></div>
+<p>and when you compile you need to run pdflatex before and after running bibtex.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb19-1"><a href="figref.html#cb19-1"></a>pdflatex turing.tex</span>
+<span id="cb19-2"><a href="figref.html#cb19-2"></a>bibtex turing.bib</span>
+<span id="cb19-3"><a href="figref.html#cb19-3"></a>pdflatex turing.tex</span>
+<span id="cb19-4"><a href="figref.html#cb19-4"></a>pdflatex turing.tex</span></code></pre></div>
+</div>
+<div id="fingconc" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Conclusion</h2>
+<p>You have cross referenced, illustrated and added citations and footnotes to your document. Next we’ll look at doing some maths.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-googlescholar">
+<p>Anon. 2020a. “Alan Turing Google Scholar Page.” <a href="https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ">https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ</a>.</p>
+</div>
+<div id="ref-turing">
+<p>Turing, Alan. 1937. “On Computable Numbers, with an Application to the Entscheidungsproblem.” <em>Proceedings of the London Mathematical Society</em> s2-42 (1): 230–65. <a href="https://doi.org/10.1112/plms/s2-42.1.230">https://doi.org/10.1112/plms/s2-42.1.230</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>Like this one which is a footnote about footnotes. Very meta.<a href="figref.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Using tools like <a href="https://www.ottobib.com" class="uri">https://www.ottobib.com</a> can help you to quickly generate BibTeX entries from a given ISBN number<a href="figref.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>BibTeX entries for journal articles can be automatically generated from unique identifiers known as digital object identifiers, see <a href="https://doi2bib.org" class="uri">https://doi2bib.org</a> for example. This saves you the hassle of typing them in by hand.<a href="figref.html#fnref5" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="simples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="maths.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-figref.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["latex4year1.pdf", "latex4year1.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
