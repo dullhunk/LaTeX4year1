@@ -1,6 +1,6 @@
 # Your curriculum vitae {#cv}
 
-You'll write many documents at University, but there is one document that is **really** seriously important in a potentially life-changing way. Your curriculum vitae^[or curriculum vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
+You'll write many documents at University, but there is one document that is **really** seriously important in a potentially life-changing way. Your curriculum vitae^[actually it's vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
 
 ```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'}
 knitr::include_graphics("images/jake-ryan.jpg")
@@ -25,13 +25,13 @@ So it is well worth investing a bit of your time to create version 1.0 of your C
 
 ## Exercise five: your CV
 
-Create a basic CV which describes your story including:
+Create a basic CV which tells your story including:
 
-* your education, including University
-* your experience, voluntary, paid or otherwise
-* your projects: personal, technical and non-technical
+* your education, including high school and University
+* your experience, voluntary, paid, casual, technical and non-technical
+* your projects: personal or at University and beyond
 
-You can do this using the ready-made templates at https://www.overleaf.com/gallery/tagged/cv
+You can do this using the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv)
 
 ## Debug your CV
 As you progress through University, keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.

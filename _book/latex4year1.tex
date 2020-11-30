@@ -258,7 +258,7 @@ Our turing.tex file is a very simple document, so let's add some sections and fi
 \end{Highlighting}
 \end{Shaded}
 
-The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}.
+The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. The software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} in his book review called it an ``incredibly fun little book''. \citep{codinghorror}
 
 \hypertarget{exercise-one-document}{%
 \section{Exercise one: document}\label{exercise-one-document}}
@@ -362,7 +362,7 @@ when you want to use the reference. Obviously you replace the text \texttt{mymar
 \hypertarget{illustrating-your-documents}{%
 \section{Illustrating your documents}\label{illustrating-your-documents}}
 
-A document without figures, images, picture and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
+A document without figures, images, pictures and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
 
 \begin{figure}
 
@@ -421,7 +421,7 @@ You can cite sources such as websites, books or journal articles in your documen
 \end{Highlighting}
 \end{Shaded}
 
-The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX. BibTeX gives provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} look like this:
+The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX. BibTeX provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} using the \texttt{@book} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -437,7 +437,7 @@ The citations themselves can be stored in a separate \texttt{*.bib\ file} using 
 \end{Highlighting}
 \end{Shaded}
 
-and articles\footnote{BibTeX entries for journal articles can be automatically generated from unique identifiers known as digital object identifiers, see \url{https://doi2bib.org} for example. This saves you the hassle of typing them in by hand.} look like this:
+and articles\footnote{BibTeX entries for journal articles can be automatically generated from persistent identifiers known as \href{https://en.wikipedia.org/wiki/Digital_object_identifier}{digital object identifiers} or doi's, see \url{https://doi2bib.org} for example. This saves you the unpleasant task of typing them in by hand.} use the \texttt{@article} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -456,7 +456,7 @@ and articles\footnote{BibTeX entries for journal articles can be automatically g
 \end{Highlighting}
 \end{Shaded}
 
-For web references you can use misc
+For everything else you can use the \texttt{@misc} type:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -510,6 +510,8 @@ You have cross referenced, illustrated and added citations and footnotes to your
 
 \hypertarget{maths}{%
 \chapter{Doing the math}\label{maths}}
+
+(This chapters uses mathematics, if you can't see the equations below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.netlify.app/latex4year1.pdf}. Otherwise, read on below.)
 
 LaTeX provides powerful tools for typesetting mathematics, such as this equation:
 
@@ -582,8 +584,8 @@ There are some symbols that you might need (for example \texttt{\textbackslash{}
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
 \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{en.wikibooks.org/wiki/LaTeX/Mathematics} or books such as the \emph{Guide to LaTeX} by Helmut Kopka and Patrick W. Daly. \citep{kopka}
 
-\hypertarget{exercise-3-maths}{%
-\section{Exercise 3: maths}\label{exercise-3-maths}}
+\hypertarget{exercise-three-maths}{%
+\section{Exercise three: maths}\label{exercise-three-maths}}
 
 Now for an exercise that involves some mathematics. Create a file \texttt{maths.tex} which typesets the following piece of text and mathematics:
 
@@ -604,8 +606,8 @@ For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying 
 
 \[ x^n + y^n = z^n \]
 
-\hypertarget{conclusions}{%
-\section{Conclusions}\label{conclusions}}
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 We've briefly looked at typesetting mathematics in LaTeX, in the next chapter we'll look at collaborative authoring with overleaf.
 
@@ -620,7 +622,7 @@ If you are the sole author of a document, then compiling files on your local mac
 
 }
 
-\caption{A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side}\label{fig:overleaf-fig}
+\caption{A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side. Screen shot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)}\label{fig:overleaf-fig}
 \end{figure}
 
 Overleaf has two features which are useful
@@ -639,9 +641,17 @@ Overleaf has two features which are useful
 \section{Exercise four: overleaf}\label{exercise-four-overleaf}}
 
 Overleaf exercise:
-1. Login to \href{https://www.overleaf.com/}{overleaf.com}
-2. Create and save a simple document using the tutorial at \href{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}{overleaf.com/learn/how-to/Creating\_a\_document\_in\_Overleaf}
-3. Note that you could store your TeX source in a git repository if you wanted to
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Login to \href{https://www.overleaf.com/}{overleaf.com}\\
+\item
+  Create and save a simple document using the tutorial at \href{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}{overleaf.com/learn/how-to/Creating\_a\_document\_in\_Overleaf}\\
+\item
+  Note that overleaf allows you to store your TeX source in a git repository so you can use version control
+\end{enumerate}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
@@ -651,7 +661,7 @@ Overleaf is a handy tool for creating LaTeX documents. While LaTeX has been arou
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}
 
-You'll write many documents at University, but there is one document that is \textbf{really} seriously important in a potentially life-changing way. Your curriculum vitae\footnote{or curriculum vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
+You'll write many documents at University, but there is one document that is \textbf{really} seriously important in a potentially life-changing way. Your curriculum vitae\footnote{actually it's vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
 
 \begin{figure}
 
@@ -659,21 +669,21 @@ You'll write many documents at University, but there is one document that is \te
 
 }
 
-\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? There are many other templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
+\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
 \end{figure}
 
-Creating a professional document is especially important when you write your CV, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
+Creating a professional looking CV is especially important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
 
 \begin{itemize}
 \tightlist
 \item
-  how your CV looks, it's typesetting, layout and style
+  how your CV looks, the typesetting, layout and style (typography)
 \item
   the content of your CV, what you've done and how you describe it
 \item
   the quality and clarity of your written communication
 \item
-  the editing, what you've decided to leave in and out of your CV
+  the editing, what you've decided to leave in and leave +out of your CV
 \end{itemize}
 
 By opportunities we mean immediate ones within the next 12 months as well as those further in the future. Those opportunities might include:
@@ -681,7 +691,7 @@ By opportunities we mean immediate ones within the next 12 months as well as tho
 \begin{itemize}
 \tightlist
 \item
-  Spring insights during easter next year\footnote{see e.g.~\url{https://www.ratemyplacement.co.uk/insights}}
+  Spring insights during easter next year\footnote{see the essential guide to student insights at \url{https://www.ratemyplacement.co.uk/insights}}
 \item
   Summer internships next year or during subsequent summers\footnote{see where can I look for jobs? \url{https://waggle.cs.manchester.ac.uk/waggle/search}}
 \item
@@ -692,29 +702,29 @@ By opportunities we mean immediate ones within the next 12 months as well as tho
   Postgraduate study or research via masters or PhD
 \end{itemize}
 
-So it is well worth investing a bit of your time to create version 1.0 of your CV. It's never too early to make a start.
+So it is well worth investing a bit of your time to create version 1.0 of your CV. Yes, you've only just started University but it's never too early to make a start.
 
 \hypertarget{exercise-five-your-cv}{%
 \section{Exercise five: your CV}\label{exercise-five-your-cv}}
 
-Create a basic CV which describes your story including:
+Create a basic CV which tells your story including:
 
 \begin{itemize}
 \tightlist
 \item
-  your education, including University
+  your education, including high school and University
 \item
-  your experience, voluntary, paid or otherwise
+  your experience, voluntary, paid, casual, technical and non-technical
 \item
-  your projects: personal, technical and non-technical
+  your projects: personal or at University and beyond
 \end{itemize}
 
-You can do this using the ready-made templates at \url{https://www.overleaf.com/gallery/tagged/cv}
+You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}
 
 \hypertarget{debug-your-cv}{%
 \section{Debug your CV}\label{debug-your-cv}}
 
-As you progress through University, it is a good idea to keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.
+As you progress through University, keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -726,17 +736,17 @@ As you progress through University, it is a good idea to keep your CV up to date
 \item
   Does it look good, decent layout, easy on the eye?
 \item
-  Does it fit comfortably on preferably one (Résumé) or two pages (CV) only?
+  Does it fit comfortably on preferably one page (Résumé) or two pages (CV) only?
 \item
-  Is it in reverse chronological order? Most important (usually recent) things first?
+  Is it in reverse chronological order? The most important (usually recent) things should be first?
 \item
-  Have you talked about what you have actually done using prominent verbs, rather than just what you think you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
+  Have you talked about what you have actually done using prominent verbs, rather than just what you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
 \item
-  Have you mentioned things you are studying now and throughout the year, not just courses you have finished?
+  Have you mentioned things you are studying now and throughout the current academic year, not just courses you have finished?
 \item
   Have you quantified and provided evidence for the claims you make?
 \item
-  Is it robot proof? Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}. What feedback do the robots give you?
+  Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}. What feedback do the robots give you?
 \item
   Find out more in the \emph{Debug your CV} guide at \href{http://git.io/mycv}{git.io/mycv}
 \end{enumerate}
@@ -744,7 +754,7 @@ As you progress through University, it is a good idea to keep your CV up to date
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 
-Your CV is a \emph{really} important document. We recommend you start working on it sooner rather than later and get feedback from as many different people as you reasonably can.
+Your CV is a \emph{really} important document. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can.
 
   \bibliography{book.bib}
 

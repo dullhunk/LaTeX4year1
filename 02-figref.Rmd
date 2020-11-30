@@ -31,7 +31,7 @@ The Turing machines described in section \ref{sec:simplest} are named after Alan
 
 ## Illustrating your documents
 
-A document without figures, images, picture and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
+A document without figures, images, pictures and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
 
 ```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
 knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
@@ -74,7 +74,7 @@ You can cite sources such as websites, books or journal articles in your documen
 ```tex
 \cite{turing}
 ```
-The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX. BibTeX gives provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] look like this:
+The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] using the `@book` type like this:
 
 ```tex
 @Book{turingomnibus,
@@ -87,7 +87,7 @@ The citations themselves can be stored in a separate `*.bib file` using a format
   url = {https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665}
 }
 ```
-and articles^[BibTeX entries for journal articles can be automatically generated from unique identifiers known as digital object identifiers, see https://doi2bib.org for example. This saves you the hassle of typing them in by hand.] look like this:
+and articles^[BibTeX entries for journal articles can be automatically generated from persistent identifiers known as [digital object identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier) or doi's, see https://doi2bib.org for example. This saves you the unpleasant task of typing them in by hand.] use the `@article` type like this:
 
 ```tex
 @article{turing,
@@ -104,7 +104,7 @@ and articles^[BibTeX entries for journal articles can be automatically generated
 }
 ```
 
-For web references you can use misc
+For everything else you can use the `@misc` type:
 
 ```tex
 @misc{googlescholar,

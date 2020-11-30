@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.27)  30 NOV 2020 01:42
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.27)  30 NOV 2020 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,6 +424,9 @@ LaTeX Warning: Label `conclusion' multiply defined.
 
 LaTeX Warning: Label `conclusion' multiply defined.
 
+
+LaTeX Warning: Label `conclusion' multiply defined.
+
 )
 \openout1 = `latex4year1.aux'.
 
@@ -820,21 +823,31 @@ Chapter 4.
 [17] [18]
 Missing character: There is no ∴ in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (6.33002pt too wide) in paragraph at lines 582--584
+Overfull \hbox (6.33002pt too wide) in paragraph at lines 584--586
 \TU/lmr/m/n/10 surface here. For more have a look at []en.wikibooks.org/wiki/La
 TeX/Mathematics[]
  []
 
-[19] [20
-
-]
+[19] [20]
 Chapter 5.
 File: images/Overleaf_v2_editing_page.jpg Graphic file (type bmp)
 <images/Overleaf_v2_editing_page.jpg>
-[21]
-Overfull \hbox (47.16pt too wide) in paragraph at lines 641--645
-\TU/lmr/m/n/10 ment using the tutorial at []overleaf.com/learn/how-to/Creating_
-a_document_in_Overleaf[]
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
+
+ []
+
+
+Overfull \hbox (25.82002pt too wide) in paragraph at lines 651--653
+[]\TU/lmr/m/n/10 Create and save a simple document using the tutorial at []over
+leaf.com/learn/how-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
+
  []
 
 [22]
@@ -842,49 +855,61 @@ Chapter 6.
 File: images/jake-ryan.jpg Graphic file (type bmp)
 <images/jake-ryan.jpg>
 
-Underfull \hbox (badness 4144) in paragraph at lines 662--662
-[]\TU/lmr/m/n/10 Figure 6.1: []An example CV using an overleaf template. Would
+Underfull \hbox (badness 1253) in paragraph at lines 672--672
+[]\TU/lmr/m/n/10 Figure 6.1: []An example CV using an overleaf template. Would 
+you
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 662--662
-\TU/lmr/m/n/10 you invite Jake to interview based on his CV? There are many
+Underfull \hbox (badness 2875) in paragraph at lines 672--672
+\TU/lmr/m/n/10 invite Jake to interview based on his CV? These are the kinds of
+
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 662--662
-\TU/lmr/m/n/10 other templates available, this one is by Jake Gutierrez and pub
--
+Underfull \hbox (badness 3039) in paragraph at lines 672--672
+\TU/lmr/m/n/10 decisions that are made based on your CV. There are many other
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 6526) in paragraph at lines 672--672
+\TU/lmr/m/n/10 CV templates available, this one is by Jake Gutierrez and pub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--672
 \TU/lmr/m/n/10 lished under an MIT license at [overleaf.com/latex/templates/jak
 es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 10000) in paragraph at lines 672--672
 \TU/lmr/m/n/10 resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/ja
 kes-
  []
 
 [23
 
-] [24] (./latex4year1.bbl [25] [26]) [27
+] [24]
+Overfull \hbox (9.41pt too wide) in paragraph at lines 722--723
+[]\TU/lmr/m/n/10 You can do this using the ready-made templates at []overleaf.c
+om/gallery/tagged/cv[] 
+ []
 
-] (./latex4year1.aux)
+(./latex4year1.bbl [25] [26
+
+]) [27] (./latex4year1.aux)
 Package rerunfilecheck Info: File `latex4year1.out' has not changed.
-(rerunfilecheck)             Checksum: 6C88BB021DFAC32E27F2B944D85C9DD0;4241.
+(rerunfilecheck)             Checksum: 24537AB9359FB3E9F34C2657ED416F0B;4256.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17150 strings out of 479426
- 298874 string characters out of 5880084
- 752106 words of memory out of 5000000
- 36260 multiletter control sequences out of 15000+600000
+ 17152 strings out of 479426
+ 298925 string characters out of 5880084
+ 752250 words of memory out of 5000000
+ 36262 multiletter control sequences out of 15000+600000
  541587 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,8n,118p,1222b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
