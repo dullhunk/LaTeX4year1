@@ -11,9 +11,9 @@ Creating a professional looking CV is especially important, because it determine
 * how your CV looks, the typesetting, layout and style (typography)
 * the content of your CV, what you've done and how you describe it
 * the quality and clarity of your written communication
-* the editing, what you've decided to leave in and leave +out of your CV
+* the editing, what you've decided to leave in (and leave out) of your CV
 
-By opportunities we mean immediate ones within the next 12 months as well as those further in the future. Those opportunities might include:
+By opportunities we mean immediate ones within the next 12 months as well as those further in the future. These opportunities might include:
 
 * Spring insights during easter next year^[see the essential guide to student insights at https://www.ratemyplacement.co.uk/insights]
 * Summer internships next year or during subsequent summers^[see where can I look for jobs? https://waggle.cs.manchester.ac.uk/waggle/search]
