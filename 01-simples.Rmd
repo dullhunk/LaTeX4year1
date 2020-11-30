@@ -73,7 +73,7 @@ The text here is excerpted from *The New Turing Ominbus: 66 excursions in Comput
 ## Exercise one: document
 Cut-and-paste this longer text into your document or make your own sections and text. You could use text from [Lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) at [lipsum.com](https://www.lipsum.com) to fill out the page.
 
-Now, at the top of your document after the \begin{document} line and before the command defining the first section, add the following commands, each on their own line:
+Now, at the top of your document after the `\begin{document}` line and before first `\section`, add the following commands, each on their own line:
 
 ```tex
 \title{The New Turing Ominbus}
@@ -83,7 +83,7 @@ Now, at the top of your document after the \begin{document} line and before the 
 \newpage
 ```
 
-The `title`, `author`, `tableofcontents` and `newpage` commands are self-explanatory. The `maketitle` automatically generates a date Your table of contents won't be created until you run pdflatex **twice**. You need to process the source twice because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.
+The `title`, `author`, `tableofcontents` and `newpage` commands are self-explanatory. The `maketitle` automatically inserts today's date. Your table of contents won't be created until you run pdflatex **twice** because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.
 
 ```{r eval=FALSE}
 # remember to run pdflatex twice for the table of contents
