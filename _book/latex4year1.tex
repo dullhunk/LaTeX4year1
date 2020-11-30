@@ -297,7 +297,7 @@ Here's a few points to note about the text above:
 \item
   Notice how lists are created using \texttt{\textbackslash{}begin\{enumerate\}} and \texttt{item}
 \item
-  Notice that curved open quotation marks (`` - looks like miniature 66) and close quotation marks ('' - looks like miniature 99) are different characters. Look carefully at the quotes around the phrase ``Can machines think?'' in the excerpt above in section \protect\hyperlink{longer}{longer}.
+  Notice that curved open quotation marks (`` - looks a bit like a mini 66) and close quotation marks ('' - mini 99) are different characters. Look carefully at the quotes around the phrase ``Can machines think?'' in the excerpt above in section on \protect\hyperlink{longer}{a longer LaTeX document}.
 \end{itemize}
 
 \hypertarget{concsimple}{%
@@ -435,7 +435,7 @@ The citations themselves can be stored in a separate \texttt{*.bib\ file} using 
 \end{Highlighting}
 \end{Shaded}
 
-and articles\footnote{BibTeX entries for journal articles can be automatically generated from persistent identifiers known as \href{https://en.wikipedia.org/wiki/Digital_object_identifier}{digital object identifiers} or doi's, see \url{https://doi2bib.org} for example. This saves you the unpleasant task of typing them in by hand.} use the \texttt{@article} type like this:
+and articles\footnote{BibTeX entries for journal articles can be automatically generated from persistent identifiers known as \href{https://en.wikipedia.org/wiki/Digital_object_identifier}{digital object identifiers} or doi's, see \url{https://doi2bib.org} for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.} use the \texttt{@article} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -513,7 +513,7 @@ You have cross referenced, illustrated and added citations and footnotes to your
 \hypertarget{maths}{%
 \chapter{Doing the maths}\label{maths}}
 
-(This chapters uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.netlify.app/latex4year1.pdf}. Otherwise, read on below.)
+(This chapter uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf}. Otherwise, read on below.)
 
 LaTeX provides powerful tools for typesetting mathematics, such as this equation:
 
@@ -530,7 +530,7 @@ To render the equation above, you include this in your tex file:
 \hypertarget{equations}{%
 \section{Equations}\label{equations}}
 
-You can probably work out how most of this creates the formula, but it won't be obvious that the \verb|\[| and \verb|\]| symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/}{COMP11120 Mathematical Techniques for Computer Science} in your first year and \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/}{COMP26120 Algorithms and Imperative Programming} in your second year.
+You can probably work out how most of this creates the formula, but it won't be obvious that the \texttt{\textbackslash{}{[}} and \texttt{\textbackslash{}{]}} symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/}{COMP11120 Mathematical Techniques for Computer Science} in your first year and \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/}{COMP26120 Algorithms and Imperative Programming} in your second year.
 
 Here's another example, taken from computer graphics, it's a local illumination model incorporating ambient, diffuse and specular reflection by multiple lights:
 
