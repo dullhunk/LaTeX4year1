@@ -23,4 +23,4 @@ Overleaf exercise:
 
 ## Conclusion {#overleafconc}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, overleaf brings it up to date with cloud based editing. In the next chapter we will create a CV using templates provided by overleaf.
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, [@knuth] overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using document templates provided by overleaf.
