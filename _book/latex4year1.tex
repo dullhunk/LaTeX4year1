@@ -265,7 +265,7 @@ The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in C
 
 Cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
 
-Now, at the top of your document after the \textbackslash begin\{document\} line and before the command defining the first section, add the following commands, each on their own line:
+Now, at the top of your document after the \texttt{\textbackslash{}begin\{document\}} line and before first \texttt{\textbackslash{}section}, add the following commands, each on their own line:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -277,7 +277,7 @@ Now, at the top of your document after the \textbackslash begin\{document\} line
 \end{Highlighting}
 \end{Shaded}
 
-The \texttt{title}, \texttt{author}, \texttt{tableofcontents} and \texttt{newpage} commands are self-explanatory. The \texttt{maketitle} automatically generates a date Your table of contents won't be created until you run pdflatex \textbf{twice}. You need to process the source twice because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.
+The \texttt{title}, \texttt{author}, \texttt{tableofcontents} and \texttt{newpage} commands are self-explanatory. The \texttt{maketitle} automatically inserts today's date. Your table of contents won't be created until you run pdflatex \textbf{twice} because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -502,6 +502,8 @@ and when you compile you need to run pdflatex before and after running bibtex.
 \NormalTok{pdflatex turing.tex}
 \end{Highlighting}
 \end{Shaded}
+
+If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
 
 \hypertarget{fingconc}{%
 \section{Conclusion}\label{fingconc}}

@@ -256,13 +256,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="exercise-one-document" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Exercise one: document</h2>
 <p>Cut-and-paste this longer text into your document or make your own sections and text. You could use text from <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum</a> at <a href="https://www.lipsum.com">lipsum.com</a> to fill out the page.</p>
-<p>Now, at the top of your document after the \begin{document} line and before the command defining the first section, add the following commands, each on their own line:</p>
+<p>Now, at the top of your document after the <code>\begin{document}</code> line and before first <code>\section</code>, add the following commands, each on their own line:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb5-1"><a href="simples.html#cb5-1"></a><span class="fu">\title</span>{The New Turing Ominbus}</span>
 <span id="cb5-2"><a href="simples.html#cb5-2"></a><span class="fu">\author</span>{A. K. Dewdney}</span>
 <span id="cb5-3"><a href="simples.html#cb5-3"></a><span class="fu">\maketitle</span></span>
 <span id="cb5-4"><a href="simples.html#cb5-4"></a><span class="fu">\tableofcontents</span></span>
 <span id="cb5-5"><a href="simples.html#cb5-5"></a><span class="fu">\newpage</span></span></code></pre></div>
-<p>The <code>title</code>, <code>author</code>, <code>tableofcontents</code> and <code>newpage</code> commands are self-explanatory. The <code>maketitle</code> automatically generates a date Your table of contents won’t be created until you run pdflatex <strong>twice</strong>. You need to process the source twice because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.</p>
+<p>The <code>title</code>, <code>author</code>, <code>tableofcontents</code> and <code>newpage</code> commands are self-explanatory. The <code>maketitle</code> automatically inserts today’s date. Your table of contents won’t be created until you run pdflatex <strong>twice</strong> because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="simples.html#cb6-1"></a><span class="co"># remember to run pdflatex twice for the table of contents</span></span>
 <span id="cb6-2"><a href="simples.html#cb6-2"></a>pdlfatex turing.tex</span>
 <span id="cb6-3"><a href="simples.html#cb6-3"></a>pdflatex turing.tex</span></code></pre></div>

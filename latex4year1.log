@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.27)  30 NOV 2020 11:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.27)  30 NOV 2020 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,7 +823,7 @@ Chapter 4.
 [17] [18]
 Missing character: There is no ∴ in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (6.33002pt too wide) in paragraph at lines 584--586
+Overfull \hbox (6.33002pt too wide) in paragraph at lines 586--588
 \TU/lmr/m/n/10 surface here. For more have a look at []en.wikibooks.org/wiki/La
 TeX/Mathematics[]
  []
@@ -835,18 +835,18 @@ File: images/Overleaf_v2_editing_page.jpg Graphic file (type bmp)
 [21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 649--651
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
 
  []
 
 
-Overfull \hbox (25.82002pt too wide) in paragraph at lines 651--653
+Overfull \hbox (25.82002pt too wide) in paragraph at lines 653--655
 []\TU/lmr/m/n/10 Create and save a simple document using the tutorial at []over
 leaf.com/learn/how-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--653
+Underfull \hbox (badness 10000) in paragraph at lines 653--655
 
  []
 
@@ -855,35 +855,35 @@ Chapter 6.
 File: images/jake-ryan.jpg Graphic file (type bmp)
 <images/jake-ryan.jpg>
 
-Underfull \hbox (badness 1253) in paragraph at lines 672--672
+Underfull \hbox (badness 1253) in paragraph at lines 674--674
 []\TU/lmr/m/n/10 Figure 6.1: []An example CV using an overleaf template. Would 
 you
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 672--672
+Underfull \hbox (badness 2875) in paragraph at lines 674--674
 \TU/lmr/m/n/10 invite Jake to interview based on his CV? These are the kinds of
 
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 672--672
+Underfull \hbox (badness 3039) in paragraph at lines 674--674
 \TU/lmr/m/n/10 decisions that are made based on your CV. There are many other
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 672--672
+Underfull \hbox (badness 6526) in paragraph at lines 674--674
 \TU/lmr/m/n/10 CV templates available, this one is by Jake Gutierrez and pub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
+Underfull \hbox (badness 10000) in paragraph at lines 674--674
 \TU/lmr/m/n/10 lished under an MIT license at [overleaf.com/latex/templates/jak
 es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
+Underfull \hbox (badness 10000) in paragraph at lines 674--674
 \TU/lmr/m/n/10 resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/ja
 kes-
  []
@@ -891,7 +891,7 @@ kes-
 [23
 
 ] [24]
-Overfull \hbox (9.41pt too wide) in paragraph at lines 722--723
+Overfull \hbox (9.41pt too wide) in paragraph at lines 724--725
 []\TU/lmr/m/n/10 You can do this using the ready-made templates at []overleaf.c
 om/gallery/tagged/cv[] 
  []
