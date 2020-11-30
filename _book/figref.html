@@ -276,13 +276,13 @@ Figure 3.1: Alan Turing at the age of sixteen, picture by unknown author, public
 <span id="cb16-5"><a href="figref.html#cb16-5"></a>  year         = {2020},</span>
 <span id="cb16-6"><a href="figref.html#cb16-6"></a>}</span></code></pre></div>
 <p>If we wanted to create the text:</p>
-<p>“You can find Alan Turing’s publications in Google scholar. <span class="citation">(Anon <a href="#ref-googlescholar" role="doc-biblioref">2020</a><a href="#ref-googlescholar" role="doc-biblioref">a</a>)</span>
-This includes his paper on the Entscheidungsproblem published in 1937. <span class="citation">(Turing <a href="#ref-turing" role="doc-biblioref">1937</a>)</span>
-He wrote thinking machines in 1950. <span class="citation">(Turing <a href="#ref-turing50" role="doc-biblioref">1950</a>)</span>”</p>
+<p>“You can find Turing’s publications in Google scholar. <span class="citation">(Anon <a href="#ref-googlescholar" role="doc-biblioref">2020</a><a href="#ref-googlescholar" role="doc-biblioref">a</a>)</span>
+His paper on the Entscheidungsproblem was published in 1937. <span class="citation">(Turing <a href="#ref-turing" role="doc-biblioref">1937</a>)</span>
+He wrote about thinking machines in 1950. <span class="citation">(Turing <a href="#ref-turing50" role="doc-biblioref">1950</a>)</span>”</p>
 <p>We would need the following in our tex file:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="figref.html#cb17-1"></a>You can find Alan Turing&#39;s publications in Google scholar. <span class="kw">\cite</span>{<span class="ex">googlescholar</span>}</span>
-<span id="cb17-2"><a href="figref.html#cb17-2"></a>This includes his paper on the Entscheidungsproblem published in 1937. <span class="kw">\cite</span>{<span class="ex">turing</span>}</span>
-<span id="cb17-3"><a href="figref.html#cb17-3"></a>He wrote thinking machines in 1950. <span class="kw">\cite</span>{<span class="ex">turing50</span>}</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="figref.html#cb17-1"></a>You can find Turing&#39;s publications in Google scholar. <span class="kw">\cite</span>{<span class="ex">googlescholar</span>}</span>
+<span id="cb17-2"><a href="figref.html#cb17-2"></a>His paper on the Entscheidungsproblem was published in 1937. <span class="kw">\cite</span>{<span class="ex">turing</span>}</span>
+<span id="cb17-3"><a href="figref.html#cb17-3"></a>He wrote about thinking machines in 1950. <span class="kw">\cite</span>{<span class="ex">turing50</span>}</span></code></pre></div>
 <p>To generate the bibliography you’ll need to add these two lines</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb18-1"><a href="figref.html#cb18-1"></a><span class="bu">\bibliographystyle</span>{<span class="ex">natbib</span>}</span>
 <span id="cb18-2"><a href="figref.html#cb18-2"></a><span class="bu">\bibliography</span>{<span class="ex">latex</span>}</span></code></pre></div>

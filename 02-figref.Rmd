@@ -117,16 +117,16 @@ For everything else you can use the `@misc` type:
 
 If we wanted to create the text:
 
-“You can find Alan Turing's publications in Google scholar. [@googlescholar]
-This includes his paper on the Entscheidungsproblem published in 1937. [@turing]
-He wrote thinking machines in 1950. [@turing50]”
+“You can find Turing's publications in Google scholar. [@googlescholar]
+His paper on the Entscheidungsproblem was published in 1937. [@turing]
+He wrote about thinking machines in 1950. [@turing50]”
 
 We would need the following in our tex file:
 
 ```tex
-You can find Alan Turing's publications in Google scholar. \cite{googlescholar}
-This includes his paper on the Entscheidungsproblem published in 1937. \cite{turing}
-He wrote thinking machines in 1950. \cite{turing50}
+You can find Turing's publications in Google scholar. \cite{googlescholar}
+His paper on the Entscheidungsproblem was published in 1937. \cite{turing}
+He wrote about thinking machines in 1950. \cite{turing50}
 ```
 
 To generate the bibliography you'll need to add these two lines

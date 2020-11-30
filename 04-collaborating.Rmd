@@ -9,7 +9,7 @@ knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 Overleaf has several features which you might find useful:
 
 * Your documents are saved the cloud
-* Packages, class files and compilers are also in the cloud, saving you time installing things
+* Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing software
 * Templates are provided for common types of documents
 
 
@@ -18,8 +18,8 @@ Overleaf has several features which you might find useful:
 Overleaf exercise:
 
 1. Login to [overleaf.com](https://www.overleaf.com/)  
-1. Create and save a simple document using the tutorial at [overleaf.com/learn/how-to/Creating_a_document_in_Overleaf](https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf)  
-1. Note that overleaf allows  you to store your TeX source in a git repository so you can use version control
+1. Create and save a simple document using an overleaf tutorial^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
+1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control
 
 ## Conclusion {#overleafconc}
 

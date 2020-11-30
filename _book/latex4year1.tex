@@ -469,17 +469,17 @@ For everything else you can use the \texttt{@misc} type:
 
 If we wanted to create the text:
 
-``You can find Alan Turing's publications in Google scholar. \citep{googlescholar}
-This includes his paper on the Entscheidungsproblem published in 1937. \citep{turing}
-He wrote thinking machines in 1950. \citep{turing50}''
+``You can find Turing's publications in Google scholar. \citep{googlescholar}
+His paper on the Entscheidungsproblem was published in 1937. \citep{turing}
+He wrote about thinking machines in 1950. \citep{turing50}''
 
 We would need the following in our tex file:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{You can find Alan Turing\textquotesingle{}s publications in Google scholar. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{googlescholar}\NormalTok{\}}
-\NormalTok{This includes his paper on the Entscheidungsproblem published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
-\NormalTok{He wrote thinking machines in 1950. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing50}\NormalTok{\}}
+\NormalTok{You can find Turing\textquotesingle{}s publications in Google scholar. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{googlescholar}\NormalTok{\}}
+\NormalTok{His paper on the Entscheidungsproblem was published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\NormalTok{He wrote about thinking machines in 1950. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing50}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -634,7 +634,7 @@ Overleaf has several features which you might find useful:
 \item
   Your documents are saved the cloud
 \item
-  Packages, class files and compilers are also in the cloud, saving you time installing things
+  Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing software
 \item
   Templates are provided for common types of documents
 \end{itemize}
@@ -650,7 +650,7 @@ Overleaf exercise:
 \item
   Login to \href{https://www.overleaf.com/}{overleaf.com}\\
 \item
-  Create and save a simple document using the tutorial at \href{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}{overleaf.com/learn/how-to/Creating\_a\_document\_in\_Overleaf}\\
+  Create and save a simple document using an overleaf tutorial\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
 \item
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control
 \end{enumerate}
@@ -688,12 +688,12 @@ Creating a professional looking CV is especially important, because it determine
   the editing, what you've decided to leave in (and leave out) of your CV
 \end{itemize}
 
-By opportunities we mean immediate ones within the next 12 months as well as those further in the future. These opportunities might include:
+By opportunities we mean both immediate ones within the next 12 months as well as those further in the future. These opportunities might include:
 
 \begin{itemize}
 \tightlist
 \item
-  Spring insights during easter next year\footnote{see the essential guide to student insights at \url{https://www.ratemyplacement.co.uk/insights}} some of which have application deaddlines before Christmas
+  Spring insights during easter next year\footnote{see the essential guide to student insights at \url{https://www.ratemyplacement.co.uk/insights}} some of which have application deadlines before Christmas
 \item
   Summer internships next year or during subsequent summers\footnote{see where can I look for jobs? \url{https://waggle.cs.manchester.ac.uk/waggle/search}}
 \item
@@ -716,9 +716,9 @@ Create a basic CV which tells your story including:
 \item
   your education, including high school and University
 \item
-  your experience, voluntary, paid, casual, technical and non-technical
+  your experience, voluntary, paid, casual, technical and non-technical work
 \item
-  your projects: personal or at University and beyond
+  your projects, both personal or at University and beyond
 \end{itemize}
 
 You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}
@@ -726,7 +726,7 @@ You can do this using the ready-made templates at \href{https://www.overleaf.com
 \hypertarget{debug-your-cv}{%
 \section{Debug your CV}\label{debug-your-cv}}
 
-As you progress through University, keep your CV up to date, and get feedback from as many people as you can. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we've seen in CVs.
+As you progress through University, keep your CV up to date, and continuously get feedback from as many people as you can. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we have seen in students CVs:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -738,9 +738,9 @@ As you progress through University, keep your CV up to date, and get feedback fr
 \item
   Does it look good, decent layout, easy on the eye?
 \item
-  Does it fit comfortably on preferably one page (Résumé) or two pages (CV) only?
+  Does it fit comfortably on one page (preferably) or two pages only?
 \item
-  Is it in reverse chronological order? The most important (usually recent) things should be first?
+  Is it in reverse chronological order? Are the most important (usually recent) things first?
 \item
   Have you talked about what you have actually done using prominent verbs, rather than just what you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
 \item
@@ -748,9 +748,9 @@ As you progress through University, keep your CV up to date, and get feedback fr
 \item
   Have you quantified and provided evidence for the claims you make?
 \item
-  Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make it more robot proof?
+  Is your CV robot proof? Many large employers use automated applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make your CV more robot proof?
 \item
-  Find out more in the \emph{Debug your CV} guide at \href{http://git.io/mycv}{git.io/mycv}
+  Find out more in the \emph{Debug your CV} \citep{debugcv} guide at \href{http://git.io/mycv}{git.io/mycv}
 \end{enumerate}
 
 \hypertarget{cvconc}{%
@@ -765,7 +765,7 @@ Your curriculum vitae is a \emph{really} important document and it will most lik
 \item
   your CV / resume
 \item
-  your third year project dissertation. It might seem a long way off now but it comes around very quickly.
+  your third year project dissertation. It might seem a long way off now but it comes around very quickly!
 \end{itemize}
 
 \ldots and more.
