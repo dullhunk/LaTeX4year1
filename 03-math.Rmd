@@ -1,18 +1,18 @@
 # Doing the maths {#maths}
 
-(This chapter uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, read on below.)
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, if you can see the equation below, it is safe to read on...
 
-LaTeX provides powerful tools for typesetting mathematics, such as this equation:
+## Equations {#equations}
+Consider this equation:
 
 $$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$
 
-To render the equation above, you include this in your tex file:
+To render the equation, you include this in your tex file:
 
 ```tex
      \[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
 ```
 
-## Equations
 You can probably work out how most of this creates the formula, but it won't be obvious that the `\[` and  `\]` symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used `\(` and `\)` instead to enclose the formula it would appear in-line, like this: $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$. It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in [COMP11120 Mathematical Techniques for Computer Science](https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/) in your first year and [COMP26120 Algorithms and Imperative Programming](https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/) in your second year.
 
 Here's another example, taken from computer graphics, it's a local illumination model incorporating ambient, diffuse and specular reflection by multiple lights:
@@ -32,7 +32,7 @@ Try to match the LaTeX commands with the formula displayed above. You'll see lot
 
 The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see $\sum_{i=1}^M$, which creates a summation sign and its lower and upper limits: \( \sum_{i=1}^{M} \). We wrap the lower bound, `i=1` in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing `\sum_i=1^M`, LaTeX would then produce $\sum_i=1^M$, which is not at all what we want (even LaTeX can't always know what we really want).
 
-## Matrices
+## Matrices {#matrix}
 If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation
 
 \[ T_1 = \left[
@@ -65,7 +65,7 @@ LaTeX really shines at typesetting mathematics, we've really only scratched the 
 [en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or books such as the *Guide to LaTeX* by  Helmut Kopka and Patrick W. Daly. [@kopka]
 
 
-## Exercise three: maths
+## Exercise three: maths {#ex3}
 
 Now for an exercise that involves some mathematics. Create a file `maths.tex` which typesets the following piece of text and mathematics:
 
@@ -86,6 +86,6 @@ For all natural numbers $n ≥ 3$, there are no integers $x,y,z$ satisfying the 
 
 $$ x^n + y^n = z^n $$
 
-## Conclusion {#mathconc}
+## Summary {#mathconc}
 
 We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.

@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Getting started with LaTeX},
-  pdfauthor={Duncan Hull},
+  pdfauthor={A laboratory manual written by Duncan Hull at the University of Manchester},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -119,8 +119,8 @@
 \bibliographystyle{apalike}
 
 \title{Getting started with LaTeX}
-\author{Duncan Hull}
-\date{2020-11-30}
+\author{A laboratory manual written by Duncan Hull at the University of Manchester}
+\date{Last updated 2020-11-30}
 
 \begin{document}
 \maketitle
@@ -175,10 +175,10 @@ This document is a substantially revised version of earlier LaTeX lab manuals cr
 \hypertarget{simples}{%
 \chapter{Simple LaTeX documents}\label{simples}}
 
-We'll start by creating a simple LaTeX document.
+Let's start by creating a simple LaTeX document.
 
 \hypertarget{shortest}{%
-\section{The shortest document possible}\label{shortest}}
+\section{A very short document}\label{shortest}}
 
 Open up your favourite editor, enter the following text, then save it as a file called \texttt{turing.tex}
 
@@ -191,7 +191,7 @@ Open up your favourite editor, enter the following text, then save it as a file 
 \end{Highlighting}
 \end{Shaded}
 
-To turn this into a PDF we need to use a LaTeX compiler, we're going to use \texttt{pdflatex}, though several other compeilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The \texttt{pdflatex} compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
+To turn this into a PDF we need to use a LaTeX compiler, we're going to use \texttt{pdflatex}, though several other compilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The \texttt{pdflatex} compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -258,8 +258,8 @@ Our turing.tex file is a very simple document, so let's add some sections and fi
 
 The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls it an ``incredibly fun little book''. \citep{codinghorror}
 
-\hypertarget{exercise-one-document}{%
-\section{Exercise one: document}\label{exercise-one-document}}
+\hypertarget{ex1}{%
+\section{Exercise one: document}\label{ex1}}
 
 In your file \texttt{turing.tex} either cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
 
@@ -301,9 +301,9 @@ Here's a few points to note about the text above:
 \end{itemize}
 
 \hypertarget{concsimple}{%
-\section{Conclusion}\label{concsimple}}
+\section{Summary}\label{concsimple}}
 
-You've created a basic document in LaTeX and we've introduced some of its advntages:
+You've created a basic document in LaTeX and we've introduced some of its advantages:
 
 \begin{itemize}
 \tightlist
@@ -318,9 +318,9 @@ You've created a basic document in LaTeX and we've introduced some of its advnta
 Next we'll look at adding some cross-references, figures and citations.
 
 \hypertarget{figref}{%
-\chapter{Cross referencing, illustrating and citing}\label{figref}}
+\chapter{Cross-referencing, illustrating and citing}\label{figref}}
 
-LaTeX has simple but powerful tools to allow you to cross reference, illustrate and cite sources in your documents.
+LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
 \hypertarget{cross-referencing}{%
 \section{Cross referencing}\label{cross-referencing}}
@@ -383,9 +383,9 @@ Including figures and pictures in your document is straightforward. You do it li
 \end{Highlighting}
 \end{Shaded}
 
-The command \texttt{\textbackslash{}includegraphics\{\}} gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The \texttt{\textbackslash{}begin\{figure\}} and \texttt{\textbackslash{}end\{figure\}} code wraps up whatever picture you're including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This floating of figures can sometimes result in the figure ending up in a place you didn't expect, but in most cases LaTeX will make the most sensible choice. It's possible to employ finer control over figure placement, but that's beyond the scope of this guide.
+The command \texttt{\textbackslash{}includegraphics\{\}} gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The \texttt{\textbackslash{}begin\{figure\}} and \texttt{\textbackslash{}end\{figure\}} code wraps up whatever picture you're including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This ``floating'' of figures can sometimes result in the figure ending up in a place you didn't expect, but in most cases LaTeX will make the most sensible choice. It's possible to employ finer control over figure placement, but that's beyond the scope of this guide.
 
-The \texttt{\textbackslash{}includegraphics} command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command \texttt{usepackage} in the document preamble, in between the \texttt{documentclass} and the \texttt{begin\ \{document\}}.
+The \texttt{\textbackslash{}includegraphics} command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command \texttt{usepackage} in the document preamble, in between the \texttt{\textbackslash{}documentclass} and the \texttt{\textbackslash{}begin\{document\}}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -454,7 +454,7 @@ and articles\footnote{BibTeX entries for journal articles can be automatically g
 \end{Highlighting}
 \end{Shaded}
 
-For everything else you can use the \texttt{@misc} type:
+For everything else\footnote{There are many other types of BibTeX entries besides articles, books and misc. See \url{https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management\#BibTeX}} you can use the \texttt{@misc} type:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -506,29 +506,29 @@ and when you compile you need to run pdflatex before and after running bibtex.
 If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
 
 \hypertarget{fingconc}{%
-\section{Conclusion}\label{fingconc}}
+\section{Summary}\label{fingconc}}
 
 You have cross referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.
 
 \hypertarget{maths}{%
 \chapter{Doing the maths}\label{maths}}
 
-(This chapter uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf}. Otherwise, read on below.)
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf}. Otherwise, if you can see the equation below, it is safe to read on\ldots{}
 
-LaTeX provides powerful tools for typesetting mathematics, such as this equation:
+\hypertarget{equations}{%
+\section{Equations}\label{equations}}
+
+Consider this equation:
 
 \[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
 
-To render the equation above, you include this in your tex file:
+To render the equation, you include this in your tex file:
 
 \begin{Shaded}
 \begin{Highlighting}[]
      \SpecialStringTok{\textbackslash{}[ x = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{{-}b }\SpecialCharTok{\textbackslash{}pm}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}sqrt}\SpecialStringTok{\{b\^{}2{-}4ac\}\}\{2a\} \textbackslash{}]}
 \end{Highlighting}
 \end{Shaded}
-
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
 
 You can probably work out how most of this creates the formula, but it won't be obvious that the \texttt{\textbackslash{}{[}} and \texttt{\textbackslash{}{]}} symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/}{COMP11120 Mathematical Techniques for Computer Science} in your first year and \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/}{COMP26120 Algorithms and Imperative Programming} in your second year.
 
@@ -550,8 +550,8 @@ Try to match the LaTeX commands with the formula displayed above. You'll see lot
 
 The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see \(\sum_{i=1}^M\), which creates a summation sign and its lower and upper limits: \(\sum_{i=1}^{M}\). We wrap the lower bound, \texttt{i=1} in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing \texttt{\textbackslash{}sum\_i=1\^{}M}, LaTeX would then produce \(\sum_i=1^M\), which is not at all what we want (even LaTeX can't always know what we really want).
 
-\hypertarget{matrices}{%
-\section{Matrices}\label{matrices}}
+\hypertarget{matrix}{%
+\section{Matrices}\label{matrix}}
 
 If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation
 
@@ -586,8 +586,8 @@ There are some symbols that you might need (for example \texttt{\textbackslash{}
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
 \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{en.wikibooks.org/wiki/LaTeX/Mathematics} or books such as the \emph{Guide to LaTeX} by Helmut Kopka and Patrick W. Daly. \citep{kopka}
 
-\hypertarget{exercise-three-maths}{%
-\section{Exercise three: maths}\label{exercise-three-maths}}
+\hypertarget{ex3}{%
+\section{Exercise three: maths}\label{ex3}}
 
 Now for an exercise that involves some mathematics. Create a file \texttt{maths.tex} which typesets the following piece of text and mathematics:
 
@@ -609,7 +609,7 @@ For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying 
 \[ x^n + y^n = z^n \]
 
 \hypertarget{mathconc}{%
-\section{Conclusion}\label{mathconc}}
+\section{Summary}\label{mathconc}}
 
 We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
 
@@ -639,26 +639,26 @@ Overleaf has several features which you might find useful:
   Templates are provided for common types of documents
 \end{itemize}
 
-\hypertarget{exercise-four-overleaf}{%
-\section{Exercise four: overleaf}\label{exercise-four-overleaf}}
+\hypertarget{ex4}{%
+\section{Exercise four: overleaf}\label{ex4}}
 
-Overleaf exercise:
+Login to \href{https://www.overleaf.com/}{overleaf.com}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Login to \href{https://www.overleaf.com/}{overleaf.com}\\
-\item
-  Create and save a simple document using an overleaf tutorial\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
+  Create and save a simple document using the overleaf tutorial \emph{Creating a document in Overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
 \item
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control
+\item
+  If you want to take it further see how to create tables in the \emph{Creating Tables} tutorial\footnote{\url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes\#Creating_tables}}
 \end{enumerate}
 
 \hypertarget{overleafconc}{%
-\section{Conclusion}\label{overleafconc}}
+\section{Summary}\label{overleafconc}}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, \citep{knuth} overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using document templates provided by overleaf.
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established typesetting system that has been around since 1980's, \citep{knuth} overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
 
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}
@@ -706,8 +706,8 @@ By opportunities we mean both immediate ones within the next 12 months as well a
 
 So it is well worth investing a bit of your time to create version 1.0 of your CV. Yes, you've only just started University but it's never too early to make a start.
 
-\hypertarget{exercise-five-your-cv}{%
-\section{Exercise five: your CV}\label{exercise-five-your-cv}}
+\hypertarget{ex5}{%
+\section{Exercise five: your CV}\label{ex5}}
 
 Create a basic CV which tells your story including:
 
@@ -754,7 +754,7 @@ As you progress through University, keep your CV up to date, and continuously ge
 \end{enumerate}
 
 \hypertarget{cvconc}{%
-\section{Conclusion}\label{cvconc}}
+\section{Summary}\label{cvconc}}
 
 Your curriculum vitae is a \emph{really} important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can. We hope you enjoy using LaTeX to create professional documents for:
 

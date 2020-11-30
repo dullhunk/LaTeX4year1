@@ -22,7 +22,7 @@ By opportunities we mean both immediate ones within the next 12 months as well a
 
 So it is well worth investing a bit of your time to create version 1.0 of your CV. Yes, you've only just started University but it's never too early to make a start.
 
-## Exercise five: your CV
+## Exercise five: your CV {#ex5}
 
 Create a basic CV which tells your story including:
 
@@ -47,7 +47,7 @@ As you progress through University, keep your CV up to date, and continuously ge
 1. Find out more in the *Debug your CV* [@debugcv] guide at [git.io/mycv](http://git.io/mycv)
 
 
-## Conclusion {#cvconc}
+## Summary {#cvconc}
 
 Your curriculum vitae is a *really* important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can. We hope you enjoy using LaTeX to create professional documents for:
 

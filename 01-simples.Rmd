@@ -1,8 +1,8 @@
 # Simple LaTeX documents {#simples}
 
-We'll start by creating a simple LaTeX document.
+Let's start by creating a simple LaTeX document.
 
-## The shortest document possible {#shortest}
+## A very short document {#shortest}
 Open up your favourite editor, enter the following text, then save it as a file called `turing.tex`
 
 ```tex
@@ -11,7 +11,7 @@ Open up your favourite editor, enter the following text, then save it as a file 
 Computational excursions
 \end{document}
 ```
-To turn this into a PDF we need to use a LaTeX compiler, we're going to use `pdflatex`, though several other compeilers are available.^[https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler] The `pdflatex` compiler is already installed on the Linux VM image for VirtualBox.^[https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM] For other operating systems you'll need to explore the options at [latex-project.org/get](https://www.latex-project.org/get/).
+To turn this into a PDF we need to use a LaTeX compiler, we're going to use `pdflatex`, though several other compilers are available.^[https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler] The `pdflatex` compiler is already installed on the Linux VM image for VirtualBox.^[https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM] For other operating systems you'll need to explore the options at [latex-project.org/get](https://www.latex-project.org/get/).
 
 ```{r eval=FALSE}
 # compile turing.tex
@@ -70,7 +70,7 @@ We're using this \LaTeX\ document to demonstrate some of its key strengths that 
 
 The text here is excerpted from *The New Turing Ominbus: 66 excursions in Computer Science* [@turingomnibus]. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) calls it an “incredibly fun little book”. [@codinghorror]
 
-## Exercise one: document
+## Exercise one: document {#ex1}
 In your file `turing.tex` either cut-and-paste this longer text into your document or make your own sections and text. You could use text from [Lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) at [lipsum.com](https://www.lipsum.com) to fill out the page.
 
 Now, at the top of your document after the `\begin{document}` line and before first `\section`, add the following commands, each on their own line:
@@ -99,8 +99,8 @@ Here's a few points to note about the text above:
 * Notice how lists are created using `\begin{enumerate}` and `item`
 * Notice that curved open quotation marks (“ - looks a bit like a mini 66) and close quotation marks (” - mini 99) are different characters. Look carefully at the quotes around the phrase “Can machines think?” in the excerpt above in section on [a longer LaTeX document](#longer).
 
-## Conclusion {#concsimple}
-You've created a basic document in LaTeX and we've introduced some of its advntages:
+## Summary {#concsimple}
+You've created a basic document in LaTeX and we've introduced some of its advantages:
 
 * LaTeX can quickly create pdf files
 * LaTeX uses professional typesetting

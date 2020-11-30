@@ -1,6 +1,6 @@
-# Cross referencing, illustrating and citing {#figref}
+# Cross-referencing, illustrating and citing {#figref}
 
-LaTeX has simple but powerful tools to allow you to cross reference, illustrate and cite sources in your documents.
+LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
 ## Cross referencing
 
@@ -48,9 +48,9 @@ Including figures and pictures in your document is straightforward. You do it li
 ```
 
 
-The command `\includegraphics{}` gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The `\begin{figure}` and `\end{figure}` code wraps up whatever picture you’re including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This floating of figures can sometimes result in the figure ending up in a place you didn’t expect, but in most cases LaTeX will make the most sensible choice. It’s possible to employ finer control over figure placement, but that’s beyond the scope of this guide.
+The command `\includegraphics{}` gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The `\begin{figure}` and `\end{figure}` code wraps up whatever picture you’re including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This “floating” of figures can sometimes result in the figure ending up in a place you didn’t expect, but in most cases LaTeX will make the most sensible choice. It’s possible to employ finer control over figure placement, but that’s beyond the scope of this guide.
 
-The `\includegraphics` command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command `usepackage` in the document preamble, in between the `documentclass` and the `begin {document}`.
+The `\includegraphics` command is not built in to core LaTeX but is in an additional package, which needs to be explicitly loaded. You can load this package by using the command `usepackage` in the document preamble, in between the `\documentclass` and the `\begin{document}`.
 
 ```tex
 \documentclass[a4paper]{article}
@@ -104,7 +104,7 @@ and articles^[BibTeX entries for journal articles can be automatically generated
 }
 ```
 
-For everything else you can use the `@misc` type:
+For everything else^[There are many other types of BibTeX entries besides articles, books and misc. See https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX] you can use the `@misc` type:
 
 ```tex
 @misc{googlescholar,
@@ -145,5 +145,5 @@ pdflatex turing.tex
 ```
 If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
 
-## Conclusion {#fingconc}
+## Summary {#fingconc}
 You have cross referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.

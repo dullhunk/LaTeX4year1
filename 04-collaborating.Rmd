@@ -13,14 +13,14 @@ Overleaf has several features which you might find useful:
 * Templates are provided for common types of documents
 
 
-## Exercise four: overleaf
+## Exercise four: overleaf {#ex4}
 
-Overleaf exercise:
+Login to [overleaf.com](https://www.overleaf.com/)  
 
-1. Login to [overleaf.com](https://www.overleaf.com/)  
-1. Create and save a simple document using an overleaf tutorial^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
+1. Create and save a simple document using the overleaf tutorial *Creating a document in Overleaf*^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
 1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control
+1. If you want to take it further see how to create tables in the *Creating Tables* tutorial^[https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Creating_tables]
 
-## Conclusion {#overleafconc}
+## Summary {#overleafconc}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, [@knuth] overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using document templates provided by overleaf.
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established typesetting system that has been around since 1980's, [@knuth] overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
