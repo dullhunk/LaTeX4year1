@@ -6,7 +6,7 @@ If you are the sole author of a document, then compiling files on your local mac
 knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 ```
 
-Overleaf has two features which are useful
+Overleaf has several features which you might find useful:
 
 * Your documents are saved the cloud
 * Packages, class files and compilers are also in the cloud, saving you time installing things
@@ -21,6 +21,6 @@ Overleaf exercise:
 1. Create and save a simple document using the tutorial at [overleaf.com/learn/how-to/Creating_a_document_in_Overleaf](https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf)  
 1. Note that overleaf allows  you to store your TeX source in a git repository so you can use version control
 
-## Conclusion
+## Conclusion {#overleafconc}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX has been around since In the next chapter we will create a CV using templates provided by overleaf.
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, overleaf brings it up to date with cloud based editing. In the next chapter we will create a CV using templates provided by overleaf.

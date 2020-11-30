@@ -1,6 +1,6 @@
-# Doing the math {#maths}
+# Doing the maths {#maths}
 
-(This chapters uses mathematics, if you can't see the equations below in your web browser, you'll need to use the pdf version of this document at [latex4year1.netlify.app/latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, read on below.)
+(This chapters uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at [latex4year1.netlify.app/latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, read on below.)
 
 LaTeX provides powerful tools for typesetting mathematics, such as this equation:
 
@@ -86,6 +86,6 @@ For all natural numbers $n ≥ 3$, there are no integers $x,y,z$ satisfying the 
 
 $$ x^n + y^n = z^n $$
 
-## Conclusion
+## Conclusion {#mathconc}
 
-We've briefly looked at typesetting mathematics in LaTeX, in the next chapter we'll look at collaborative authoring with overleaf.
+We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.

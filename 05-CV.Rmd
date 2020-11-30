@@ -1,6 +1,6 @@
 # Your curriculum vitae {#cv}
 
-You'll write many documents at University, but there is one document that is **really** seriously important in a potentially life-changing way. Your curriculum vitae^[actually it's vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
+You'll write many documents at University, but there is one document that is **really** important in a potentially life-changing way. Your curriculum vitae^[strictly speaking it should be vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
 
 ```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'}
 knitr::include_graphics("images/jake-ryan.jpg")
@@ -44,10 +44,16 @@ As you progress through University, keep your CV up to date, and get feedback fr
 1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See [git.io/verbsfirst](http://git.io/verbsfirst) for examples
 1. Have you mentioned things you are studying now and throughout the current academic year, not just courses you have finished?
 1. Have you quantified and provided evidence for the claims you make?
-1. Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/). What feedback do the robots give you?
+1. Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make it more robot proof?
 1. Find out more in the *Debug your CV* guide at [git.io/mycv](http://git.io/mycv)
 
 
-## Conclusion
+## Conclusion {#cvconc}
 
-Your CV is a *really* important document. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can.
+Your curriculum vitae is a *really* important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can. We hope you enjoy using LaTeX to create professional documents for:
+
+* your individual COMP101 coursework (see blackboard)
+* your CV / resume
+* your third year project dissertation. It might seem a long way off now but it comes around very quickly.
+
+...and more.

@@ -129,8 +129,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{written-communciation-with-latex}{%
-\chapter{Written communciation with LaTeX}\label{written-communciation-with-latex}}
+\hypertarget{written-communication-with-latex}{%
+\chapter{Written communication with LaTeX}\label{written-communication-with-latex}}
 
 This document is designed to help you get started with using LaTeX, it supports the labs for the first year undergraduate course in Computer Science, \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus}{COMP101}.
 
@@ -143,14 +143,14 @@ This document is designed to help you get started with using LaTeX, it supports 
 \caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  }\label{fig:latexproject-fig}
 \end{figure}
 
-LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf).
+LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf) using industrial strength typesetting.
 
 \hypertarget{not-a-word-processor}{%
 \section{Not a word processor}\label{not-a-word-processor}}
 
 LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is sepereated from the contents (HTML).
 
-Reading this LaTeX guide and doing the exercises will enable you to:
+Reading this LaTeX guide and doing the five exercises it contains will enable you to:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -165,14 +165,12 @@ Reading this LaTeX guide and doing the exercises will enable you to:
   Save and share LaTeX documents using overleaf
 \item
   Create a CV using LaTeX templates in overleaf
-\item
-  Extend your knowledge of LaTeX and know where to find out more
 \end{enumerate}
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
 
-This document is a revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
+This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
 
 \hypertarget{simples}{%
 \chapter{Simple LaTeX documents}\label{simples}}
@@ -193,7 +191,7 @@ Open up your favourite editor, enter the following text, then save it as a file 
 \end{Highlighting}
 \end{Shaded}
 
-To turn this into a PDF we need to use a LaTeX compiler, we're going to use pdflatex, though several other compeilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The pdflatex compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
+To turn this into a PDF we need to use a LaTeX compiler, we're going to use \texttt{pdflatex}, though several other compeilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The \texttt{pdflatex} compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -204,7 +202,7 @@ To turn this into a PDF we need to use a LaTeX compiler, we're going to use pdfl
 \end{Highlighting}
 \end{Shaded}
 
-The first command outputs a pdf file from your TeX input using the pdflatex compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary file and a log file which can be helpful for debugging the compilation of more complicated documents:
+The first command outputs a pdf file from your TeX input using the \texttt{pdflatex} compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary \texttt{*.aux} file and a \texttt{*.log} log file which can be helpful for debugging the compilation of more complicated documents:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -258,12 +256,12 @@ Our turing.tex file is a very simple document, so let's add some sections and fi
 \end{Highlighting}
 \end{Shaded}
 
-The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. The software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} in his book review called it an ``incredibly fun little book''. \citep{codinghorror}
+The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls it an ``incredibly fun little book''. \citep{codinghorror}
 
 \hypertarget{exercise-one-document}{%
 \section{Exercise one: document}\label{exercise-one-document}}
 
-Cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
+In your file \texttt{turing.tex} either cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
 
 Now, at the top of your document after the \texttt{\textbackslash{}begin\{document\}} line and before first \texttt{\textbackslash{}section}, add the following commands, each on their own line:
 
@@ -302,8 +300,8 @@ Here's a few points to note about the text above:
   Notice that curved open quotation marks (`` - looks like miniature 66) and close quotation marks ('' - looks like miniature 99) are different characters. Look carefully at the quotes around the phrase ``Can machines think?'' in the excerpt above in section \protect\hyperlink{longer}{longer}.
 \end{itemize}
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\hypertarget{concsimple}{%
+\section{Conclusion}\label{concsimple}}
 
 You've created a basic document in LaTeX and we've introduced some of its advntages:
 
@@ -400,16 +398,16 @@ The \texttt{\textbackslash{}includegraphics} command is not built in to core LaT
 \hypertarget{ex2}{%
 \section{Exercise two: figures}\label{ex2}}
 
-Create a document image.tex, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
+Create a document \texttt{image.tex}, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
 
 \hypertarget{citations-and-footnotes}{%
 \section{Citations and footnotes}\label{citations-and-footnotes}}
 
-Footnotes\footnote{Like this one which is a footnote about footnotes. Very meta.} can be added to a document with \texttt{\textbackslash{}footnote\{\}}
+Footnotes\footnote{This is a footnote about footnotes. Very meta.} can be added to a document with \texttt{\textbackslash{}footnote\{\}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{\textbackslash{}footnote}\NormalTok{\{This is a footnote\}}
+\FunctionTok{\textbackslash{}footnote}\NormalTok{\{This is a footnote about footnotes\}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -472,7 +470,8 @@ For everything else you can use the \texttt{@misc} type:
 If we wanted to create the text:
 
 ``You can find Alan Turing's publications in Google scholar. \citep{googlescholar}
-This includes his paper on the Entscheidungsproblem published in 1937. \citep{turing}''
+This includes his paper on the Entscheidungsproblem published in 1937. \citep{turing}
+He wrote thinking machines in 1950. \citep{turing50}''
 
 We would need the following in our tex file:
 
@@ -480,6 +479,7 @@ We would need the following in our tex file:
 \begin{Highlighting}[]
 \NormalTok{You can find Alan Turing\textquotesingle{}s publications in Google scholar. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{googlescholar}\NormalTok{\}}
 \NormalTok{This includes his paper on the Entscheidungsproblem published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\NormalTok{He wrote thinking machines in 1950. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing50}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -511,9 +511,9 @@ If you find all the typing at the command line tedious, you could write a little
 You have cross referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.
 
 \hypertarget{maths}{%
-\chapter{Doing the math}\label{maths}}
+\chapter{Doing the maths}\label{maths}}
 
-(This chapters uses mathematics, if you can't see the equations below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.netlify.app/latex4year1.pdf}. Otherwise, read on below.)
+(This chapters uses mathematics, if you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.netlify.app/latex4year1.pdf}. Otherwise, read on below.)
 
 LaTeX provides powerful tools for typesetting mathematics, such as this equation:
 
@@ -608,10 +608,10 @@ For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying 
 
 \[ x^n + y^n = z^n \]
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\hypertarget{mathconc}{%
+\section{Conclusion}\label{mathconc}}
 
-We've briefly looked at typesetting mathematics in LaTeX, in the next chapter we'll look at collaborative authoring with overleaf.
+We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
 
 \hypertarget{overleaf}{%
 \chapter{Collaborative editing with overleaf}\label{overleaf}}
@@ -627,7 +627,7 @@ If you are the sole author of a document, then compiling files on your local mac
 \caption{A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side. Screen shot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)}\label{fig:overleaf-fig}
 \end{figure}
 
-Overleaf has two features which are useful
+Overleaf has several features which you might find useful:
 
 \begin{itemize}
 \tightlist
@@ -655,15 +655,15 @@ Overleaf exercise:
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control
 \end{enumerate}
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\hypertarget{overleafconc}{%
+\section{Conclusion}\label{overleafconc}}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX has been around since In the next chapter we will create a CV using templates provided by overleaf.
+Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established system for typesetting that has been around since 1980's, overleaf brings it up to date with cloud based editing. In the next chapter we will create a CV using templates provided by overleaf.
 
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}
 
-You'll write many documents at University, but there is one document that is \textbf{really} seriously important in a potentially life-changing way. Your curriculum vitae\footnote{actually it's vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
+You'll write many documents at University, but there is one document that is \textbf{really} important in a potentially life-changing way. Your curriculum vitae\footnote{strictly speaking it should be vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
 
 \begin{figure}
 
@@ -748,15 +748,27 @@ As you progress through University, keep your CV up to date, and get feedback fr
 \item
   Have you quantified and provided evidence for the claims you make?
 \item
-  Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}. What feedback do the robots give you?
+  Is your CV robot proof? Many large employers use applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make it more robot proof?
 \item
   Find out more in the \emph{Debug your CV} guide at \href{http://git.io/mycv}{git.io/mycv}
 \end{enumerate}
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\hypertarget{cvconc}{%
+\section{Conclusion}\label{cvconc}}
 
-Your CV is a \emph{really} important document. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can.
+Your curriculum vitae is a \emph{really} important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can. We hope you enjoy using LaTeX to create professional documents for:
+
+\begin{itemize}
+\tightlist
+\item
+  your individual COMP101 coursework (see blackboard)
+\item
+  your CV / resume
+\item
+  your third year project dissertation. It might seem a long way off now but it comes around very quickly.
+\end{itemize}
+
+\ldots and more.
 
   \bibliography{book.bib}
 

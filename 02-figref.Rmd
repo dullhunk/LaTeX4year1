@@ -59,15 +59,15 @@ The `\includegraphics` command is not built in to core LaTeX but is in an additi
 ```
 
 ## Exercise two: figures {#ex2}
-Create a document image.tex, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
+Create a document `image.tex`, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
 
 
 ## Citations and footnotes
 
-Footnotes^[Like this one which is a footnote about footnotes. Very meta.] can be added to a document with `\footnote{}`
+Footnotes^[This is a footnote about footnotes. Very meta.] can be added to a document with `\footnote{}`
 
 ```tex
-\footnote{This is a footnote}
+\footnote{This is a footnote about footnotes}
 ```
 You can cite sources such as websites, books or journal articles in your document using the `\cite` command.
 
@@ -118,13 +118,15 @@ For everything else you can use the `@misc` type:
 If we wanted to create the text:
 
 “You can find Alan Turing's publications in Google scholar. [@googlescholar]
-This includes his paper on the Entscheidungsproblem published in 1937. [@turing]”
+This includes his paper on the Entscheidungsproblem published in 1937. [@turing]
+He wrote thinking machines in 1950. [@turing50]”
 
 We would need the following in our tex file:
 
 ```tex
 You can find Alan Turing's publications in Google scholar. \cite{googlescholar}
 This includes his paper on the Entscheidungsproblem published in 1937. \cite{turing}
+He wrote thinking machines in 1950. \cite{turing50}
 ```
 
 To generate the bibliography you'll need to add these two lines
