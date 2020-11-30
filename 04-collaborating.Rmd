@@ -2,7 +2,7 @@
 
 If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you'll need to share your TeX on a server. Overleaf ([overleaf.com](https://www.overleaf.com/)) allows you to do this, and is shown in the screenshot in Figure \@ref(fig:overleaf-fig).
 
-```{r overleaf-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side'}
+```{r overleaf-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='A screenshot of overleaf showing the source TeX on the left and side and the corresponding pdf on the right hand side. Screen shot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)'}
 knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 ```
 
@@ -19,7 +19,7 @@ Overleaf exercise:
 
 1. Login to [overleaf.com](https://www.overleaf.com/)  
 1. Create and save a simple document using the tutorial at [overleaf.com/learn/how-to/Creating_a_document_in_Overleaf](https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf)  
-1. Note that you could store your TeX source in a git repository if you wanted to
+1. Note that overleaf allows  you to store your TeX source in a git repository so you can use version control
 
 ## Conclusion
 
