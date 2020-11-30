@@ -5,7 +5,7 @@ You'll write many documents at University, but there is one document that is **r
 ```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'}
 knitr::include_graphics("images/jake-ryan.jpg")
 ```
-Creating a professional looking CV is especially important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
+Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
 
 * how your CV looks, the typesetting, layout and style (typography)
 * the content of your CV, what you've done and how you describe it
@@ -36,9 +36,9 @@ You can do this using the ready-made templates at [overleaf.com/gallery/tagged/c
 As you progress through University, keep your CV up to date, and continuously get feedback from as many people as you can. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Here's some common bugs we have seen in students CVs:
 
 1. Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
-1. Are there any spelling mistakes, typos and grammar? Don't just rely on a spellchecker, they can't detect everything
-1. Does it look good, decent layout, easy on the eye?
-1. Does it fit comfortably on one page (preferably) or two pages only?
+1. Are there any spelling mistakes, typos and grammatical errors? Don't just rely on a spellchecker, they can't detect everything
+1. Does it look good, decent layout, easy to scan?
+1. Does it fit comfortably on one page (preferably) or two pages only? Not too cramped or gappy?
 1. Is it in reverse chronological order? Are the most important (usually recent) things first?
 1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See [git.io/verbsfirst](http://git.io/verbsfirst) for examples
 1. Have you mentioned things you are studying now and throughout the current academic year, not just courses you have finished?

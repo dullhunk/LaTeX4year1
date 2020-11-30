@@ -129,28 +129,11 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{written-communication-with-latex}{%
-\chapter{Written communication with LaTeX}\label{written-communication-with-latex}}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
 
-This document is designed to help you get started with using LaTeX, it supports the labs for the first year undergraduate course in Computer Science, \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus}{COMP101}.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.9\linewidth]{images/1000px-LaTeX_project_logo_bird.svg} 
-
-}
-
-\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  }\label{fig:latexproject-fig}
-\end{figure}
-
-LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf) using industrial strength typesetting.
-
-\hypertarget{not-a-word-processor}{%
-\section{Not a word processor}\label{not-a-word-processor}}
-
-LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is sepereated from the contents (HTML).
-
-Reading this LaTeX guide and doing the five exercises it contains will enable you to:
+Reading this LaTeX guide and doing the five exercises it contains will enable you to develop your written communication skills using LaTeX so that you can:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -162,15 +145,48 @@ Reading this LaTeX guide and doing the five exercises it contains will enable yo
 \item
   Typeset some mathematics
 \item
-  Save and share LaTeX documents using overleaf
+  Share and collaborate on LaTeX documents using overleaf
 \item
   Create a CV using LaTeX templates in overleaf
 \end{enumerate}
 
 \hypertarget{acknowledgements}{%
-\section{Acknowledgements}\label{acknowledgements}}
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
 
-This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
+This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer. Thanks to everyone who has contributed or provided feedback.
+
+\hypertarget{improve-this-guide}{%
+\section*{Improve this guide}\label{improve-this-guide}}
+\addcontentsline{toc}{section}{Improve this guide}
+
+The source of this document is on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}.
+
+\hypertarget{latex}{%
+\chapter{What is LaTeX?}\label{latex}}
+
+LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf) using industrial strength typesetting.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/1000px-LaTeX_project_logo_bird.svg} 
+
+}
+
+\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  }\label{fig:latexproject-fig}
+\end{figure}
+
+\hypertarget{not-a-word-processor}{%
+\section{Not a word processor}\label{not-a-word-processor}}
+
+LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the contents (HTML).
+
+Unlike most word processors, LaTex is \textbf{not} a WYSIWYG (what you see is what you get) system. The document you edit (a \texttt{*.tex} file) is not your final output (its usually a \texttt{*.pdf} file).
+
+\hypertarget{so-what-is-latex-then}{%
+\section{So what is LaTeX then?}\label{so-what-is-latex-then}}
+
+The best way to understand LaTeX is to create some documents which we'll do in the next chapter.
 
 \hypertarget{simples}{%
 \chapter{Simple LaTeX documents}\label{simples}}
@@ -648,11 +664,11 @@ Login to \href{https://www.overleaf.com/}{overleaf.com}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Create and save a simple document using the overleaf tutorial \emph{Creating a document in Overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
+  Create and save a simple document using the overleaf tutorial \emph{creating a document in Overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
 \item
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control
 \item
-  If you want to take it further see how to create tables in the \emph{Creating Tables} tutorial\footnote{\url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes\#Creating_tables}}
+  If you want to take it further see how to create tables in the \emph{creating Tables} tutorial\footnote{\url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes\#Creating_tables}}
 \end{enumerate}
 
 \hypertarget{overleafconc}{%
@@ -674,7 +690,7 @@ You'll write many documents at University, but there is one document that is \te
 \caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
 \end{figure}
 
-Creating a professional looking CV is especially important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
+Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
 
 \begin{itemize}
 \tightlist
@@ -734,11 +750,11 @@ As you progress through University, keep your CV up to date, and continuously ge
 \item
   Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
 \item
-  Are there any spelling mistakes, typos and grammar? Don't just rely on a spellchecker, they can't detect everything
+  Are there any spelling mistakes, typos and grammatical errors? Don't just rely on a spellchecker, they can't detect everything
 \item
-  Does it look good, decent layout, easy on the eye?
+  Does it look good, decent layout, easy to scan?
 \item
-  Does it fit comfortably on one page (preferably) or two pages only?
+  Does it fit comfortably on one page (preferably) or two pages only? Not too cramped or gappy?
 \item
   Is it in reverse chronological order? Are the most important (usually recent) things first?
 \item

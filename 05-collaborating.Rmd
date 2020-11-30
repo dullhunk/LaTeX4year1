@@ -17,9 +17,9 @@ Overleaf has several features which you might find useful:
 
 Login to [overleaf.com](https://www.overleaf.com/)  
 
-1. Create and save a simple document using the overleaf tutorial *Creating a document in Overleaf*^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
+1. Create and save a simple document using the overleaf tutorial *creating a document in Overleaf*^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
 1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control
-1. If you want to take it further see how to create tables in the *Creating Tables* tutorial^[https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Creating_tables]
+1. If you want to take it further see how to create tables in the *creating Tables* tutorial^[https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Creating_tables]
 
 ## Summary {#overleafconc}
 
