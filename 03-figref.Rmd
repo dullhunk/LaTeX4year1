@@ -2,9 +2,9 @@
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
-## Cross referencing
+## Cross-referencing
 
-LaTeX allows you to cross-reference almost anything in the document, which includes sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
+LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
 
 ```{r eval=FALSE}
 \label{mymarker}

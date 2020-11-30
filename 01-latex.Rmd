@@ -1,16 +1,18 @@
 # What is LaTeX? {#latex}
 
-LaTeX is a document preparation system for high-quality typesetting. [@latexproject] It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf) using industrial strength typesetting.
+LaTeX is a document preparation system for high-quality typesetting. [@latexproject] LaTeX is a mature and established typesetting system that has been around since 1980's. [@knuth] It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever documents you create with LaTeX, one of its key strengths is making them look professional in portable document format (pdf) using industrial strength typesetting.
 
 ```{r latexproject-fig, echo = FALSE, fig.align = "center", out.width = "90%", fig.cap='The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  '}
 knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")
 ```
 
+
+
 ## Not a word processor
 
-LaTeX is not a word processor! Instead, LaTeX encourages you not to worry too much about the appearance of your documents but to concentrate on getting the right content. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the contents (HTML).
+LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on getting on the content and will take care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
 
-Unlike most word processors, LaTex is **not** a WYSIWYG (what you see is what you get) system. The document you edit (a `*.tex` file) is not your final output (its usually a `*.pdf` file). 
+Unlike most word processors, LaTex is **not** a WYSIWYG (what you see is what you get) system. The document you edit (a `*.tex` file) is not your final output (its usually a `*.pdf` file).
 
 ## So what is LaTeX then?
 

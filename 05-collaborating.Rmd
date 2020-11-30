@@ -6,7 +6,7 @@ If you are the sole author of a document, then compiling files on your local mac
 knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 ```
 
-Overleaf has several features which you might find useful:
+Compared to LaTeX, overleaf is relatively new (founded in 2013) and has several features which you might find useful:
 
 * Your documents are saved the cloud
 * Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing software
@@ -23,4 +23,4 @@ Login to [overleaf.com](https://www.overleaf.com/)
 
 ## Summary {#overleafconc}
 
-Overleaf is a handy tool for creating LaTeX documents. While LaTeX is a mature and established typesetting system that has been around since 1980's, [@knuth] overleaf brings it up to date with a convenient cloud based interface. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
+Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. [@knuth] It also allows you to share the source of your documents while providing some handy templates for common document types. Which toolset is “best” for you will largely depend on what kind of documents you are working on. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.

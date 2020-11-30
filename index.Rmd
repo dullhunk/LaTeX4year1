@@ -14,7 +14,7 @@ description: "A resource for getting started with LaTeX"
 
 # Welcome {-}
 
-Reading this LaTeX guide and doing the five exercises it contains will enable you to develop your written communication skills using LaTeX so that you can:
+Reading this LaTeX guide and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
 
 1. Create a simple document in pdf using LaTeX
 1. Illustrate a document with figures and cross references
@@ -26,4 +26,4 @@ Reading this LaTeX guide and doing the five exercises it contains will enable yo
 This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer. Thanks to everyone who has contributed or provided feedback.
 
 ## Improve this guide {-}
-The source of this document is on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls).
+The source of this document is on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
