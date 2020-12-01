@@ -129,11 +129,11 @@ His paper on the Entscheidungsproblem was published in 1937. \cite{turing}
 He wrote about thinking machines in 1950. \cite{turing50}
 ```
 
-To generate the bibliography you'll need to add these two lines
+To generate the bibliography you'll need to add these two lines. If your bib file is calle `turing.bib` then you'll need to say `\bibliography{turing}`
 
 ```tex
 \bibliographystyle{natbib}
-\bibliography{latex}
+\bibliography{turing}
 ```
 and when you compile you need to run `pdflatex` before and after running `bibtex` like this:
 
