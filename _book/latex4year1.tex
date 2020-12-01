@@ -433,11 +433,11 @@ You can cite sources such as websites, books or journal articles in your documen
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{alanturing}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX. BibTeX provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} using the \texttt{@book} type like this:
+The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX, in this case we'll use \texttt{turing.bib}. BibTeX provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} using the \texttt{@book} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -457,7 +457,7 @@ and articles\footnote{BibTeX entries for journal articles can be automatically g
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{@article\{turing,}
+\NormalTok{@article\{alanturing,}
 \NormalTok{  doi = \{10.1112/plms/s2{-}42.1.230\},}
 \NormalTok{  url = \{https://doi.org/10.1112/plms/s2{-}42.1.230\},}
 \NormalTok{  year = \{1937\},}
@@ -496,7 +496,7 @@ We would need the following in our tex file:
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{You can find Turing\textquotesingle{}s publications in Google scholar. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{googlescholar}\NormalTok{\}}
-\NormalTok{His paper on the Entscheidungsproblem was published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing}\NormalTok{\}}
+\NormalTok{His paper on the Entscheidungsproblem was published in 1937. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{alanturing}\NormalTok{\}}
 \NormalTok{He wrote about thinking machines in 1950. }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{turing50}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -515,7 +515,7 @@ and when you compile you need to run \texttt{pdflatex} before and after running 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{pdflatex turing.tex}
-\NormalTok{bibtex turing.bib}
+\NormalTok{bibtex turing}
 \NormalTok{pdflatex turing.tex}
 \NormalTok{pdflatex turing.tex}
 \end{Highlighting}

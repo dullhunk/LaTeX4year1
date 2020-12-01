@@ -72,9 +72,9 @@ Footnotes^[This is a footnote about footnotes. Very meta.] can be added to a doc
 You can cite sources such as websites, books or journal articles in your document using the `\cite` command.
 
 ```tex
-\cite{turing}
+\cite{alanturing}
 ```
-The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] using the `@book` type like this:
+The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX, in this case we'll use `turing.bib`. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] using the `@book` type like this:
 
 ```tex
 @Book{turingomnibus,
@@ -90,7 +90,7 @@ The citations themselves can be stored in a separate `*.bib file` using a format
 and articles^[BibTeX entries for journal articles can be automatically generated from persistent identifiers known as [digital object identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier) or doi's, see https://doi2bib.org for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.] use the `@article` type like this:
 
 ```tex
-@article{turing,
+@article{alanturing,
   doi = {10.1112/plms/s2-42.1.230},
   url = {https://doi.org/10.1112/plms/s2-42.1.230},
   year = {1937},
@@ -125,7 +125,7 @@ We would need the following in our tex file:
 
 ```tex
 You can find Turing's publications in Google scholar. \cite{googlescholar}
-His paper on the Entscheidungsproblem was published in 1937. \cite{turing}
+His paper on the Entscheidungsproblem was published in 1937. \cite{alanturing}
 He wrote about thinking machines in 1950. \cite{turing50}
 ```
 
