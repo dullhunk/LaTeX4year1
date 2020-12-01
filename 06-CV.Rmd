@@ -33,7 +33,7 @@ Create a basic CV which tells your story including:
 You can do this using the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Have a good look around, there are plenty of templates to choose from.
 
 ## Debug your CV
-As you progress through University, continuously update your CV and solicit feedback from as many people as you can. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because employers often have to deal with high volumes of applications. Here's some common bugs we have seen in students CVs:
+As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because employers often have to deal with high volumes of applications. Here's some common bugs we have seen in students CVs:
 
 1. Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
 1. Are there any spelling mistakes, typos and grammatical errors? Don't just rely on a spellchecker, they can't detect everything
