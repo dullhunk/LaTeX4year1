@@ -139,7 +139,7 @@ and when you compile you need to run `pdflatex` before and after running `bibtex
 
 ```tex
 pdflatex turing.tex
-bibtex turing.bib
+bibtex turing
 pdflatex turing.tex
 pdflatex turing.tex
 ```
