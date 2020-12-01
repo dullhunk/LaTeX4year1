@@ -23,7 +23,9 @@ Reading this LaTeX guide and doing the five exercises it contains will enable yo
 1. Create a CV using LaTeX templates in overleaf
 
 ## Acknowledgements {-}
-This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer. Thanks to everyone who has contributed or provided feedback.
+This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
 
 ## Improve this guide {-}
 The source of this document is on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
+
+If you want to make suggestions for improvements that **don't** get attributed to your name, [email me](http://www.cs.man.ac.uk/~hulld/contact.html) directly.

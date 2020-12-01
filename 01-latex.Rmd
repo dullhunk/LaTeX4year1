@@ -9,7 +9,7 @@ knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")
 ## Not a word processor
 LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
 
-Unlike most word processors, LaTex is **not** a WYSIWYG system (what you see is what you get). The raw document you edit (a `*.tex` file) is not your final output (its usually a `*.pdf` file).
+Unlike most word processors, LaTex is **not** a WYSIWYG system (what you see is what you get). The raw document you edit (a `*.tex` file) is not your final output (usually a `*.pdf` file).
 
 ## So what is LaTeX then?
 
