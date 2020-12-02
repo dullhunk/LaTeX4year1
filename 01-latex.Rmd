@@ -12,7 +12,7 @@ LaTeX is typically used for technical documents but it can be used for almost an
 ## Not a word processor
 LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
 
-LaTeX is **not** a WYSIWYG system (what you see is what you get) either. The raw document you edit (a `*.tex` file) is not your final output (usually a `*.pdf` file).
+LaTeX is **not** a what you see is what you get (WYSIWIG) system either. The raw document you edit (a `*.tex` file) is not your final output (usually a `*.pdf` file).
 
 ## So what is LaTeX then?
 

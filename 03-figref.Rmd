@@ -125,8 +125,7 @@ You can find Turing's publications in Google scholar. \cite{googlescholar}
 His paper on the Entscheidungsproblem was published in 1937. \cite{alanturing}
 He wrote about thinking machines in 1950. \cite{turing50}
 ```
-
-To generate the bibliography you'll need to specify what style of bibliography you're using with `\bibliographystyle{stylename}` and `\bibliography{bibfile}`. The example below uses `unsrt` for style and references a bib file called `turing.bib` which might contain many articles and books. You don't need to specific the file extension `.bib`:
+To generate your bibliography you'll need to specify what style of bibliography you're using with `\bibliographystyle{stylename}` and where to find the metadata with `\bibliography{bibfile}`. The example below uses `unsrt` for style and uses a bib file called `turing.bib` which might contain many articles and books. You don't need to specific the file extension `.bib`:
 
 ```tex
 \bibliographystyle{unsrt}
