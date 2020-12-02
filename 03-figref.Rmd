@@ -33,7 +33,7 @@ The Turing machines described in section \ref{sec:simplest} are named after Alan
 
 Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
 
-```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
+```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
 knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
 ```
 Including figures and pictures in your document is straightforward. You do it like this:

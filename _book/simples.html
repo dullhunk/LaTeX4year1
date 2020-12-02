@@ -209,12 +209,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-2"><a href="simples.html#cb1-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
 <span id="cb1-3"><a href="simples.html#cb1-3"></a>Computational excursions</span>
 <span id="cb1-4"><a href="simples.html#cb1-4"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
-<p>To turn this into a PDF we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The <code>pdflatex</code> compiler is already installed on the Linux VM image for VirtualBox.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> For other operating systems you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
+<p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The <code>pdflatex</code> compiler is already installed on the Linux VM image for VirtualBox.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> For other operating systems you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="simples.html#cb2-1"></a><span class="co"># compile turing.tex</span></span>
 <span id="cb2-2"><a href="simples.html#cb2-2"></a>pdflatex turing.tex</span>
 <span id="cb2-3"><a href="simples.html#cb2-3"></a><span class="co"># open the pdf output</span></span>
 <span id="cb2-4"><a href="simples.html#cb2-4"></a>xdg<span class="op">-</span>open turing.pdf</span></code></pre></div>
-<p>The first command outputs a pdf file from your TeX input using the <code>pdflatex</code> compiler. The second command opens the file you’ve created. If you list the directory contents, you’ll see that the compiler has also created an auxillary <code>*.aux</code> file and a <code>*.log</code> log file which can be helpful for debugging the compilation of more complicated documents:</p>
+<p>The first command outputs a pdf file from your <code>turing.tex</code> input using the <code>pdflatex</code> compiler. The second command opens the file you’ve created. If you list the directory contents, you’ll see that the compiler has also created an auxillary <code>*.aux</code> file and a <code>*.log</code> file which can be helpful for debugging the compilation:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simples.html#cb3-1"></a><span class="co"># files created on compilation</span></span>
 <span id="cb3-2"><a href="simples.html#cb3-2"></a>turing.tex</span>
 <span id="cb3-3"><a href="simples.html#cb3-3"></a>turing.pdf</span>
@@ -256,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-30"><a href="simples.html#cb4-30"></a><span class="kw">\end</span>{<span class="ex">enumerate</span>}</span>
 <span id="cb4-31"><a href="simples.html#cb4-31"></a></span>
 <span id="cb4-32"><a href="simples.html#cb4-32"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
-<p>The text here is excerpted from <em>The New Turing Omnibus: 66 excursions in Computer Science</em> <span class="citation">(Dewdney <a href="#ref-turingomnibus" role="doc-biblioref">2001</a>)</span>. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> calls it an “incredibly fun little book”. <span class="citation">(Atwood <a href="#ref-codinghorror" role="doc-biblioref">2007</a>)</span></p>
+<p>The text here is excerpted from <em>The New Turing Omnibus: 66 excursions in Computer Science</em> <span class="citation">(Dewdney <a href="#ref-turingomnibus" role="doc-biblioref">2001</a>)</span>. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> calls the omnibus an “incredibly fun little book”. <span class="citation">(Atwood <a href="#ref-codinghorror" role="doc-biblioref">2007</a>)</span></p>
 </div>
 <div id="ex1" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Exercise one: documentum</h2>
@@ -282,13 +282,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="quotation-marks" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Quotation marks</h2>
-<p>Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotes around the quote below:</p>
+<p>Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotation marks in the text below:</p>
 <ul>
 <li>Turing addressed the question “Can machines think“… ❎</li>
 <li>Turing addressed the question “Can machines think”… ✅</li>
 </ul>
-<p>In your LaTeX it looks like this:</p>
+<p>In your <code>*.tex</code> file it looks like this:</p>
 <p><code>Turing addressed the question ``Can machines think?''</code></p>
+<p>The difference is subtle in most web browsers, but it’s really noticeable in print and pdf so worth paying attention to.</p>
 </div>
 <div id="concsimple" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Summary</h2>
@@ -296,7 +297,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>LaTeX can quickly create pdf files</li>
 <li>LaTeX uses professional typesetting</li>
-<li>LaTeX documents can be more legible, clear, and visually appealing to the reader that those created with word processing software</li>
+<li>LaTeX documents can be more legible and visually appealing to the reader than those created with conventional word processing software</li>
 </ul>
 <p>Next we’ll look at adding some cross-references, figures and citations.</p>
 

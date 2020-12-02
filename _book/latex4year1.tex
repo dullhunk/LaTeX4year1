@@ -189,7 +189,7 @@ LaTeX is typically used for technical documents but it can be used for almost an
 \hypertarget{not-a-word-processor}{%
 \section{NOT a word processor}\label{not-a-word-processor}}
 
-LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
+LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}).
 
 LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output).
 
@@ -217,7 +217,7 @@ Open up your favourite editor, enter the following text, then save it as a file 
 \end{Highlighting}
 \end{Shaded}
 
-To turn this into a PDF we need to use a LaTeX compiler, we're going to use \texttt{pdflatex}, though several other compilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The \texttt{pdflatex} compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
+To turn this into a pdf we need to use a LaTeX compiler, we're going to use \texttt{pdflatex}, though several other compilers are available.\footnote{\url{https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler}} The \texttt{pdflatex} compiler is already installed on the Linux VM image for VirtualBox.\footnote{\url{https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM}} For other operating systems you'll need to explore the options at \href{https://www.latex-project.org/get/}{latex-project.org/get}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -228,7 +228,7 @@ To turn this into a PDF we need to use a LaTeX compiler, we're going to use \tex
 \end{Highlighting}
 \end{Shaded}
 
-The first command outputs a pdf file from your TeX input using the \texttt{pdflatex} compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary \texttt{*.aux} file and a \texttt{*.log} log file which can be helpful for debugging the compilation of more complicated documents:
+The first command outputs a pdf file from your \texttt{turing.tex} input using the \texttt{pdflatex} compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary \texttt{*.aux} file and a \texttt{*.log} file which can be helpful for debugging the compilation:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -282,7 +282,7 @@ Our \texttt{turing.tex} file is a very simple document, so let's add some sectio
 \end{Highlighting}
 \end{Shaded}
 
-The text here is excerpted from \emph{The New Turing Omnibus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls it an ``incredibly fun little book''. \citep{codinghorror}
+The text here is excerpted from \emph{The New Turing Omnibus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls the omnibus an ``incredibly fun little book''. \citep{codinghorror}
 
 \hypertarget{ex1}{%
 \section{Exercise one: documentum}\label{ex1}}
@@ -327,7 +327,7 @@ Here's a few points to note about the text above:
 \hypertarget{quotation-marks}{%
 \section{Quotation marks}\label{quotation-marks}}
 
-Proper open quotation marks (`` - looks a bit like a mini 66 ) and close quotation marks ( '' - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotes around the quote below:
+Proper open quotation marks (`` - looks a bit like a mini 66 ) and close quotation marks ( '' - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotation marks in the text below:
 
 \begin{itemize}
 \tightlist
@@ -337,9 +337,11 @@ Proper open quotation marks (`` - looks a bit like a mini 66 ) and close quotati
   Turing addressed the question ``Can machines think''\ldots{} ✅
 \end{itemize}
 
-In your LaTeX it looks like this:
+In your \texttt{*.tex} file it looks like this:
 
 \texttt{Turing\ addressed\ the\ question\ \textasciigrave{}\textasciigrave{}Can\ machines\ think?\textquotesingle{}\textquotesingle{}}
+
+The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to.
 
 \hypertarget{concsimple}{%
 \section{Summary}\label{concsimple}}
@@ -353,7 +355,7 @@ You've created a basic document in LaTeX and we've introduced some of its advant
 \item
   LaTeX uses professional typesetting
 \item
-  LaTeX documents can be more legible, clear, and visually appealing to the reader that those created with word processing software
+  LaTeX documents can be more legible and visually appealing to the reader than those created with conventional word processing software
 \end{itemize}
 
 Next we'll look at adding some cross-references, figures and citations.
@@ -409,7 +411,7 @@ Documents without figures, images, pictures and graphs are pretty dull, so you'l
 
 }
 
-\caption{Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)}\label{fig:turing-fig}
+\caption{Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)}\label{fig:turing-fig}
 \end{figure}
 
 Including figures and pictures in your document is straightforward. You do it like this:
