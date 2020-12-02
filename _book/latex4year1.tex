@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Getting started with LaTeX},
-  pdfauthor={A laboratory manual written by Duncan Hull at the University of Manchester},
+  pdfauthor={A laboratory manual written by Duncan Hull},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -119,8 +119,8 @@
 \bibliographystyle{apalike}
 
 \title{Getting started with LaTeX}
-\author{A laboratory manual written by Duncan Hull at the University of Manchester}
-\date{Last updated 2020-12-01}
+\author{A laboratory manual written by Duncan Hull}
+\date{Last updated 2020-12-02}
 
 \begin{document}
 \maketitle
@@ -133,7 +133,18 @@
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
 
-Reading this LaTeX guide and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
+Hello and welcome to the LaTeX lab manual, part of COMP101 at the University of Manchester.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/1000px-LaTeX_project_logo_bird.svg} 
+
+}
+
+\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)}\label{fig:latexproject-fig}
+\end{figure}
+
+Reading this LaTeX manual and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -147,43 +158,41 @@ Reading this LaTeX guide and doing the five exercises it contains will enable yo
 \item
   Share and collaborate on LaTeX documents using overleaf
 \item
-  Create a CV using LaTeX templates in overleaf
+  Draft a CV using LaTeX templates in overleaf
 \end{enumerate}
 
 \hypertarget{acknowledgements}{%
 \section*{Acknowledgements}\label{acknowledgements}}
 \addcontentsline{toc}{section}{Acknowledgements}
 
-This document is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
+This manual is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
 
 \hypertarget{improve-this-guide}{%
 \section*{Improve this guide}\label{improve-this-guide}}
 \addcontentsline{toc}{section}{Improve this guide}
 
-The source of this document is on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}. We'll credit every contribution, however small, because they all make a difference.
+The source of this manual is on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}. We'll credit every contribution, however small, because they all make a difference.
 
 If you want to make suggestions for improvements that \textbf{don't} get attributed to your name, \href{http://www.cs.man.ac.uk/~hulld/contact.html}{email me} directly.
 
 \hypertarget{latex}{%
 \chapter{What is LaTeX?}\label{latex}}
 
-LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} LaTeX is a mature and established typesetting system that has been around since 1980's. \citep{knuth} It is most often used for technical or scientific documents but it can be used for almost any form of publishing, including writing CVs and formal letters. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
+LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} LaTeX is a mature and established typesetting system that has been around since 1980's. \citep{knuth} It was originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
+now working at Microsoft Research, although its development has long been taken over by a world-wide LaTeX community. It's actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
 
 \begin{figure}
-
-{\centering \includegraphics[width=0.9\linewidth]{images/1000px-LaTeX_project_logo_bird.svg} 
-
-}
-
-\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)  }\label{fig:latexproject-fig}
+\includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \caption{Turing award winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons [w.wiki/oyM](https://w.wiki/oyM), Knuth portrait by Jacob Appelbaum CC BY-SA 2.5 via Wikimedia Commons [w.wiki/oyL](https://w.wiki/oyL)}\label{fig:knuthport-fig}
 \end{figure}
+
+LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, formal letters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 \hypertarget{not-a-word-processor}{%
 \section{Not a word processor}\label{not-a-word-processor}}
 
 LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
 
-Unlike most word processors, LaTex is \textbf{not} a WYSIWYG system (what you see is what you get). The raw document you edit (a \texttt{*.tex} file) is not your final output (usually a \texttt{*.pdf} file).
+LaTeX is \textbf{not} a WYSIWYG system (what you see is what you get) either. The raw document you edit (a \texttt{*.tex} file) is not your final output (usually a \texttt{*.pdf} file).
 
 \hypertarget{so-what-is-latex-then}{%
 \section{So what is LaTeX then?}\label{so-what-is-latex-then}}
@@ -235,7 +244,7 @@ The first command outputs a pdf file from your TeX input using the \texttt{pdfla
 \hypertarget{longer}{%
 \section{A longer LaTeX document}\label{longer}}
 
-Our turing.tex file is a very simple document, so let's add some sections and fill them out a bit:
+Our \texttt{turing.tex} file is a very simple document, so let's add some sections and fill them out a bit:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -256,7 +265,7 @@ Our turing.tex file is a very simple document, so let's add some sections and fi
 \NormalTok{In the quest to understand the many systems that comprise the modern world we turn increasingly to computer simulation. Whether the system is natural or artificial, frequently one or more of its components have such complex behaviour that the only feasible approach to approximating such behaviour is to assume that it is random.}
 
 \KeywordTok{\textbackslash{}section}\NormalTok{\{Gödel\textquotesingle{}s Theorem: Limits on Logic\}}
-\NormalTok{In the early 1930\textquotesingle{}s, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete\textquotesingle{}\textquotesingle{} {-} that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.}
+\NormalTok{In the early 1930\textquotesingle{}s, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete {-} that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.}
 
 \KeywordTok{\textbackslash{}section}\NormalTok{\{Can machines think?\}}
 \NormalTok{Turing addressed the question \textasciigrave{}\textasciigrave{}Can machines think?\textquotesingle{}\textquotesingle{} in his 1950 paper }\FunctionTok{\textbackslash{}textit}\NormalTok{\{Computing machinery and intelligence\}.}
@@ -274,10 +283,10 @@ Our turing.tex file is a very simple document, so let's add some sections and fi
 \end{Highlighting}
 \end{Shaded}
 
-The text here is excerpted from \emph{The New Turing Ominbus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls it an ``incredibly fun little book''. \citep{codinghorror}
+The text here is excerpted from \emph{The New Turing Omnibus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls it an ``incredibly fun little book''. \citep{codinghorror}
 
 \hypertarget{ex1}{%
-\section{Exercise one: document}\label{ex1}}
+\section{Exercise one: documentum}\label{ex1}}
 
 In your file \texttt{turing.tex} either cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
 
@@ -285,7 +294,7 @@ Now, at the top of your document after the \texttt{\textbackslash{}begin\{docume
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{\textbackslash{}title}\NormalTok{\{The New Turing Ominbus\}}
+\FunctionTok{\textbackslash{}title}\NormalTok{\{The New Turing Omnibus\}}
 \FunctionTok{\textbackslash{}author}\NormalTok{\{A. K. Dewdney\}}
 \FunctionTok{\textbackslash{}maketitle}
 \FunctionTok{\textbackslash{}tableofcontents}
@@ -378,7 +387,7 @@ when you want to use the reference. Obviously you replace the text \texttt{mymar
 \hypertarget{illustrating-your-documents}{%
 \section{Illustrating your documents}\label{illustrating-your-documents}}
 
-A document without figures, images, pictures and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
+Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
 
 \begin{figure}
 
@@ -501,7 +510,7 @@ We would need the following in our tex file:
 \end{Highlighting}
 \end{Shaded}
 
-To generate the bibliography you'll need to add these two lines. If your bib file is called \texttt{turing.bib} then you'll need to say \texttt{\textbackslash{}bibliography\{turing\}}
+To generate the bibliography you'll need to specify what style of bibliography you're using with \texttt{\textbackslash{}bibliographystyle\{stylename\}} and \texttt{\textbackslash{}bibliography\{bibfile\}}. The example below uses \texttt{unsrt} for style and references a bib file called \texttt{turing.bib} which might contain many articles and books. You don't need to specific the file extension \texttt{.bib}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -510,7 +519,7 @@ To generate the bibliography you'll need to add these two lines. If your bib fil
 \end{Highlighting}
 \end{Shaded}
 
-and when you compile you need to run \texttt{pdflatex} before and after running \texttt{bibtex} like this:
+When you compile you need to run \texttt{pdflatex} before and after running \texttt{bibtex} like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -650,17 +659,17 @@ Compared to LaTeX, overleaf is relatively new, the company responsible was found
 \begin{itemize}
 \tightlist
 \item
-  Your documents are automatically saved the cloud
+  Your documents are automatically saved to the cloud
 \item
-  Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing software
+  Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing them
 \item
-  Templates are provided for common types of documents
+  Templates are provided for common types of documents, although you don't need to use overleaf to get access to LaTeX templates\footnote{see \url{http://www.tug.org/texshowcase} and \url{https://www.latextemplates.com} for example}
 \end{itemize}
 
 \hypertarget{ex4}{%
 \section{Exercise four: overleaf}\label{ex4}}
 
-Login to \href{https://www.overleaf.com/}{overleaf.com}
+Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -670,13 +679,13 @@ Login to \href{https://www.overleaf.com/}{overleaf.com}
 \item
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control
 \item
-  If you want to take it further see how to create tables in the \emph{creating Tables} tutorial\footnote{\url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes\#Creating_tables}}
+  Browse the overleaf tutorials at \href{https://www.overleaf.com/learn}{overleaf.com/learn} if you want to take things further
 \end{enumerate}
 
 \hypertarget{overleafconc}{%
 \section{Summary}\label{overleafconc}}
 
-Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Which toolset is ``best'' for you will largely depend on what kind of documents you are working on. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
+Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are working on. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
 
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}
@@ -689,7 +698,7 @@ You'll write many documents at University, but there is one document that is \te
 
 }
 
-\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? These are the kinds of decisions that are made based on your CV. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
+\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker to invite you to interview. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
 \end{figure}
 
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on:
@@ -697,11 +706,11 @@ Creating a professional looking CV is particularly important, because it determi
 \begin{itemize}
 \tightlist
 \item
-  how your CV looks, the typesetting, layout and style (typography)
+  how your CV looks, the typesetting and style (typography)
 \item
-  the content of your CV, what you've done and how you describe it
+  the content of your CV, what you've done
 \item
-  the quality and clarity of your written communication
+  the quality and clarity of your written communication, how you describe yourself
 \item
   the editing, what you've decided to leave in (and leave out) of your CV
 \end{itemize}
@@ -717,26 +726,26 @@ By opportunities we mean both immediate ones within the next 12 months as well a
 \item
   Year long placements in your penultimate year, if you're considering doing \href{http://studentnet.cs.manchester.ac.uk/employment/placement/}{industrial experience}
 \item
-  Graduate jobs or graduate schemes
+  Graduate jobs or graduate schemes after graduation
 \item
   Postgraduate study or research via masters or PhD
 \end{itemize}
 
-So it is well worth investing a bit of your time to create version 1.0 of your CV. Yes, you've only just started University but it's never too early to make a start.
+Any time you invest in creating a convincing CV will pay off in the long run. Yes, you've only just started University, so might not have much to talk about just yet, but it's never too early to make a start.
 
 \hypertarget{ex5}{%
 \section{Exercise five: your CV}\label{ex5}}
 
-Create a basic CV which tells your story including:
+Create a basic CV which tells your story, in particular:
 
 \begin{itemize}
 \tightlist
 \item
-  your education, including high school and University
+  your \emph{education}, including high school and University
 \item
-  your experience, voluntary, paid, casual, technical and non-technical work
+  your \emph{experience}, voluntary, paid, casual, technical and non-technical: it all counts and demonstrates your range of soft and hard skills
 \item
-  your projects, both personal or at University and beyond
+  your \emph{projects}, both personal or at University and beyond
 \end{itemize}
 
 You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}. Have a good look around, there are plenty of templates to choose from.
@@ -744,7 +753,7 @@ You can do this using the ready-made templates at \href{https://www.overleaf.com
 \hypertarget{debug-your-cv}{%
 \section{Debug your CV}\label{debug-your-cv}}
 
-As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because employers often have to deal with high volumes of applications. Here's some common bugs we have seen in students CVs:
+As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because most employers typically have to deal with lots of applicants. Here's some common bugs we have seen in students CVs:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -762,11 +771,11 @@ As you progress through University, continuously update your CV and solicit feed
 \item
   Have you talked about what you have actually done using prominent verbs, rather than just what you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
 \item
-  Have you mentioned things you are studying now and throughout the current academic year, not just courses you have finished?
+  Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 \item
   Have you quantified and provided evidence for the claims you make?
 \item
-  Is your CV robot proof? Many large employers use automated applicant tracking systems where your CV is screened by software long before a human ever sees it. Feed it through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make your CV more robot proof?
+  Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make your CV more robot proof?
 \item
   Find out more in the \emph{Debug your CV} \citep{debugcv} guide at \href{http://git.io/mycv}{git.io/mycv}
 \end{enumerate}

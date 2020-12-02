@@ -31,12 +31,11 @@ The Turing machines described in section \ref{sec:simplest} are named after Alan
 
 ## Illustrating your documents
 
-A document without figures, images, pictures and graphs is pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
+Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
 
 ```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
 knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
 ```
-
 Including figures and pictures in your document is straightforward. You do it like this:
 
 ```tex
@@ -46,7 +45,6 @@ Including figures and pictures in your document is straightforward. You do it li
 \label{figure:turing}
 \end{figure}
 ```
-
 
 The command `\includegraphics{}` gets your image, which can be PDF, PNG, JPG, GIF or PostScript. The `\begin{figure}` and `\end{figure}` code wraps up whatever picture you’re including, and allows LaTeX to treat it as an unbreakable floating thing that it will position for you as best it can in the document, while maintaining an overall nice typographical layout. This “floating” of figures can sometimes result in the figure ending up in a place you didn’t expect, but in most cases LaTeX will make the most sensible choice. It’s possible to employ finer control over figure placement, but that’s beyond the scope of this guide.
 
@@ -60,7 +58,6 @@ The `\includegraphics` command is not built in to core LaTeX but is in an additi
 
 ## Exercise two: figures {#ex2}
 Create a document `image.tex`, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
-
 
 ## Citations and footnotes
 
@@ -129,13 +126,13 @@ His paper on the Entscheidungsproblem was published in 1937. \cite{alanturing}
 He wrote about thinking machines in 1950. \cite{turing50}
 ```
 
-To generate the bibliography you'll need to add these two lines. If your bib file is called `turing.bib` then you'll need to say `\bibliography{turing}`
+To generate the bibliography you'll need to specify what style of bibliography you're using with `\bibliographystyle{stylename}` and `\bibliography{bibfile}`. The example below uses `unsrt` for style and references a bib file called `turing.bib` which might contain many articles and books. You don't need to specific the file extension `.bib`:
 
 ```tex
 \bibliographystyle{unsrt}
 \bibliography{turing}
 ```
-and when you compile you need to run `pdflatex` before and after running `bibtex` like this:
+When you compile you need to run `pdflatex` before and after running `bibtex` like this:
 
 ```tex
 pdflatex turing.tex

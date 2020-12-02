@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="A resource for getting started with LaTeX" />
   
 
-<meta name="author" content="A laboratory manual written by Duncan Hull at the University of Manchester" />
+<meta name="author" content="A laboratory manual written by Duncan Hull" />
 
 
 
@@ -147,7 +147,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="simples.html"><a href="simples.html#shortest"><i class="fa fa-check"></i><b>2.1</b> A very short document</a></li>
 <li class="chapter" data-level="2.2" data-path="simples.html"><a href="simples.html#longer"><i class="fa fa-check"></i><b>2.2</b> A longer LaTeX document</a></li>
-<li class="chapter" data-level="2.3" data-path="simples.html"><a href="simples.html#ex1"><i class="fa fa-check"></i><b>2.3</b> Exercise one: document</a></li>
+<li class="chapter" data-level="2.3" data-path="simples.html"><a href="simples.html#ex1"><i class="fa fa-check"></i><b>2.3</b> Exercise one: documentum</a></li>
 <li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-lists-and-quotes"><i class="fa fa-check"></i><b>2.4</b> Bold, italic, lists and quotes</a></li>
 <li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#concsimple"><i class="fa fa-check"></i><b>2.5</b> Summary</a></li>
 </ul></li>
@@ -220,7 +220,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="illustrating-your-documents" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Illustrating your documents</h2>
-<p>A document without figures, images, pictures and graphs is pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.1</a>, for example.</p>
+<p>Documents without figures, images, pictures and graphs are pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.1</a>, for example.</p>
 <div class="figure" style="text-align: center"><span id="fig:turing-fig"></span>
 <img src="images/Alan_Turing_Aged_16.jpg" alt="Alan Turing at the age of sixteen, picture by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)" width="40%" />
 <p class="caption">
@@ -287,10 +287,10 @@ He wrote about thinking machines in 1950. <span class="citation">(Turing <a href
 <div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="figref.html#cb17-1"></a>You can find Turing&#39;s publications in Google scholar. <span class="kw">\cite</span>{<span class="ex">googlescholar</span>}</span>
 <span id="cb17-2"><a href="figref.html#cb17-2"></a>His paper on the Entscheidungsproblem was published in 1937. <span class="kw">\cite</span>{<span class="ex">alanturing</span>}</span>
 <span id="cb17-3"><a href="figref.html#cb17-3"></a>He wrote about thinking machines in 1950. <span class="kw">\cite</span>{<span class="ex">turing50</span>}</span></code></pre></div>
-<p>To generate the bibliography you’ll need to add these two lines. If your bib file is called <code>turing.bib</code> then you’ll need to say <code>\bibliography{turing}</code></p>
+<p>To generate the bibliography you’ll need to specify what style of bibliography you’re using with <code>\bibliographystyle{stylename}</code> and <code>\bibliography{bibfile}</code>. The example below uses <code>unsrt</code> for style and references a bib file called <code>turing.bib</code> which might contain many articles and books. You don’t need to specific the file extension <code>.bib</code>:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb18-1"><a href="figref.html#cb18-1"></a><span class="bu">\bibliographystyle</span>{<span class="ex">unsrt</span>}</span>
 <span id="cb18-2"><a href="figref.html#cb18-2"></a><span class="bu">\bibliography</span>{<span class="ex">turing</span>}</span></code></pre></div>
-<p>and when you compile you need to run <code>pdflatex</code> before and after running <code>bibtex</code> like this:</p>
+<p>When you compile you need to run <code>pdflatex</code> before and after running <code>bibtex</code> like this:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb19-1"><a href="figref.html#cb19-1"></a>pdflatex turing.tex</span>
 <span id="cb19-2"><a href="figref.html#cb19-2"></a>bibtex turing</span>
 <span id="cb19-3"><a href="figref.html#cb19-3"></a>pdflatex turing.tex</span>

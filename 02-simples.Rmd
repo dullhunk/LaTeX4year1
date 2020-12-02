@@ -31,7 +31,7 @@ turing.log
 ```
 
 ## A longer LaTeX document {#longer}
-Our turing.tex file is a very simple document, so let's add some sections and fill them out a bit:
+Our `turing.tex` file is a very simple document, so let's add some sections and fill them out a bit:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -51,7 +51,7 @@ In an age of computers and automation, almost every electronic device one can na
 In the quest to understand the many systems that comprise the modern world we turn increasingly to computer simulation. Whether the system is natural or artificial, frequently one or more of its components have such complex behaviour that the only feasible approach to approximating such behaviour is to assume that it is random.
 
 \section{Gödel's Theorem: Limits on Logic}
-In the early 1930's, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete'' - that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.
+In the early 1930's, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete - that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.
 
 \section{Can machines think?}
 Turing addressed the question ``Can machines think?'' in his 1950 paper \textit{Computing machinery and intelligence}.
@@ -70,7 +70,7 @@ We're using this \LaTeX\ document to demonstrate some of its key strengths that 
 
 The text here is excerpted from *The New Turing Omnibus: 66 excursions in Computer Science* [@turingomnibus]. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) calls it an “incredibly fun little book”. [@codinghorror]
 
-## Exercise one: document {#ex1}
+## Exercise one: documentum {#ex1}
 In your file `turing.tex` either cut-and-paste this longer text into your document or make your own sections and text. You could use text from [Lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) at [lipsum.com](https://www.lipsum.com) to fill out the page.
 
 Now, at the top of your document after the `\begin{document}` line and before first `\section`, add the following commands, each on their own line:
