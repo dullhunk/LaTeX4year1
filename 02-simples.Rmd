@@ -91,13 +91,24 @@ pdlfatex turing.tex
 pdflatex turing.tex
 ```
 
-## Bold, italic, lists and quotes
+## Bold, italic and lists
 
 Here's a few points to note about the text above:
 
 * Notice how **bold** and *italic* formatting are created using `\textbf{}` and `\textit{}`
 * Notice how lists are created using `\begin{enumerate}` and `\item`
-* Notice that curved open quotation marks (“ - looks a bit like a mini 66) and close quotation marks (” - mini 99) are different characters. Look carefully at the quotes around the phrase “Can machines think?” in the excerpt above in section on [a longer LaTeX document](#longer). If you don't pay attention to this your quotes will look odd.
+
+## Quotation marks
+
+Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotes around the quote below:
+
+* Turing addressed the question “Can machines think“... ❎
+* Turing addressed the question “Can machines think”... ✅
+
+In your LaTeX it looks like this:
+
+`Turing addressed the question ``Can machines think?''`
+
 
 ## Summary {#concsimple}
 You've created a basic document in LaTeX and we've introduced some of its advantages:

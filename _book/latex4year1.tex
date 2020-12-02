@@ -187,11 +187,11 @@ now working at Microsoft Research, its development has long been taken over by a
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, formal letters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 \hypertarget{not-a-word-processor}{%
-\section{Not a word processor}\label{not-a-word-processor}}
+\section{NOT a word processor}\label{not-a-word-processor}}
 
 LaTeX is not a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages where the style (CSS) is separated from the content (HTML).
 
-LaTeX is \textbf{not} a what you see is what you get (WYSIWIG) system either. The raw document you edit (a \texttt{*.tex} file) is not your final output (usually a \texttt{*.pdf} file).
+LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output).
 
 \hypertarget{so-what-is-latex-then}{%
 \section{So what is LaTeX then?}\label{so-what-is-latex-then}}
@@ -311,8 +311,8 @@ The \texttt{title}, \texttt{author}, \texttt{tableofcontents} and \texttt{newpag
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{bold-italic-lists-and-quotes}{%
-\section{Bold, italic, lists and quotes}\label{bold-italic-lists-and-quotes}}
+\hypertarget{bold-italic-and-lists}{%
+\section{Bold, italic and lists}\label{bold-italic-and-lists}}
 
 Here's a few points to note about the text above:
 
@@ -322,9 +322,24 @@ Here's a few points to note about the text above:
   Notice how \textbf{bold} and \emph{italic} formatting are created using \texttt{\textbackslash{}textbf\{\}} and \texttt{\textbackslash{}textit\{\}}
 \item
   Notice how lists are created using \texttt{\textbackslash{}begin\{enumerate\}} and \texttt{\textbackslash{}item}
-\item
-  Notice that curved open quotation marks (`` - looks a bit like a mini 66) and close quotation marks ('' - mini 99) are different characters. Look carefully at the quotes around the phrase ``Can machines think?'' in the excerpt above in section on \protect\hyperlink{longer}{a longer LaTeX document}. If you don't pay attention to this your quotes will look odd.
 \end{itemize}
+
+\hypertarget{quotation-marks}{%
+\section{Quotation marks}\label{quotation-marks}}
+
+Proper open quotation marks (`` - looks a bit like a mini 66 ) and close quotation marks ( '' - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotes around the quote below:
+
+\begin{itemize}
+\tightlist
+\item
+  Turing addressed the question ``Can machines think``\ldots{} ❎
+\item
+  Turing addressed the question ``Can machines think''\ldots{} ✅
+\end{itemize}
+
+In your LaTeX it looks like this:
+
+\texttt{Turing\ addressed\ the\ question\ \textasciigrave{}\textasciigrave{}Can\ machines\ think?\textquotesingle{}\textquotesingle{}}
 
 \hypertarget{concsimple}{%
 \section{Summary}\label{concsimple}}
@@ -493,13 +508,13 @@ For everything else\footnote{There are many other types of BibTeX entries beside
 \end{Highlighting}
 \end{Shaded}
 
-If we wanted to create the text:
+So to create the text:
 
-``You can find Turing's publications in Google scholar. \citep{googlescholar}
+``\emph{You can find Turing's publications in Google scholar. \citep{googlescholar}
 His paper on the Entscheidungsproblem was published in 1937. \citep{turing}
-He wrote about thinking machines in 1950. \citep{turing50}''
+He wrote about thinking machines in 1950. \citep{turing50}}''
 
-We would need the following in our tex file:
+You add this to your tex file:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -684,7 +699,7 @@ Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 \hypertarget{overleafconc}{%
 \section{Summary}\label{overleafconc}}
 
-Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are working on. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
+Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are working on and what your workflow is. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
 
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}

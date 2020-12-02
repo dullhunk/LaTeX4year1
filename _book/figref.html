@@ -140,7 +140,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1" data-path="latex.html"><a href="latex.html"><i class="fa fa-check"></i><b>1</b> What is LaTeX?</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> Not a word processor</a></li>
+<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> NOT a word processor</a></li>
 <li class="chapter" data-level="1.2" data-path="latex.html"><a href="latex.html#so-what-is-latex-then"><i class="fa fa-check"></i><b>1.2</b> So what is LaTeX then?</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="simples.html"><a href="simples.html"><i class="fa fa-check"></i><b>2</b> Simple LaTeX documents</a>
@@ -148,8 +148,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="simples.html"><a href="simples.html#shortest"><i class="fa fa-check"></i><b>2.1</b> A very short document</a></li>
 <li class="chapter" data-level="2.2" data-path="simples.html"><a href="simples.html#longer"><i class="fa fa-check"></i><b>2.2</b> A longer LaTeX document</a></li>
 <li class="chapter" data-level="2.3" data-path="simples.html"><a href="simples.html#ex1"><i class="fa fa-check"></i><b>2.3</b> Exercise one: documentum</a></li>
-<li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-lists-and-quotes"><i class="fa fa-check"></i><b>2.4</b> Bold, italic, lists and quotes</a></li>
-<li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#concsimple"><i class="fa fa-check"></i><b>2.5</b> Summary</a></li>
+<li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-and-lists"><i class="fa fa-check"></i><b>2.4</b> Bold, italic and lists</a></li>
+<li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#quotation-marks"><i class="fa fa-check"></i><b>2.5</b> Quotation marks</a></li>
+<li class="chapter" data-level="2.6" data-path="simples.html"><a href="simples.html#concsimple"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="figref.html"><a href="figref.html"><i class="fa fa-check"></i><b>3</b> Cross-referencing, illustrating and citing</a>
 <ul>
@@ -279,11 +280,11 @@ Figure 3.1: Alan Turing at the age of sixteen, picture by unknown author, public
 <span id="cb16-4"><a href="figref.html#cb16-4"></a>  url          = {https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ},</span>
 <span id="cb16-5"><a href="figref.html#cb16-5"></a>  year         = {2020},</span>
 <span id="cb16-6"><a href="figref.html#cb16-6"></a>}</span></code></pre></div>
-<p>If we wanted to create the text:</p>
-<p>“You can find Turing’s publications in Google scholar. <span class="citation">(Anon <a href="#ref-googlescholar" role="doc-biblioref">2020</a>)</span>
+<p>So to create the text:</p>
+<p>“<em>You can find Turing’s publications in Google scholar. <span class="citation">(Anon <a href="#ref-googlescholar" role="doc-biblioref">2020</a>)</span>
 His paper on the Entscheidungsproblem was published in 1937. <span class="citation">(Turing <a href="#ref-turing" role="doc-biblioref">1937</a>)</span>
-He wrote about thinking machines in 1950. <span class="citation">(Turing <a href="#ref-turing50" role="doc-biblioref">1950</a>)</span>”</p>
-<p>We would need the following in our tex file:</p>
+He wrote about thinking machines in 1950. <span class="citation">(Turing <a href="#ref-turing50" role="doc-biblioref">1950</a>)</span></em>”</p>
+<p>You add this to your tex file:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="figref.html#cb17-1"></a>You can find Turing&#39;s publications in Google scholar. <span class="kw">\cite</span>{<span class="ex">googlescholar</span>}</span>
 <span id="cb17-2"><a href="figref.html#cb17-2"></a>His paper on the Entscheidungsproblem was published in 1937. <span class="kw">\cite</span>{<span class="ex">alanturing</span>}</span>
 <span id="cb17-3"><a href="figref.html#cb17-3"></a>He wrote about thinking machines in 1950. <span class="kw">\cite</span>{<span class="ex">turing50</span>}</span></code></pre></div>

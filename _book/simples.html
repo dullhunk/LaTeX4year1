@@ -140,7 +140,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1" data-path="latex.html"><a href="latex.html"><i class="fa fa-check"></i><b>1</b> What is LaTeX?</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> Not a word processor</a></li>
+<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> NOT a word processor</a></li>
 <li class="chapter" data-level="1.2" data-path="latex.html"><a href="latex.html#so-what-is-latex-then"><i class="fa fa-check"></i><b>1.2</b> So what is LaTeX then?</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="simples.html"><a href="simples.html"><i class="fa fa-check"></i><b>2</b> Simple LaTeX documents</a>
@@ -148,8 +148,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="simples.html"><a href="simples.html#shortest"><i class="fa fa-check"></i><b>2.1</b> A very short document</a></li>
 <li class="chapter" data-level="2.2" data-path="simples.html"><a href="simples.html#longer"><i class="fa fa-check"></i><b>2.2</b> A longer LaTeX document</a></li>
 <li class="chapter" data-level="2.3" data-path="simples.html"><a href="simples.html#ex1"><i class="fa fa-check"></i><b>2.3</b> Exercise one: documentum</a></li>
-<li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-lists-and-quotes"><i class="fa fa-check"></i><b>2.4</b> Bold, italic, lists and quotes</a></li>
-<li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#concsimple"><i class="fa fa-check"></i><b>2.5</b> Summary</a></li>
+<li class="chapter" data-level="2.4" data-path="simples.html"><a href="simples.html#bold-italic-and-lists"><i class="fa fa-check"></i><b>2.4</b> Bold, italic and lists</a></li>
+<li class="chapter" data-level="2.5" data-path="simples.html"><a href="simples.html#quotation-marks"><i class="fa fa-check"></i><b>2.5</b> Quotation marks</a></li>
+<li class="chapter" data-level="2.6" data-path="simples.html"><a href="simples.html#concsimple"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="figref.html"><a href="figref.html"><i class="fa fa-check"></i><b>3</b> Cross-referencing, illustrating and citing</a>
 <ul>
@@ -271,17 +272,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-2"><a href="simples.html#cb6-2"></a>pdlfatex turing.tex</span>
 <span id="cb6-3"><a href="simples.html#cb6-3"></a>pdflatex turing.tex</span></code></pre></div>
 </div>
-<div id="bold-italic-lists-and-quotes" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Bold, italic, lists and quotes</h2>
+<div id="bold-italic-and-lists" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Bold, italic and lists</h2>
 <p>Here’s a few points to note about the text above:</p>
 <ul>
 <li>Notice how <strong>bold</strong> and <em>italic</em> formatting are created using <code>\textbf{}</code> and <code>\textit{}</code></li>
 <li>Notice how lists are created using <code>\begin{enumerate}</code> and <code>\item</code></li>
-<li>Notice that curved open quotation marks (“ - looks a bit like a mini 66) and close quotation marks (” - mini 99) are different characters. Look carefully at the quotes around the phrase “Can machines think?” in the excerpt above in section on <a href="simples.html#longer">a longer LaTeX document</a>. If you don’t pay attention to this your quotes will look odd.</li>
 </ul>
 </div>
-<div id="concsimple" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Summary</h2>
+<div id="quotation-marks" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Quotation marks</h2>
+<p>Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotes around the quote below:</p>
+<ul>
+<li>Turing addressed the question “Can machines think“… ❎</li>
+<li>Turing addressed the question “Can machines think”… ✅</li>
+</ul>
+<p>In your LaTeX it looks like this:</p>
+<p><code>Turing addressed the question ``Can machines think?''</code></p>
+</div>
+<div id="concsimple" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Summary</h2>
 <p>You’ve created a basic document in LaTeX and we’ve introduced some of its advantages:</p>
 <ul>
 <li>LaTeX can quickly create pdf files</li>

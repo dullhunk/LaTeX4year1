@@ -112,13 +112,13 @@ For everything else^[There are many other types of BibTeX entries besides articl
 }
 ```
 
-If we wanted to create the text:
+So to create the text:
 
-“You can find Turing's publications in Google scholar. [@googlescholar]
+“*You can find Turing's publications in Google scholar. [@googlescholar]
 His paper on the Entscheidungsproblem was published in 1937. [@turing]
-He wrote about thinking machines in 1950. [@turing50]”
+He wrote about thinking machines in 1950. [@turing50]*”
 
-We would need the following in our tex file:
+You add this to your tex file:
 
 ```tex
 You can find Turing's publications in Google scholar. \cite{googlescholar}
