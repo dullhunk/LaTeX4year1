@@ -163,7 +163,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="maths.html"><a href="maths.html#equations"><i class="fa fa-check"></i><b>4.1</b> Equations</a></li>
 <li class="chapter" data-level="4.2" data-path="maths.html"><a href="maths.html#matrix"><i class="fa fa-check"></i><b>4.2</b> Matrices</a></li>
-<li class="chapter" data-level="4.3" data-path="maths.html"><a href="maths.html#ex3"><i class="fa fa-check"></i><b>4.3</b> Exercise three: maths</a></li>
+<li class="chapter" data-level="4.3" data-path="maths.html"><a href="maths.html#ex3"><i class="fa fa-check"></i><b>4.3</b> Exercise three: you do the maths</a></li>
 <li class="chapter" data-level="4.4" data-path="maths.html"><a href="maths.html#mathconc"><i class="fa fa-check"></i><b>4.4</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="overleaf.html"><a href="overleaf.html"><i class="fa fa-check"></i><b>5</b> Collaborative editing with overleaf</a>
@@ -200,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="maths" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Doing the maths</h1>
-<p>LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can’t see the equations and matrix below in your web browser, you’ll need to use the pdf version of this manual at <a href="https://latex4year1.netlify.app/latex4year1.pdf">latex4year1.pdf</a>. Otherwise, if you can see the equation below, it is safe to read on…</p>
+<p>LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can’t see the equations and matrix below in your web browser, you’ll need to use the pdf or epub version of this manual at <a href="https://latex4year1.netlify.app/latex4year1.pdf">latex4year1.pdf</a> or <a href="https://latex4year1.netlify.app/latex4year1.epub">latex4year1.epub</a>. Otherwise, if you can see the equation below, it is safe to read on…</p>
 <div id="equations" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Equations</h2>
 <p>Consider this equation:</p>
@@ -219,7 +219,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="matrix" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Matrices</h2>
-<p>If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation</p>
+<p>As well as equations, LaTeX can display matrices. This one expresses a particular 3D geometrical transformation:</p>
 <p><span class="math display">\[ T_1 = \left[
  \begin{array}{cccc}
  \cos \theta &amp; -\sin \theta &amp; 0 &amp; \delta \\
@@ -228,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  \alpha &amp; \beta &amp; \gamma &amp; 1
  \end{array}
  \right] \]</span></p>
-<p>we can use the following</p>
+<p>The source for this matrix looks like this:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb22-1"><a href="maths.html#cb22-1"></a>   <span class="ss">\[ T_1 = </span><span class="sc">\left</span><span class="ss">[</span></span>
 <span id="cb22-2"><a href="maths.html#cb22-2"></a><span class="ss">    </span><span class="sc">\begin</span><span class="ss">{array}{cccc}</span></span>
 <span id="cb22-3"><a href="maths.html#cb22-3"></a><span class="ss">    </span><span class="sc">\cos</span><span class="ss"> </span><span class="sc">\theta</span><span class="ss"> &amp; -</span><span class="sc">\sin</span><span class="ss"> </span><span class="sc">\theta</span><span class="ss"> &amp; 0 &amp; </span><span class="sc">\delta</span><span class="ss"> </span><span class="sc">\\</span></span>
@@ -243,7 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">en.wikibooks.org/wiki/LaTeX/Mathematics</a> or books such as the <em>Guide to LaTeX</em> by Helmut Kopka and Patrick W. Daly. <span class="citation">(Kopka and Daly <a href="#ref-kopka" role="doc-biblioref">2001</a>)</span></p>
 </div>
 <div id="ex3" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Exercise three: maths</h2>
+<h2><span class="header-section-number">4.3</span> Exercise three: you do the maths</h2>
 <p>Now for an exercise that involves some mathematics. Create a file <code>maths.tex</code> which typesets the following piece of text and mathematics:</p>
 <p>There are many positive integer solutions to the equation</p>
 <p><span class="math display">\[ x^2 + y^2 =  z^2 \]</span></p>

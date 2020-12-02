@@ -142,4 +142,4 @@ pdflatex turing.tex
 If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
 
 ## Summary {#fingconc}
-You have cross-referenced, illustrated and added citations and footnotes to your document. Next we'll look at doing some maths.
+You have cross-referenced, illustrated, added citations and footnotes to your document. Next we'll look at doing some maths.

@@ -1,6 +1,6 @@
 # Doing the maths {#maths}
 
-LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this manual at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, if you can see the equation below, it is safe to read on...
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf) or [latex4year1.epub](https://latex4year1.netlify.app/latex4year1.epub). Otherwise, if you can see the equation below, it is safe to read on...
 
 ## Equations {#equations}
 Consider this equation:
@@ -33,7 +33,7 @@ Try to match the LaTeX commands with the formula displayed above. You'll see lot
 The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see $\sum_{i=1}^M$, which creates a summation sign and its lower and upper limits: \( \sum_{i=1}^{M} \). We wrap the lower bound, `i=1` in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing `\sum_i=1^M`, LaTeX would then produce $\sum_i=1^M$, which is not at all what we want (even LaTeX can't always know what we really want).
 
 ## Matrices {#matrix}
-If we need to use matrix, such as the one below which expresses a particular 3D geometrical transformation
+As well as equations, LaTeX can display matrices. This one expresses a particular 3D geometrical transformation:
 
 \[ T_1 = \left[
  \begin{array}{cccc}
@@ -44,7 +44,7 @@ If we need to use matrix, such as the one below which expresses a particular 3D 
  \end{array}
  \right] \]
 
- we can use the following
+ The source for this matrix looks like this:
 
  ```tex
     \[ T_1 = \left[
@@ -62,10 +62,9 @@ In the LaTeX code, `\left[` means ‘big opening square bracket please’; `{ccc
 There are some symbols that you might need (for example `\therefore`, which produces the usual three dots symbol ∴) that are not part of standard LaTeX. Many such symbols are provided by the `amssymb` package of symbols compiled by the American Mathematical Society. Details of the many symbols provided by this package can be found online. To use these extra symbols, you need to have `\usepackage{amssymb}` in your document preamble.
 
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
-[en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or books such as the *Guide to LaTeX* by  Helmut Kopka and Patrick W. Daly. [@kopka]
+[en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or books such as the *Guide to LaTeX* by Helmut Kopka and Patrick W. Daly. [@kopka]
 
-
-## Exercise three: maths {#ex3}
+## Exercise three: you do the maths {#ex3}
 
 Now for an exercise that involves some mathematics. Create a file `maths.tex` which typesets the following piece of text and mathematics:
 
