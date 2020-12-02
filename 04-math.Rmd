@@ -1,6 +1,6 @@
 # Doing the maths {#maths}
 
-LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this document at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, if you can see the equation below, it is safe to read on...
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf version of this manual at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf). Otherwise, if you can see the equation below, it is safe to read on...
 
 ## Equations {#equations}
 Consider this equation:

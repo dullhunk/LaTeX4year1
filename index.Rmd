@@ -1,7 +1,8 @@
 ---
 title: "Getting started with LaTeX"
 author: "A laboratory manual written by Duncan Hull"
-date: "Last updated `r Sys.Date()`"
+#date: "Last updated `r Sys.Date()`"
+date: "Last updated on `r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -14,7 +15,7 @@ description: "A resource for getting started with LaTeX"
 
 # Welcome {-}
 
-Hello and welcome to the LaTeX lab manual, part of COMP101 at the University of Manchester.
+Hello and welcome to the LaTeX lab manual, part of [COMP101](https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus/) at the University of Manchester.
 
 ```{r latexproject-fig, echo = FALSE, fig.align = "center", out.width = "90%", fig.cap='The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)'}
 knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")
@@ -25,7 +26,7 @@ Reading this LaTeX manual and doing the five exercises it contains will enable y
 1. Illustrate a document with figures and cross references
 1. Typeset some mathematics
 1. Share and collaborate on LaTeX documents using overleaf
-1. Draft a CV using LaTeX templates in overleaf
+1. Draft a CV using LaTeX templates
 
 ## Acknowledgements {-}
 This manual is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
