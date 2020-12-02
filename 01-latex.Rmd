@@ -3,10 +3,9 @@
 LaTeX is a document preparation system for high-quality typesetting. [@latexproject] LaTeX is a mature and established typesetting system that has been around since 1980's. [@knuth] It was originally written by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), a computer scientist
 now working at Microsoft Research, although its development has long been taken over by a world-wide LaTeX community. It’s actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) of Stanford University. Lamport and Knuth are shown in Figure \@ref(fig:knuthport-fig).
 
-```{r knuthport-fig, echo = FALSE, fig.show = "hold", out.width = "47%", fig.cap = "Turing award winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons [w.wiki/oyM](https://w.wiki/oyM), Knuth portrait by Jacob Appelbaum CC BY-SA 2.5 via Wikimedia Commons [w.wiki/oyL](https://w.wiki/oyL)"}
+```{r knuthport-fig, echo = FALSE, fig.show = "hold", out.width = "47%", fig.cap = "[Turing award](https://en.wikipedia.org/wiki/Turing_Award) winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons [w.wiki/oyM](https://w.wiki/oyM), Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons [w.wiki/oyL](https://w.wiki/oyL)"}
 knitr::include_graphics(rep(c("images/Leslie_Lamport.jpg","images/KnuthAtOpenContentAlliance.jpg"),1))
 ```
-
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, formal letters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 ## Not a word processor
