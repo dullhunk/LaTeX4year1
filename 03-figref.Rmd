@@ -2,6 +2,10 @@
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
+```{r echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='It has always been important to cite your sources and LaTeX gives you the tools to cite properly. _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/)  published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)'}
+knitr::include_graphics("images/wikipedian_protester.png")
+```
+
 ## Cross-referencing
 
 LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
@@ -56,7 +60,7 @@ The `\includegraphics` command is not built in to core LaTeX but is in an additi
 \begin{document}
 ```
 
-## Exercise two: figures {#ex2}
+## Exercise two: picture this {#ex2}
 Create a document `image.tex`, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
 
 ## Citations and footnotes

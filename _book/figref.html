@@ -156,7 +156,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="figref.html"><a href="figref.html#cross-referencing"><i class="fa fa-check"></i><b>3.1</b> Cross-referencing</a></li>
 <li class="chapter" data-level="3.2" data-path="figref.html"><a href="figref.html#illustrating-your-documents"><i class="fa fa-check"></i><b>3.2</b> Illustrating your documents</a></li>
-<li class="chapter" data-level="3.3" data-path="figref.html"><a href="figref.html#ex2"><i class="fa fa-check"></i><b>3.3</b> Exercise two: figures</a></li>
+<li class="chapter" data-level="3.3" data-path="figref.html"><a href="figref.html#ex2"><i class="fa fa-check"></i><b>3.3</b> Exercise two: picture this</a></li>
 <li class="chapter" data-level="3.4" data-path="figref.html"><a href="figref.html#citations-and-footnotes"><i class="fa fa-check"></i><b>3.4</b> Citations and footnotes</a></li>
 <li class="chapter" data-level="3.5" data-path="figref.html"><a href="figref.html#fingconc"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
 </ul></li>
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>6</b> Your curriculum vitae</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="cv.html"><a href="cv.html#ex5"><i class="fa fa-check"></i><b>6.1</b> Exercise five: your CV</a></li>
-<li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#debug-your-cv"><i class="fa fa-check"></i><b>6.2</b> Debug your CV</a></li>
+<li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#debugging-your-cv"><i class="fa fa-check"></i><b>6.2</b> Debugging your CV</a></li>
 <li class="chapter" data-level="6.3" data-path="cv.html"><a href="cv.html#cvconc"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -202,6 +202,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="figref" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Cross-referencing, illustrating and citing</h1>
 <p>LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<img src="images/wikipedian_protester.png" alt="It has always been important to cite your sources and LaTeX gives you the tools to cite properly. _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/)  published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)" width="70%" />
+<p class="caption">
+Figure 3.1: It has always been important to cite your sources and LaTeX gives you the tools to cite properly. <em>Wikipedian Protester</em> cartoon by <a href="https://en.wikipedia.org/wiki/Randall_Munroe">Randall Munroe</a> at <a href="https://xkcd.com/285/">xkcd.com/285</a> published under a <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 License</a>
+</p>
+</div>
 <div id="cross-referencing" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Cross-referencing</h2>
 <p>LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:</p>
@@ -221,11 +227,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="illustrating-your-documents" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Illustrating your documents</h2>
-<p>Documents without figures, images, pictures and graphs are pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.1</a>, for example.</p>
+<p>Documents without figures, images, pictures and graphs are pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.2</a>, for example.</p>
 <div class="figure" style="text-align: center"><span id="fig:turing-fig"></span>
 <img src="images/Alan_Turing_Aged_16.jpg" alt="Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)" width="40%" />
 <p class="caption">
-Figure 3.1: Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons <a href="https://w.wiki/oZx">w.wiki/oZx</a>
+Figure 3.2: Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons <a href="https://w.wiki/oZx">w.wiki/oZx</a>
 </p>
 </div>
 <p>Including figures and pictures in your document is straightforward. You do it like this:</p>
@@ -241,7 +247,7 @@ Figure 3.1: Alan Turing at the age of sixteen, portrait by unknown author, publi
 <span id="cb11-3"><a href="figref.html#cb11-3"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span></code></pre></div>
 </div>
 <div id="ex2" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Exercise two: figures</h2>
+<h2><span class="header-section-number">3.3</span> Exercise two: picture this</h2>
 <p>Create a document <code>image.tex</code>, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.</p>
 </div>
 <div id="citations-and-footnotes" class="section level2" number="3.4">

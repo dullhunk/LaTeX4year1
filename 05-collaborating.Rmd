@@ -6,11 +6,12 @@ If you are the sole author of a document, then compiling files on your local mac
 knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 ```
 
-Compared to LaTeX, overleaf is relatively new, the company responsible was founded in 2013. It has several features which you might find useful:
+Compared to LaTeX, overleaf is relatively new. The British company responsible (Write Latex Limited) was founded in 2013 by [John Lees-Miller](https://www.linkedin.com/in/jdleesmiller/) and [John Hammersley](https://www.linkedin.com/in/john-hammersley-6419a266/) to allow easier collaboration between authors. Overleaf has several features which you might find useful:
 
 * Your documents are automatically saved to the cloud
 * Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing them
 * Templates are provided for common types of documents, although you don't need to use overleaf to get access to LaTeX templates^[see http://www.tug.org/texshowcase and https://www.latextemplates.com for example]
+* Overleaf publish lots of tutorials to help you learn more LaTeX
 
 
 ## Exercise four: overleaf {#ex4}
@@ -18,9 +19,9 @@ Compared to LaTeX, overleaf is relatively new, the company responsible was found
 Login to [overleaf.com](https://www.overleaf.com/) and try the following:
 
 1. Create and save a simple document using the overleaf tutorial *creating a document in overleaf*^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
-1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control
+1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control if you want to
 1. Browse the overleaf tutorials at [overleaf.com/learn](https://www.overleaf.com/learn) if you want to take things further
 
 ## Summary {#overleafconc}
 
-Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. [@knuth] It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and command line are just two popular interfaces to LaTeX amongst many others. [@latexproject] Which interface is “best” for you will largely depend on what kind of documents you are working on and what your workflow is.  In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
+Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. [@knuth] It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and the command line are just two popular interfaces to LaTeX amongst many others. [@latexproject] Which interface is “best” for you will largely depend on what kind of documents you are writing and what your workflow is. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.

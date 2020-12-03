@@ -32,7 +32,7 @@ Create a basic CV which tells your story, in particular:
 
 You can do this using the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Have a good look around, there are over 600 templates to choose from.
 
-## Debug your CV
+## Debugging your CV
 As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because most employers typically have to deal with lots of applicants. Here's some common bugs we have seen in students CVs:
 
 1. Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
@@ -58,3 +58,17 @@ In the meantime, enjoy exploring and using LaTeX to create professional document
 * your third year project dissertation. It might seem a long way off now but it comes around very quickly!
 
 ...and more.
+
+
+<!--
+
+limitations of LaTeX
+limitations of pdf
+The Stoic Resilience of PDF Within a Digital Ecosystem
+https://www.overleaf.com/learn/latex/Articles/The_Stoic_Resilience_of_PDF_Within_a_Digital_Ecosystem
+
+markdown, bookdown, pandoc
+
+appendix with stuff from SRP
+
+-->

@@ -1,6 +1,18 @@
 # Doing the maths {#maths}
 
-LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf) or [latex4year1.epub](https://latex4year1.netlify.app/latex4year1.epub). Otherwise, if you can see the equation below, it is safe to read on...
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them.
+
+<!--
+```{block2, type='rmdimportant'}
+If you want to cross-reference figures or tables generated from a code chunk, please make sure the chunk label only contains _alphanumeric_ characters (a-z, A-Z, 0-9), slashes (/), or dashes (-).
+```
+
+see https://bookdown.org/yihui/bookdown/custom-blocks.html and corresponding yaml file
+
+https://github.com/rstudio/bookdown/blob/master/inst/examples/_output.yml
+-->
+
+If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at [latex4year1.pdf](https://latex4year1.netlify.app/latex4year1.pdf) or [latex4year1.epub](https://latex4year1.netlify.app/latex4year1.epub). Otherwise, if you can see the equation below, it is safe to read on...
 
 ## Equations {#equations}
 Consider this equation:
@@ -62,7 +74,13 @@ In the LaTeX code, `\left[` means ‘big opening square bracket please’; `{ccc
 There are some symbols that you might need (for example `\therefore`, which produces the usual three dots symbol ∴) that are not part of standard LaTeX. Many such symbols are provided by the `amssymb` package of symbols compiled by the American Mathematical Society. Details of the many symbols provided by this package can be found online. To use these extra symbols, you need to have `\usepackage{amssymb}` in your document preamble.
 
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
-[en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or books such as the *Guide to LaTeX* by Helmut Kopka and Patrick W. Daly. [@kopka]
+[en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or  books such as the *Guide to LaTeX* by Helmut Kopka and Patrick W. Daly. [@kopka]
+
+<!-- integrals
+
+fourier transform
+
+page 149 of 17 equations that changed the world-->
 
 ## Exercise three: you do the maths {#ex3}
 
@@ -87,4 +105,4 @@ $$ x^n + y^n = z^n $$
 
 ## Summary {#mathconc}
 
-We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
+We've briefly introduced typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can handle a lot more maths than that but this gives you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.

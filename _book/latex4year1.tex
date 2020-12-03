@@ -189,7 +189,7 @@ LaTeX is typically used for technical documents but it can be used for almost an
 \hypertarget{not-a-word-processor}{%
 \section{NOT a word processor}\label{not-a-word-processor}}
 
-LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this in a web browser, view the raw \texttt{latex.html} of this page as an example.
+LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this in a web browser, view the source of this page \texttt{latex.html} as an example.
 
 LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
 
@@ -365,6 +365,15 @@ Next we'll look at adding some cross-references, figures and citations.
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
+\textbackslash begin\{figure\}
+
+\{\centering \includegraphics[width=0.7\linewidth]{images/wikipedian_protester}
+
+\}
+
+\textbackslash caption\{It has always been important to cite your sources and LaTeX gives you the tools to cite properly. \emph{Wikipedian Protester} cartoon by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} at \href{https://xkcd.com/285/}{xkcd.com/285} published under a \href{https://creativecommons.org/licenses/by-nc/2.5/}{Creative Commons Attribution-NonCommercial 2.5 License}\}\label{fig:unnamed-chunk-4}
+\textbackslash end\{figure\}
+
 \hypertarget{cross-referencing}{%
 \section{Cross-referencing}\label{cross-referencing}}
 
@@ -439,7 +448,7 @@ The \texttt{\textbackslash{}includegraphics} command is not built in to core LaT
 \end{Shaded}
 
 \hypertarget{ex2}{%
-\section{Exercise two: figures}\label{ex2}}
+\section{Exercise two: picture this}\label{ex2}}
 
 Create a document \texttt{image.tex}, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
 
@@ -556,7 +565,9 @@ You have cross-referenced, illustrated, added citations and footnotes to your do
 \hypertarget{maths}{%
 \chapter{Doing the maths}\label{maths}}
 
-LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them. If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf} or \href{https://latex4year1.netlify.app/latex4year1.epub}{latex4year1.epub}. Otherwise, if you can see the equation below, it is safe to read on\ldots{}
+LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them.
+
+If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf} or \href{https://latex4year1.netlify.app/latex4year1.epub}{latex4year1.epub}. Otherwise, if you can see the equation below, it is safe to read on\ldots{}
 
 \hypertarget{equations}{%
 \section{Equations}\label{equations}}
@@ -654,7 +665,7 @@ For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying 
 \hypertarget{mathconc}{%
 \section{Summary}\label{mathconc}}
 
-We've briefly looked at typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can do a lot more maths than equations and matrices but this has given you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
+We've briefly introduced typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can handle a lot more maths than that but this gives you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
 
 \hypertarget{overleaf}{%
 \chapter{Collaborative editing with overleaf}\label{overleaf}}
@@ -670,7 +681,7 @@ If you are the sole author of a document, then compiling files on your local mac
 \caption{A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)}\label{fig:overleaf-fig}
 \end{figure}
 
-Compared to LaTeX, overleaf is relatively new, the company responsible was founded in 2013. It has several features which you might find useful:
+Compared to LaTeX, overleaf is relatively new. The British company responsible (Write Latex Limited) was founded in 2013 by \href{https://www.linkedin.com/in/jdleesmiller/}{John Lees-Miller} and \href{https://www.linkedin.com/in/john-hammersley-6419a266/}{John Hammersley} to allow easier collaboration between authors. Overleaf has several features which you might find useful:
 
 \begin{itemize}
 \tightlist
@@ -680,6 +691,8 @@ Compared to LaTeX, overleaf is relatively new, the company responsible was found
   Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing them
 \item
   Templates are provided for common types of documents, although you don't need to use overleaf to get access to LaTeX templates\footnote{see \url{http://www.tug.org/texshowcase} and \url{https://www.latextemplates.com} for example}
+\item
+  Overleaf publish lots of tutorials to help you learn more LaTeX
 \end{itemize}
 
 \hypertarget{ex4}{%
@@ -693,7 +706,7 @@ Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 \item
   Create and save a simple document using the overleaf tutorial \emph{creating a document in overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
 \item
-  Note that overleaf allows you to store your TeX source in a git repository so you can use version control
+  Note that overleaf allows you to store your TeX source in a git repository so you can use version control if you want to
 \item
   Browse the overleaf tutorials at \href{https://www.overleaf.com/learn}{overleaf.com/learn} if you want to take things further
 \end{enumerate}
@@ -701,7 +714,7 @@ Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 \hypertarget{overleafconc}{%
 \section{Summary}\label{overleafconc}}
 
-Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are working on and what your workflow is. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
+Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and the command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are writing and what your workflow is. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
 
 \hypertarget{cv}{%
 \chapter{Your curriculum vitae}\label{cv}}
@@ -766,8 +779,8 @@ Create a basic CV which tells your story, in particular:
 
 You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}. Have a good look around, there are over 600 templates to choose from.
 
-\hypertarget{debug-your-cv}{%
-\section{Debug your CV}\label{debug-your-cv}}
+\hypertarget{debugging-your-cv}{%
+\section{Debugging your CV}\label{debugging-your-cv}}
 
 As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because most employers typically have to deal with lots of applicants. Here's some common bugs we have seen in students CVs:
 
