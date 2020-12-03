@@ -32,6 +32,8 @@ Reading this LaTeX manual and doing the five exercises it contains will enable y
 This manual is a substantially revised version of earlier LaTeX lab manuals created by Ulrike Sattler, Graham Gough, Paul Waring, Toby Howard and Steve Pettifer.
 
 ## Improve this manual {-}
-The source of this manual is on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
+The source of this manual is available on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
+
+Thanks to contributions from Hamza Latif ([\@ultrasockhead](https://github.com/ultrasockhead)).
 
 If you want to make suggestions for improvements that **don't** get attributed to your name, [email me](http://www.cs.man.ac.uk/~hulld/contact.html) directly.

@@ -171,7 +171,9 @@ This manual is a substantially revised version of earlier LaTeX lab manuals crea
 \section*{Improve this manual}\label{improve-this-manual}}
 \addcontentsline{toc}{section}{Improve this manual}
 
-The source of this manual is on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}. We'll credit every contribution, however small, because they all make a difference.
+The source of this manual is available on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}. We'll credit every contribution, however small, because they all make a difference.
+
+Thanks to contributions from Hamza Latif (\href{https://github.com/ultrasockhead}{@ultrasockhead}).
 
 If you want to make suggestions for improvements that \textbf{don't} get attributed to your name, \href{http://www.cs.man.ac.uk/~hulld/contact.html}{email me} directly.
 
@@ -191,7 +193,7 @@ LaTeX is typically used for technical documents but it can be used for almost an
 
 LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this in a web browser, view the source of this page \texttt{latex.html} as an example.
 
-LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
+LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
 
 \hypertarget{so-what-is-latex-then}{%
 \section{So what is LaTeX then?}\label{so-what-is-latex-then}}
@@ -321,7 +323,7 @@ Here's a few points to note about the text above:
 \item
   Notice how \textbf{bold} and \emph{italic} formatting are created using \texttt{\textbackslash{}textbf\{\}} and \texttt{\textbackslash{}textit\{\}}
 \item
-  Notice how lists are created with \texttt{\textbackslash{}item}s inside either \texttt{\textbackslash{}begin\{enumerate\}} for numbered lists or \texttt{\textbackslash{}begin\{itemize\}} for unordered lists.
+  Notice how lists are created with \texttt{\textbackslash{}item}s inside either \texttt{\textbackslash{}begin\{enumerate\}} for numbered lists or \texttt{\textbackslash{}begin\{itemize\}} for bulleted lists.
 \end{itemize}
 
 \hypertarget{quotation-marks}{%
@@ -341,7 +343,7 @@ In your \texttt{*.tex} file it looks like this:
 
 \texttt{Turing\ addressed\ the\ question\ \textasciigrave{}\textasciigrave{}Can\ machines\ think?\textquotesingle{}\textquotesingle{}}
 
-The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to.
+The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see \href{https://fonts.google.com/}{fonts.google.com} for example.
 
 \hypertarget{concsimple}{%
 \section{Summary}\label{concsimple}}
@@ -393,7 +395,7 @@ at the point in the document you want to refer to, and then use the command:
 \end{Highlighting}
 \end{Shaded}
 
-when you want to use the reference. Obviously you replace the text \texttt{mymarker} with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
+when you want to refer to it. Obviously you replace the text \texttt{mymarker} with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -401,7 +403,7 @@ when you want to use the reference. Obviously you replace the text \texttt{mymar
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \KeywordTok{\textbackslash{}section}\NormalTok{\{Turing Machines: The Simplest Computers\}}
 \KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{sec:simplest}\NormalTok{\}}
-\NormalTok{Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term }\FunctionTok{\textbackslash{}textit}\NormalTok{\{computation\}. No only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.}
+\NormalTok{Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term }\FunctionTok{\textbackslash{}textit}\NormalTok{\{computation\}. Not only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.}
 
 \KeywordTok{\textbackslash{}section}\NormalTok{\{Alan Turing\}}
 \NormalTok{The Turing machines described in section }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{sec:simplest}\NormalTok{\} are named after Alan Turing.}
@@ -487,7 +489,7 @@ The citations themselves can be stored in a separate \texttt{*.bib\ file} using 
 \end{Highlighting}
 \end{Shaded}
 
-and articles\footnote{BibTeX entries for journal articles can be automatically generated from persistent identifiers known as \href{https://en.wikipedia.org/wiki/Digital_object_identifier}{digital object identifiers} or doi's, see \url{https://doi2bib.org} for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.} use the \texttt{@article} type like this:
+and articles\footnote{BibTeX entries for journal articles can be automatically generated from persistent identifiers known as \href{https://en.wikipedia.org/wiki/Digital_object_identifier}{digital object identifiers} or doi's, such as \url{https://doi2bib.org} for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.} use the \texttt{@article} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -535,7 +537,7 @@ You add this to your tex file:
 \end{Highlighting}
 \end{Shaded}
 
-To generate your bibliography you'll need to specify what style of bibliography you're using with \texttt{\textbackslash{}bibliographystyle\{stylename\}} and where to find the metadata with \texttt{\textbackslash{}bibliography\{bibfile\}}. The example below uses \texttt{unsrt} for style and uses a bib file called \texttt{turing.bib} which might contain many articles and books. You don't need to specific the file extension \texttt{.bib}:
+To generate your bibliography you'll need to specify what style of bibliography you're using with \texttt{\textbackslash{}bibliographystyle\{stylename\}} and where to find the metadata with \texttt{\textbackslash{}bibliography\{bibfile\}}. The example below uses a style called \texttt{unsrt} and uses a bib file called \texttt{turing.bib} which might contain many articles and books. You don't need to specific the file extension \texttt{.bib}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -555,7 +557,7 @@ When you compile you need to run \texttt{pdflatex} before and after running \tex
 \end{Highlighting}
 \end{Shaded}
 
-If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
+If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening the pdf when it is created.
 
 \hypertarget{fingconc}{%
 \section{Summary}\label{fingconc}}

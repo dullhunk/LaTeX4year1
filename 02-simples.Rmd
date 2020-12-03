@@ -96,7 +96,7 @@ pdflatex turing.tex
 Here's a few points to note about the text above:
 
 * Notice how **bold** and *italic* formatting are created using `\textbf{}` and `\textit{}`
-* Notice how lists are created with `\item`s inside either `\begin{enumerate}` for numbered lists or `\begin{itemize}` for unordered lists.
+* Notice how lists are created with `\item`s inside either `\begin{enumerate}` for numbered lists or `\begin{itemize}` for bulleted lists.
 
 ## Quotation marks
 
@@ -109,7 +109,7 @@ In your `*.tex` file it looks like this:
 
 `Turing addressed the question ``Can machines think?''`
 
-The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to.
+The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example.
 
 ## Summary {#concsimple}
 You've created a basic document in LaTeX and we've introduced some of its advantages:

@@ -19,14 +19,14 @@ at the point in the document you want to refer to, and then use the command:
 \ref{mymarker}
 ```
 
-when you want to use the reference. Obviously you replace the text `mymarker` with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
+when you want to refer to it. Obviously you replace the text `mymarker` with something more meaningful. An important tip here is to call the marker something that refers to the content of that part of the document, and to avoid the temptation to use numbers in case you re-order your document. For example, lets say we wanted to cross reference between sections:
 
 ```tex
 \documentclass[a4paper]{article}
 \begin{document}
 \section{Turing Machines: The Simplest Computers}
 \label{sec:simplest}
-Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term \textit{computation}. No only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.
+Turing machines are the simplest and most widely used theoretical models of computing. Far too slow and unwieldy ever to be embodied in a real device, these conceptual machines nevertheless seem to capture everything we mean by the term \textit{computation}. Not only do Turing machines occupy the top level of the Chomsky hierarchy, but they also seem capable of computing any function which is computable by any other conceptual scheme.
 
 \section{Alan Turing}
 The Turing machines described in section \ref{sec:simplest} are named after Alan Turing.
@@ -88,7 +88,7 @@ The citations themselves can be stored in a separate `*.bib file` using a format
   url = {https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665}
 }
 ```
-and articles^[BibTeX entries for journal articles can be automatically generated from persistent identifiers known as [digital object identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier) or doi's, see https://doi2bib.org for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.] use the `@article` type like this:
+and articles^[BibTeX entries for journal articles can be automatically generated from persistent identifiers known as [digital object identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier) or doi's, such as https://doi2bib.org for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.] use the `@article` type like this:
 
 ```tex
 @article{alanturing,
@@ -129,7 +129,7 @@ You can find Turing's publications in Google scholar. \cite{googlescholar}
 His paper on the Entscheidungsproblem was published in 1937. \cite{alanturing}
 He wrote about thinking machines in 1950. \cite{turing50}
 ```
-To generate your bibliography you'll need to specify what style of bibliography you're using with `\bibliographystyle{stylename}` and where to find the metadata with `\bibliography{bibfile}`. The example below uses `unsrt` for style and uses a bib file called `turing.bib` which might contain many articles and books. You don't need to specific the file extension `.bib`:
+To generate your bibliography you'll need to specify what style of bibliography you're using with `\bibliographystyle{stylename}` and where to find the metadata with `\bibliography{bibfile}`. The example below uses a style called `unsrt` and uses a bib file called `turing.bib` which might contain many articles and books. You don't need to specific the file extension `.bib`:
 
 ```tex
 \bibliographystyle{unsrt}
@@ -143,7 +143,7 @@ bibtex turing
 pdflatex turing.tex
 pdflatex turing.tex
 ```
-If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening pdf when it is created.
+If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening the pdf when it is created.
 
 ## Summary {#fingconc}
 You have cross-referenced, illustrated, added citations and footnotes to your document. Next we'll look at doing some maths.
