@@ -204,17 +204,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s start by creating a simple LaTeX document.</p>
 <div id="shortest" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> A very short document</h2>
-<p>Open up your favourite editor, enter the following text, then save it as a file called <code>turing.tex</code></p>
+<p>Open up your favourite editor<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, enter the following text, then save it as a file called <code>turing.tex</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="simples.html#cb1-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
 <span id="cb1-2"><a href="simples.html#cb1-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
 <span id="cb1-3"><a href="simples.html#cb1-3"></a>Computational excursions</span>
 <span id="cb1-4"><a href="simples.html#cb1-4"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
-<p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The <code>pdflatex</code> compiler is already installed on the Linux VM image for VirtualBox.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> For other operating systems you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
+<p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> The <code>pdflatex</code> compiler is already installed on the Linux VM image for VirtualBox.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> For other operating systems you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="simples.html#cb2-1"></a><span class="co"># compile turing.tex</span></span>
 <span id="cb2-2"><a href="simples.html#cb2-2"></a>pdflatex turing.tex</span>
 <span id="cb2-3"><a href="simples.html#cb2-3"></a><span class="co"># open the pdf output</span></span>
 <span id="cb2-4"><a href="simples.html#cb2-4"></a>xdg<span class="op">-</span>open turing.pdf</span></code></pre></div>
-<p>The first command outputs a pdf file from your <code>turing.tex</code> input using the <code>pdflatex</code> compiler. The second command opens the file you’ve created. If you list the directory contents, you’ll see that the compiler has also created an auxillary <code>*.aux</code> file and a <code>*.log</code> file which can be helpful for debugging the compilation:</p>
+<p>The first command outputs a pdf file from your <code>turing.tex</code> input using the <code>pdflatex</code> compiler. The second command opens the file you’ve created. If you list the directory contents, you’ll see that the compiler has also created an auxillary <code>*.aux</code> file and a <code>*.log</code> file which can be helpful when you’re debugging the compilation:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simples.html#cb3-1"></a><span class="co"># files created on compilation</span></span>
 <span id="cb3-2"><a href="simples.html#cb3-2"></a>turing.tex</span>
 <span id="cb3-3"><a href="simples.html#cb3-3"></a>turing.pdf</span>
@@ -277,7 +277,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Here’s a few points to note about the text above:</p>
 <ul>
 <li>Notice how <strong>bold</strong> and <em>italic</em> formatting are created using <code>\textbf{}</code> and <code>\textit{}</code></li>
-<li>Notice how lists are created using <code>\begin{enumerate}</code> and <code>\item</code></li>
+<li>Notice how lists are created with <code>\item</code>s inside either <code>\begin{enumerate}</code> for numbered lists or <code>\begin{itemize}</code> for unordered lists.</li>
 </ul>
 </div>
 <div id="quotation-marks" class="section level2" number="2.5">
@@ -315,8 +315,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p><a href="https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler" class="uri">https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler</a><a href="simples.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM" class="uri">https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM</a><a href="simples.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>it is worth configuring your editor that is LaTex aware, and can highlight syntax, suggest auto-completions and spell-check for you. Tools like <a href="https://atom.io/">atom.io</a> and <a href="https://www.sublimetext.com/">sublimetext</a> and many others will do this for you<a href="simples.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler" class="uri">https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler</a><a href="simples.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM" class="uri">https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM</a><a href="simples.html#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

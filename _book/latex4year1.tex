@@ -178,20 +178,20 @@ If you want to make suggestions for improvements that \textbf{don't} get attribu
 \hypertarget{latex}{%
 \chapter{What is LaTeX?}\label{latex}}
 
-LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} LaTeX is a mature and established toolchain that has been around since 1980's. \citep{knuth} Originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
+LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is part of a mature and established toolchain that has been around since 1980's. \citep{knuth} Originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
 now working at Microsoft Research, its development has long been taken over by a world-wide LaTeX community. LaTeX is actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
 
 \textbackslash begin\{figure\}
 \includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \textbackslash caption\{\href{https://en.wikipedia.org/wiki/Turing_Award}{Turing award} winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/oyM}{w.wiki/oyM}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/oyL}{w.wiki/oyL}\}\label{fig:knuthport-fig}
 \textbackslash end\{figure\}
-LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, formal letters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
+LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 \hypertarget{not-a-word-processor}{%
 \section{NOT a word processor}\label{not-a-word-processor}}
 
-LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this page in a web browser, view the raw \texttt{*.html} of this as an example.
+LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this in a web browser, view the raw \texttt{latex.html} of this page as an example.
 
-LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output).
+LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWIG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
 
 \hypertarget{so-what-is-latex-then}{%
 \section{So what is LaTeX then?}\label{so-what-is-latex-then}}
@@ -206,7 +206,7 @@ Let's start by creating a simple LaTeX document.
 \hypertarget{shortest}{%
 \section{A very short document}\label{shortest}}
 
-Open up your favourite editor, enter the following text, then save it as a file called \texttt{turing.tex}
+Open up your favourite editor\footnote{it is worth configuring your editor that is LaTex aware, and can highlight syntax, suggest auto-completions and spell-check for you. Tools like \href{https://atom.io/}{atom.io} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -228,7 +228,7 @@ To turn this into a pdf we need to use a LaTeX compiler, we're going to use \tex
 \end{Highlighting}
 \end{Shaded}
 
-The first command outputs a pdf file from your \texttt{turing.tex} input using the \texttt{pdflatex} compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary \texttt{*.aux} file and a \texttt{*.log} file which can be helpful for debugging the compilation:
+The first command outputs a pdf file from your \texttt{turing.tex} input using the \texttt{pdflatex} compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary \texttt{*.aux} file and a \texttt{*.log} file which can be helpful when you're debugging the compilation:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -321,7 +321,7 @@ Here's a few points to note about the text above:
 \item
   Notice how \textbf{bold} and \emph{italic} formatting are created using \texttt{\textbackslash{}textbf\{\}} and \texttt{\textbackslash{}textit\{\}}
 \item
-  Notice how lists are created using \texttt{\textbackslash{}begin\{enumerate\}} and \texttt{\textbackslash{}item}
+  Notice how lists are created with \texttt{\textbackslash{}item}s inside either \texttt{\textbackslash{}begin\{enumerate\}} for numbered lists or \texttt{\textbackslash{}begin\{itemize\}} for unordered lists.
 \end{itemize}
 
 \hypertarget{quotation-marks}{%

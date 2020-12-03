@@ -3,7 +3,7 @@
 Let's start by creating a simple LaTeX document.
 
 ## A very short document {#shortest}
-Open up your favourite editor, enter the following text, then save it as a file called `turing.tex`
+Open up your favourite editor^[it is worth configuring your editor that is LaTex aware, and can highlight syntax, suggest auto-completions and spell-check for you. Tools like [atom.io](https://atom.io/) and [sublimetext](https://www.sublimetext.com/) and many others will do this for you], enter the following text, then save it as a file called `turing.tex`:
 
 ```tex
 \documentclass[a4paper]{article}
@@ -20,7 +20,7 @@ pdflatex turing.tex
 xdg-open turing.pdf
 ```
 
-The first command outputs a pdf file from your `turing.tex` input using the `pdflatex` compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary `*.aux` file and a `*.log` file which can be helpful for debugging the compilation:
+The first command outputs a pdf file from your `turing.tex` input using the `pdflatex` compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary `*.aux` file and a `*.log` file which can be helpful when you're debugging the compilation:
 
 ```{r eval=FALSE}
 # files created on compilation
@@ -68,7 +68,7 @@ We're using this \LaTeX\ document to demonstrate some of its key strengths that 
 \end{document}
 ```
 
-The text here is excerpted from *The New Turing Omnibus: 66 excursions in Computer Science* [@turingomnibus]. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) calls the omnibus an “incredibly fun little book”. [@codinghorror] 
+The text here is excerpted from *The New Turing Omnibus: 66 excursions in Computer Science* [@turingomnibus]. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) calls the omnibus an “incredibly fun little book”. [@codinghorror]
 
 ## Exercise one: documentum {#ex1}
 In your file `turing.tex` either cut-and-paste this longer text into your document or make your own sections and text. You could use text from [Lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) at [lipsum.com](https://www.lipsum.com) to fill out the page.
@@ -96,7 +96,7 @@ pdflatex turing.tex
 Here's a few points to note about the text above:
 
 * Notice how **bold** and *italic* formatting are created using `\textbf{}` and `\textit{}`
-* Notice how lists are created using `\begin{enumerate}` and `\item`
+* Notice how lists are created with `\item`s inside either `\begin{enumerate}` for numbered lists or `\begin{itemize}` for unordered lists.
 
 ## Quotation marks
 

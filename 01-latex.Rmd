@@ -1,17 +1,17 @@
 # What is LaTeX? {#latex}
 
-LaTeX is a document preparation system for high-quality typesetting. [@latexproject] LaTeX is a mature and established toolchain that has been around since 1980's. [@knuth] Originally written by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), a computer scientist
+LaTeX is a document preparation system for high-quality typesetting. [@latexproject] It is part of a mature and established toolchain that has been around since 1980's. [@knuth] Originally written by [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport), a computer scientist
 now working at Microsoft Research, its development has long been taken over by a world-wide LaTeX community. LaTeX is actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) of Stanford University. Lamport and Knuth are shown in Figure \@ref(fig:knuthport-fig).
 
 ```{r knuthport-fig, echo = FALSE, fig.show = "hold", out.width = "47%", fig.cap = "[Turing award](https://en.wikipedia.org/wiki/Turing_Award) winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons [w.wiki/oyM](https://w.wiki/oyM), Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons [w.wiki/oyL](https://w.wiki/oyL)"}
 knitr::include_graphics(rep(c("images/Leslie_Lamport.jpg","images/KnuthAtOpenContentAlliance.jpg"),1))
 ```
-LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, formal letters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
+LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 ## NOT a word processor
-LaTeX is *not* a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your `*.css`) should be cleanly separated from the raw content (in your `*.html`). If you're reading this page in a web browser, view the raw `*.html` of this as an example.
+LaTeX is *not* a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of many of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your `*.css`) should be cleanly separated from the raw content (in your `*.html`). If you're reading this in a web browser, view the raw `latex.html` of this page as an example.
 
-LaTeX is **not** a what you see is what you get ([WYSIWIG](https://en.wikipedia.org/wiki/WYSIWYG)) system either. The raw document you edit (a `*.tex` file input) is not your final result (usually a `*.pdf` file output).
+LaTeX is **not** a what you see is what you get ([WYSIWIG](https://en.wikipedia.org/wiki/WYSIWYG)) system either. The raw document you edit (a `*.tex` file input) is not your final result (usually a `*.pdf` file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
 
 ## So what is LaTeX then?
 
