@@ -175,9 +175,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>6</b> Your curriculum vitae</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="cv.html"><a href="cv.html#ex5"><i class="fa fa-check"></i><b>6.1</b> Exercise five: your CV</a></li>
-<li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#debugging-your-cv"><i class="fa fa-check"></i><b>6.2</b> Debugging your CV</a></li>
+<li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#debugging-your-cv-checklist"><i class="fa fa-check"></i><b>6.2</b> Debugging your CV checklist</a></li>
 <li class="chapter" data-level="6.3" data-path="cv.html"><a href="cv.html#cvconc"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
 </ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="pictures.html"><a href="pictures.html"><i class="fa fa-check"></i><b>A</b> Image credits</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -202,10 +204,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="figref" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Cross-referencing, illustrating and citing</h1>
 <p>LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
-<img src="images/wikipedian_protester.png" alt="It has always been important to cite your sources and LaTeX gives you the tools to cite properly. _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/)  published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)" width="70%" />
+<div class="figure" style="text-align: center"><span id="fig:wikipedian-fig"></span>
+<img src="images/wikipedian_protester.png" alt="It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits" width="70%" />
 <p class="caption">
-Figure 3.1: It has always been important to cite your sources and LaTeX gives you the tools to cite properly. <em>Wikipedian Protester</em> cartoon by <a href="https://en.wikipedia.org/wiki/Randall_Munroe">Randall Munroe</a> at <a href="https://xkcd.com/285/">xkcd.com/285</a> published under a <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 License</a>
+Figure 3.1: It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits
 </p>
 </div>
 <div id="cross-referencing" class="section level2" number="3.1">
@@ -229,9 +231,9 @@ Figure 3.1: It has always been important to cite your sources and LaTeX gives yo
 <h2><span class="header-section-number">3.2</span> Illustrating your documents</h2>
 <p>Documents without figures, images, pictures and graphs are pretty dull, so you’ll want to illustrate your document with figures such as the one in Figure <a href="figref.html#fig:turing-fig">3.2</a>, for example.</p>
 <div class="figure" style="text-align: center"><span id="fig:turing-fig"></span>
-<img src="images/Alan_Turing_Aged_16.jpg" alt="Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)" width="40%" />
+<img src="images/Alan_Turing_Aged_16.jpg" alt="Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit" width="40%" />
 <p class="caption">
-Figure 3.2: Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons <a href="https://w.wiki/oZx">w.wiki/oZx</a>
+Figure 3.2: Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit
 </p>
 </div>
 <p>Including figures and pictures in your document is straightforward. You do it like this:</p>
@@ -256,7 +258,7 @@ Figure 3.2: Alan Turing at the age of sixteen, portrait by unknown author, publi
 <div class="sourceCode" id="cb12"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb12-1"><a href="figref.html#cb12-1"></a><span class="fu">\footnote</span>{This is a footnote about footnotes}</span></code></pre></div>
 <p>You can cite sources such as websites, books or journal articles in your document using the <code>\cite</code> command.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb13-1"><a href="figref.html#cb13-1"></a><span class="kw">\cite</span>{<span class="ex">alanturing</span>}</span></code></pre></div>
-<p>The citations themselves can be stored in a separate <code>*.bib file</code> using a format called BibTeX, in this case we’ll use <code>turing.bib</code>. BibTeX provides citation types so books<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> using the <code>@book</code> type like this:</p>
+<p>The metadata for the citations can be stored in a separate <code>*.bib file</code> using a format called BibTeX, in this case we’ll use <code>turing.bib</code>. BibTeX provides citation types so books<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> are described using the <code>@book</code> type like this:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb14-1"><a href="figref.html#cb14-1"></a>@Book{turingomnibus,</span>
 <span id="cb14-2"><a href="figref.html#cb14-2"></a>  title = {The New Turing Omnibus: Sixty-six excursions in Computer Science},</span>
 <span id="cb14-3"><a href="figref.html#cb14-3"></a>  author = {A. K. Dewdney},</span>

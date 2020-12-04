@@ -2,7 +2,7 @@
 
 If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you'll need to share your TeX on a server. Overleaf ([overleaf.com](https://www.overleaf.com/)) allows you to do this, and is shown in the screenshot in Figure \@ref(fig:overleaf-fig).
 
-```{r overleaf-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)'}
+```{r overleaf-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons, see appendix for full image credit'}
 knitr::include_graphics("images/Overleaf_v2_editing_page.jpg")
 ```
 
@@ -11,7 +11,7 @@ Compared to LaTeX, overleaf is relatively new. The British company responsible (
 * Your documents are automatically saved to the cloud
 * Packages, class files, compilers and other LaTeX components are also in the cloud, saving you time installing and managing them
 * Templates are provided for common types of documents, although you don't need to use overleaf to get access to LaTeX templates^[see http://www.tug.org/texshowcase and https://www.latextemplates.com for example]
-* Overleaf publish lots of tutorials to help you learn more LaTeX
+* Overleaf publish lots of tutorials to help you learn LaTeX
 
 
 ## Exercise four: overleaf {#ex4}

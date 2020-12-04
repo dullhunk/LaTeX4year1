@@ -2,7 +2,7 @@
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
-```{r echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='It has always been important to cite your sources and LaTeX gives you the tools to cite properly. _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/)  published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)'}
+```{r wikipedian-fig, echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits'}
 knitr::include_graphics("images/wikipedian_protester.png")
 ```
 
@@ -37,7 +37,7 @@ The Turing machines described in section \ref{sec:simplest} are named after Alan
 
 Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
 
-```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)'}
+```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit'}
 knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
 ```
 Including figures and pictures in your document is straightforward. You do it like this:
@@ -75,7 +75,7 @@ You can cite sources such as websites, books or journal articles in your documen
 ```tex
 \cite{alanturing}
 ```
-The citations themselves can be stored in a separate `*.bib file` using a format called BibTeX, in this case we'll use `turing.bib`. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] using the `@book` type like this:
+The metadata for the citations can be stored in a separate `*.bib file` using a format called BibTeX, in this case we'll use `turing.bib`. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] are described using the `@book` type like this:
 
 ```tex
 @Book{turingomnibus,

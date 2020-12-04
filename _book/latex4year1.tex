@@ -120,7 +120,7 @@
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual written by Duncan Hull}
-\date{Last updated on 03 December, 2020}
+\date{Last updated on 04 December, 2020}
 
 \begin{document}
 \maketitle
@@ -141,7 +141,7 @@ Hello and welcome to the LaTeX lab manual, part of \href{https://studentnet.cs.m
 
 }
 
-\caption{The LaTeX project logo, image by Jonas Jacek CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)}\label{fig:latexproject-fig}
+\caption{The LaTeX project logo, for image credits see appendix}\label{fig:latexproject-fig}
 \end{figure}
 
 Reading this LaTeX manual and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
@@ -183,9 +183,10 @@ If you want to make suggestions for improvements that \textbf{don't} get attribu
 LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is part of a mature and established toolchain that has been around since 1980's. \citep{knuth} Originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
 now working at Microsoft Research, its development has long been taken over by a world-wide LaTeX community. LaTeX is actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
 
-\textbackslash begin\{figure\}
-\includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \textbackslash caption\{\href{https://en.wikipedia.org/wiki/Turing_Award}{Turing award} winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/oyM}{w.wiki/oyM}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/oyL}{w.wiki/oyL}\}\label{fig:knuthport-fig}
-\textbackslash end\{figure\}
+\begin{figure}
+\includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \caption{Turing award winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. See Appendix for image credits}\label{fig:knuthport-fig}
+\end{figure}
+
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
 \hypertarget{not-a-word-processor}{%
@@ -208,7 +209,7 @@ Let's start by creating a simple LaTeX document.
 \hypertarget{shortest}{%
 \section{A very short document}\label{shortest}}
 
-Open up your favourite editor\footnote{it is worth configuring your editor that is LaTex aware, and can highlight syntax, suggest auto-completions and spell-check for you. Tools like \href{https://atom.io/}{atom.io} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
+Open up your favourite editor\footnote{it is worth configuring your editor that is LaTeX aware, and can highlight syntax, suggest auto-completions and spell-check for you. Tools like \href{https://atom.io/}{atom.io} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -367,14 +368,14 @@ Next we'll look at adding some cross-references, figures and citations.
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
-\textbackslash begin\{figure\}
+\begin{figure}
 
-\{\centering \includegraphics[width=0.7\linewidth]{images/wikipedian_protester}
+{\centering \includegraphics[width=0.7\linewidth]{images/wikipedian_protester} 
 
-\}
+}
 
-\textbackslash caption\{It has always been important to cite your sources and LaTeX gives you the tools to cite properly. \emph{Wikipedian Protester} cartoon by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} at \href{https://xkcd.com/285/}{xkcd.com/285} published under a \href{https://creativecommons.org/licenses/by-nc/2.5/}{Creative Commons Attribution-NonCommercial 2.5 License}\}\label{fig:unnamed-chunk-4}
-\textbackslash end\{figure\}
+\caption{It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits}\label{fig:wikipedian-fig}
+\end{figure}
 
 \hypertarget{cross-referencing}{%
 \section{Cross-referencing}\label{cross-referencing}}
@@ -422,7 +423,7 @@ Documents without figures, images, pictures and graphs are pretty dull, so you'l
 
 }
 
-\caption{Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)}\label{fig:turing-fig}
+\caption{Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit}\label{fig:turing-fig}
 \end{figure}
 
 Including figures and pictures in your document is straightforward. You do it like this:
@@ -473,7 +474,7 @@ You can cite sources such as websites, books or journal articles in your documen
 \end{Highlighting}
 \end{Shaded}
 
-The citations themselves can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX, in this case we'll use \texttt{turing.bib}. BibTeX provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} using the \texttt{@book} type like this:
+The metadata for the citations can be stored in a separate \texttt{*.bib\ file} using a format called BibTeX, in this case we'll use \texttt{turing.bib}. BibTeX provides citation types so books\footnote{Using tools like \url{https://www.ottobib.com} can help you to quickly generate BibTeX entries from a given ISBN number} are described using the \texttt{@book} type like this:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -680,7 +681,7 @@ If you are the sole author of a document, then compiling files on your local mac
 
 }
 
-\caption{A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)}\label{fig:overleaf-fig}
+\caption{A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons, see appendix for full image credit}\label{fig:overleaf-fig}
 \end{figure}
 
 Compared to LaTeX, overleaf is relatively new. The British company responsible (Write Latex Limited) was founded in 2013 by \href{https://www.linkedin.com/in/jdleesmiller/}{John Lees-Miller} and \href{https://www.linkedin.com/in/john-hammersley-6419a266/}{John Hammersley} to allow easier collaboration between authors. Overleaf has several features which you might find useful:
@@ -694,7 +695,7 @@ Compared to LaTeX, overleaf is relatively new. The British company responsible (
 \item
   Templates are provided for common types of documents, although you don't need to use overleaf to get access to LaTeX templates\footnote{see \url{http://www.tug.org/texshowcase} and \url{https://www.latextemplates.com} for example}
 \item
-  Overleaf publish lots of tutorials to help you learn more LaTeX
+  Overleaf publish lots of tutorials to help you learn LaTeX
 \end{itemize}
 
 \hypertarget{ex4}{%
@@ -729,7 +730,7 @@ You'll write many documents at University, but there is one document that is \te
 
 }
 
-\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)}\label{fig:cv-fig}
+\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. See Appendix for full image credit. }\label{fig:cv-fig}
 \end{figure}
 
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on several factors:
@@ -774,17 +775,17 @@ Create a basic CV which tells your story, in particular:
 \item
   your \emph{education}, including high school and University
 \item
-  your \emph{experience}, voluntary, paid, casual, technical and non-technical: it all counts and demonstrates your range of soft and hard skills
+  your \emph{experience}, voluntary, paid, casual, technical and non-technical: \emph{any} experience demonstrates your range of soft and hard skills
 \item
   your \emph{projects}, personal, social, educational and entrepreneurial
 \end{itemize}
 
 You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}. Have a good look around, there are over 600 templates to choose from.
 
-\hypertarget{debugging-your-cv}{%
-\section{Debugging your CV}\label{debugging-your-cv}}
+\hypertarget{debugging-your-cv-checklist}{%
+\section{Debugging your CV checklist}\label{debugging-your-cv-checklist}}
 
-As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because most employers typically have to deal with lots of applicants. Here's some common bugs we have seen in students CVs:
+As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because most employers typically have to deal with lots of applicants. Here's a check list of some common bugs we have seen in students CVs:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -829,6 +830,25 @@ In the meantime, enjoy exploring and using LaTeX to create professional document
 \end{itemize}
 
 \ldots and more.
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{pictures}{%
+\chapter{Image credits}\label{pictures}}
+
+Figure \ref{fig:latexproject-fig}: LaTeX project logo by \href{https://www.jonas.me/}{Jonas Jacek} CC BY 4.0 via Wikimedia Commons \href{https://w.wiki/oZs}{w.wiki/oZs}
+
+Figure \ref{fig:knuthport-fig}: Leslie Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/oyM}{w.wiki/oyM}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/oyL}{w.wiki/oyL}
+
+Figure \ref{fig:wikipedian-fig}: \emph{Wikipedian Protester} cartoon by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} at \href{https://xkcd.com/285/}{xkcd.com/285} published under a \href{https://creativecommons.org/licenses/by-nc/2.5/}{Creative Commons Attribution-NonCommercial 2.5 License}
+
+Figure \ref{fig:turing-fig}: Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons \href{https://w.wiki/oZx}{w.wiki/oZx}
+
+Figure \ref{fig:overleaf-fig}: Overleaf screenshot by Dan Cherniy via Wikimedia Commons at \href{https://w.wiki/omo}{w.wiki/omo}
+
+Figure \ref{fig:cv-fig}: CV by Jake Gutierrez and published under an MIT license at \href{https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}{overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}
 
   \bibliography{book.bib}
 

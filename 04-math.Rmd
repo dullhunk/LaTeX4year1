@@ -76,11 +76,34 @@ There are some symbols that you might need (for example `\therefore`, which prod
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
 [en.wikibooks.org/wiki/LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) or  books such as the *Guide to LaTeX* by Helmut Kopka and Patrick W. Daly. [@kopka]
 
+
+
+
 <!-- integrals
+
+## Calculus Integrals differential calculus
+
+## Integrals
+We can also have integrals using:
+
+\(\int_a^{a'}f.dt\)
+
+\( v^2=2\int f.ds+C\)
 
 fourier transform
 
-page 149 of 17 equations that changed the world-->
+page 149 of 17 equations that changed the world
+
+
+https://www.claymath.org/content/folios-144-145-aal-adm
+
+\[ \int_a^b f(x)\,dx.\]
+
+\[ f(x,y)\,dx\,dy.\]
+
+-->
+
+
 
 ## Exercise three: you do the maths {#ex3}
 

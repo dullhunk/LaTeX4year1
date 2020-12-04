@@ -1,0 +1,15 @@
+# (APPENDIX) Appendix {-}
+
+# Image credits {#pictures}
+
+Figure \@ref(fig:latexproject-fig): LaTeX project logo by [Jonas Jacek](https://www.jonas.me/) CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)
+
+Figure \@ref(fig:knuthport-fig): Leslie Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons [w.wiki/oyM](https://w.wiki/oyM), Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons [w.wiki/oyL](https://w.wiki/oyL)
+
+Figure \@ref(fig:wikipedian-fig): _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/)  published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)
+
+Figure \@ref(fig:turing-fig): Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)
+
+Figure \@ref(fig:overleaf-fig): Overleaf screenshot by Dan Cherniy via Wikimedia Commons at [w.wiki/omo](https://w.wiki/omo)
+
+Figure \@ref(fig:cv-fig): CV by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)

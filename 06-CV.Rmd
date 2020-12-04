@@ -2,7 +2,7 @@
 
 You'll write many documents at University, but there is one document that is **really** important in a potentially life-changing way. Your curriculum vitae^[strictly speaking it should be vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
 
-```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are many other CV templates available, this one is by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'}
+```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. See Appendix for full image credit. '}
 knitr::include_graphics("images/jake-ryan.jpg")
 ```
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on several factors:
@@ -27,13 +27,13 @@ Any time you invest in creating a convincing CV will pay off in the long run. Ye
 Create a basic CV which tells your story, in particular:
 
 * your *education*, including high school and University
-* your *experience*, voluntary, paid, casual, technical and non-technical: it all counts and demonstrates your range of soft and hard skills
+* your *experience*, voluntary, paid, casual, technical and non-technical: *any* experience demonstrates your range of soft and hard skills
 * your *projects*, personal, social, educational and entrepreneurial
 
 You can do this using the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Have a good look around, there are over 600 templates to choose from.
 
-## Debugging your CV
-As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because most employers typically have to deal with lots of applicants. Here's some common bugs we have seen in students CVs:
+## Debugging your CV checklist
+As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because most employers typically have to deal with lots of applicants. Here's a check list of some common bugs we have seen in students CVs:
 
 1. Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?
 1. Are there any spelling mistakes, typos and grammatical errors? Don't just rely on a spellchecker, they can't detect everything
@@ -66,6 +66,9 @@ limitations of LaTeX
 limitations of pdf
 The Stoic Resilience of PDF Within a Digital Ecosystem
 https://www.overleaf.com/learn/latex/Articles/The_Stoic_Resilience_of_PDF_Within_a_Digital_Ecosystem
+
+ada lovelace integral
+https://www.claymath.org/publications/ada-lovelaces-mathematical-papers
 
 markdown, bookdown, pandoc
 
