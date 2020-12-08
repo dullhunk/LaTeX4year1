@@ -2,20 +2,22 @@
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
 
-```{r wikipedian-fig, echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits'}
+```{r wikipedian-fig, echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='(ref:captionwikipedian)'}
 knitr::include_graphics("images/wikipedian_protester.png")
 ```
+
+(ref:captionwikipedian) It has always been important to cite your sources and LaTeX gives you the tools to cite properly. _Wikipedian Protester_ cartoon by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) at [xkcd.com/285](https://xkcd.com/285/) published under a [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/)
 
 ## Cross-referencing
 
 LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
 
-```{r eval=FALSE}
+```tex
 \label{mymarker}
 ```
 
 at the point in the document you want to refer to, and then use the command:
-```{r eval=FALSE}
+```tex
 \ref{mymarker}
 ```
 
@@ -37,9 +39,12 @@ The Turing machines described in section \ref{sec:simplest} are named after Alan
 
 Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \@ref(fig:turing-fig), for example.
 
-```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit'}
+```{r turing-fig, echo = FALSE, fig.align = "center", out.width = "40%", fig.cap='(ref:captionturing)'}
 knitr::include_graphics("images/Alan_Turing_Aged_16.jpg")
 ```
+
+(ref:captionturing) [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons [w.wiki/oZx](https://w.wiki/oZx)
+
 Including figures and pictures in your document is straightforward. You do it like this:
 
 ```tex

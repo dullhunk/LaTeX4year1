@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Getting started with LaTeX},
-  pdfauthor={A laboratory manual written by Duncan Hull},
+  pdfauthor={A laboratory manual edited by Duncan Hull},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -119,8 +119,8 @@
 \bibliographystyle{apalike}
 
 \title{Getting started with LaTeX}
-\author{A laboratory manual written by Duncan Hull}
-\date{Last updated on 04 December, 2020}
+\author{A laboratory manual edited by Duncan Hull}
+\date{Last updated on 08 December, 2020}
 
 \begin{document}
 \maketitle
@@ -141,8 +141,10 @@ Hello and welcome to the LaTeX lab manual, part of \href{https://studentnet.cs.m
 
 }
 
-\caption{The LaTeX project logo, for image credits see appendix}\label{fig:latexproject-fig}
+\caption{The LaTeX project logo by \href{https://www.jonas.me/}{Jonas Jacek} CC BY 4.0 via Wikimedia Commons \href{https://w.wiki/oZs}{w.wiki/oZs}}\label{fig:latexproject-fig}
 \end{figure}
+
+
 
 Reading this LaTeX manual and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
 
@@ -184,8 +186,10 @@ LaTeX is a document preparation system for high-quality typesetting. \citep{late
 now working at Microsoft Research, its development has long been taken over by a world-wide LaTeX community. LaTeX is actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
 
 \begin{figure}
-\includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \caption{Turing award winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. See Appendix for image credits}\label{fig:knuthport-fig}
+\includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \caption{\href{https://en.wikipedia.org/wiki/Turing_Award}{Turing award} winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/oyM}{w.wiki/oyM}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/oyL}{w.wiki/oyL}}\label{fig:knuthport-fig}
 \end{figure}
+
+
 
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
@@ -374,8 +378,10 @@ LaTeX has simple but powerful tools to allow you to cross-reference, illustrate 
 
 }
 
-\caption{It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian protester by Randall Munro at XKCD, see appendix for full image credits}\label{fig:wikipedian-fig}
+\caption{It has always been important to cite your sources and LaTeX gives you the tools to cite properly. \emph{Wikipedian Protester} cartoon by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} at \href{https://xkcd.com/285/}{xkcd.com/285} published under a \href{https://creativecommons.org/licenses/by-nc/2.5/}{Creative Commons Attribution-NonCommercial 2.5 License}}\label{fig:wikipedian-fig}
 \end{figure}
+
+
 
 \hypertarget{cross-referencing}{%
 \section{Cross-referencing}\label{cross-referencing}}
@@ -384,7 +390,7 @@ LaTeX allows you to cross-reference almost anything in your document, including 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{\textbackslash{}label\{mymarker\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{mymarker}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -392,7 +398,7 @@ at the point in the document you want to refer to, and then use the command:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{\textbackslash{}ref\{mymarker\}}
+\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{mymarker}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
@@ -423,8 +429,10 @@ Documents without figures, images, pictures and graphs are pretty dull, so you'l
 
 }
 
-\caption{Alan Turing at the age of sixteen, public domain, via Wikimedia Commons, see appendix for full image credit}\label{fig:turing-fig}
+\caption{\href{https://en.wikipedia.org/wiki/Alan_Turing}{Alan Turing} at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons \href{https://w.wiki/oZx}{w.wiki/oZx}}\label{fig:turing-fig}
 \end{figure}
+
+
 
 Including figures and pictures in your document is straightforward. You do it like this:
 
@@ -681,10 +689,12 @@ If you are the sole author of a document, then compiling files on your local mac
 
 }
 
-\caption{A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons, see appendix for full image credit}\label{fig:overleaf-fig}
+\caption{A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at \href{https://w.wiki/omo}{w.wiki/omo}}\label{fig:overleaf-fig}
 \end{figure}
 
-Compared to LaTeX, overleaf is relatively new. The British company responsible (Write Latex Limited) was founded in 2013 by \href{https://www.linkedin.com/in/jdleesmiller/}{John Lees-Miller} and \href{https://www.linkedin.com/in/john-hammersley-6419a266/}{John Hammersley} to allow easier collaboration between authors. Overleaf has several features which you might find useful:
+
+
+Compared to LaTeX, overleaf is relatively new. Write Latex Limited, the company behind overleaf was founded fairly recently (in LaTeX terms) in 2013 by \href{https://www.linkedin.com/in/jdleesmiller/}{John Lees-Miller} and \href{https://www.linkedin.com/in/john-hammersley-6419a266/}{John Hammersley}. Overleaf has several features which you might find useful:
 
 \begin{itemize}
 \tightlist
@@ -730,8 +740,10 @@ You'll write many documents at University, but there is one document that is \te
 
 }
 
-\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. See Appendix for full image credit. }\label{fig:cv-fig}
+\caption{An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. This CV by Jake Gutierrez and published under an MIT license at \href{https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}{overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}}\label{fig:cv-fig}
 \end{figure}
+
+
 
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on several factors:
 
@@ -835,20 +847,10 @@ In the meantime, enjoy exploring and using LaTeX to create professional document
 \appendix}
 
 
-\hypertarget{pictures}{%
-\chapter{Image credits}\label{pictures}}
+\hypertarget{typography}{%
+\chapter{Typography}\label{typography}}
 
-Figure \ref{fig:latexproject-fig}: LaTeX project logo by \href{https://www.jonas.me/}{Jonas Jacek} CC BY 4.0 via Wikimedia Commons \href{https://w.wiki/oZs}{w.wiki/oZs}
-
-Figure \ref{fig:knuthport-fig}: Leslie Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/oyM}{w.wiki/oyM}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/oyL}{w.wiki/oyL}
-
-Figure \ref{fig:wikipedian-fig}: \emph{Wikipedian Protester} cartoon by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} at \href{https://xkcd.com/285/}{xkcd.com/285} published under a \href{https://creativecommons.org/licenses/by-nc/2.5/}{Creative Commons Attribution-NonCommercial 2.5 License}
-
-Figure \ref{fig:turing-fig}: Alan Turing at the age of sixteen, portrait by unknown author, public domain, via Wikimedia Commons \href{https://w.wiki/oZx}{w.wiki/oZx}
-
-Figure \ref{fig:overleaf-fig}: Overleaf screenshot by Dan Cherniy via Wikimedia Commons at \href{https://w.wiki/omo}{w.wiki/omo}
-
-Figure \ref{fig:cv-fig}: CV by Jake Gutierrez and published under an MIT license at \href{https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}{overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs}
+A mostly empty placeholder appendix which will cover some typographical details about \href{https://en.wikipedia.org/wiki/Kerning}{kerning} and \href{https://en.wikipedia.org/wiki/Orthographic_ligature}{ligatures} etc.
 
   \bibliography{book.bib}
 

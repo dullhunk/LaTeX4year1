@@ -1,0 +1,5 @@
+# (APPENDIX) Appendix {-}
+
+# Typography {#typography}
+
+A mostly empty placeholder appendix which will cover some typographical details about [kerning](https://en.wikipedia.org/wiki/Kerning) and [ligatures](https://en.wikipedia.org/wiki/Orthographic_ligature) etc.
