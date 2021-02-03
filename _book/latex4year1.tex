@@ -120,7 +120,7 @@
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual edited by Duncan Hull}
-\date{Last updated on 08 December, 2020}
+\date{Last updated on 09 December, 2020}
 
 \begin{document}
 \maketitle
@@ -344,9 +344,29 @@ Proper open quotation marks (`` - looks a bit like a mini 66 ) and close quotati
   Turing addressed the question ``Can machines think''\ldots{} ✅
 \end{itemize}
 
-In your \texttt{*.tex} file it looks like this:
+In your \texttt{*.tex} file the correct version looks like this
 
-\texttt{Turing\ addressed\ the\ question\ \textasciigrave{}\textasciigrave{}Can\ machines\ think?\textquotesingle{}\textquotesingle{}}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Turing addressed the question \textasciigrave{}\textasciigrave{}Can machines think\textquotesingle{}\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+not
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Turing addressed the question \textasciigrave{}\textasciigrave{}Can machines think\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+or
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Turing addressed the question \textquotesingle{}\textquotesingle{}Can machines think\textquotesingle{}\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
 
 The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see \href{https://fonts.google.com/}{fonts.google.com} for example.
 

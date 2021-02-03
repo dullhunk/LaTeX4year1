@@ -289,8 +289,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Turing addressed the question “Can machines think“… ❎</li>
 <li>Turing addressed the question “Can machines think”… ✅</li>
 </ul>
-<p>In your <code>*.tex</code> file it looks like this:</p>
-<p><code>Turing addressed the question ``Can machines think?''</code></p>
+<p>In your <code>*.tex</code> file the correct version looks like this</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb7-1"><a href="simples.html#cb7-1"></a>Turing addressed the question ``Can machines think&#39;&#39;</span></code></pre></div>
+<p>not</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb8-1"><a href="simples.html#cb8-1"></a>Turing addressed the question ``Can machines think``</span></code></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb9-1"><a href="simples.html#cb9-1"></a>Turing addressed the question &#39;&#39;Can machines think&#39;&#39;</span></code></pre></div>
 <p>The difference is subtle in most web browsers, but it’s really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see <a href="https://fonts.google.com/">fonts.google.com</a> for example.</p>
 </div>
 <div id="concsimple" class="section level2" number="2.6">

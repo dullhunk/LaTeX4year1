@@ -102,12 +102,25 @@ Here's a few points to note about the text above:
 
 Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotation marks in the text below:
 
+
 * Turing addressed the question “Can machines think“... ❎
 * Turing addressed the question “Can machines think”... ✅
 
-In your `*.tex` file it looks like this:
+In your `*.tex` file the correct version looks like this
 
-`Turing addressed the question ``Can machines think?''`
+```tex
+Turing addressed the question ``Can machines think''
+```
+not
+
+```tex
+Turing addressed the question ``Can machines think``
+```
+or
+```tex
+Turing addressed the question ''Can machines think''
+```
+
 
 The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example.
 
