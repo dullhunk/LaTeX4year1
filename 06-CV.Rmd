@@ -43,11 +43,11 @@ As you progress through University, continuously update your CV and solicit feed
 1. Does it look good, decent layout, easy to scan?
 1. Does it fit comfortably on one page (preferably) or two pages only? Not too cramped or gappy?
 1. Is it in reverse chronological order? Are the most important (usually recent) things first?
-1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See [git.io/verbsfirst](http://git.io/verbsfirst) for examples
+1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See [cdyf.me/actioning.html](https://www.cdyf.me/actioning.html) for examples
 1. Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 1. Have you quantified and provided evidence for the claims you make?
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
-1. Find out more in the *Debug your CV* [@debugcv] guide at [git.io/mycv](http://git.io/mycv)
+1. Find out more in the *debugging your future* [@debugyourfuture] guide at [cdyf.me/debugging.html](https://www.cdyf.me/debugging.html)
 
 
 ## Summary {#cvconc}

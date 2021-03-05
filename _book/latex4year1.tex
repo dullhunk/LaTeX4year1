@@ -5,12 +5,13 @@
 \documentclass[
 ]{book}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
+\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -82,6 +83,7 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -115,12 +117,15 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual edited by Duncan Hull}
-\date{Last updated on 09 December, 2020}
+\date{Last updated on 05 March, 2021}
 
 \begin{document}
 \maketitle
@@ -231,7 +236,7 @@ To turn this into a pdf we need to use a LaTeX compiler, we're going to use \tex
 \CommentTok{\# compile turing.tex}
 \NormalTok{pdflatex turing.tex}
 \CommentTok{\# open the pdf output}
-\NormalTok{xdg}\OperatorTok{{-}}\NormalTok{open turing.pdf}
+\NormalTok{xdg}\SpecialCharTok{{-}}\NormalTok{open turing.pdf}
 \end{Highlighting}
 \end{Shaded}
 
@@ -654,12 +659,12 @@ The source for this matrix looks like this:
 \begin{Shaded}
 \begin{Highlighting}[]
    \SpecialStringTok{\textbackslash{}[ T\_1 = }\SpecialCharTok{\textbackslash{}left}\SpecialStringTok{[}
-\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}begin}\SpecialStringTok{\{array\}\{cccc\}}
+\SpecialStringTok{    }\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{array}\NormalTok{\}}\SpecialStringTok{\{cccc\}}
 \SpecialStringTok{    }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& {-}}\SpecialCharTok{\textbackslash{}sin}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& 0 \& }\SpecialCharTok{\textbackslash{}delta}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
 \SpecialStringTok{    }\SpecialCharTok{\textbackslash{}sin}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{  \& }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}theta}\SpecialStringTok{ \& 0 \& }\SpecialCharTok{\textbackslash{}epsilon}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
 \SpecialStringTok{    0 \& 0 \& 1 \& }\SpecialCharTok{\textbackslash{}eta}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}\textbackslash{}}
 \SpecialStringTok{    }\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{ \& }\SpecialCharTok{\textbackslash{}beta}\SpecialStringTok{ \& }\SpecialCharTok{\textbackslash{}gamma}\SpecialStringTok{ \& 1}
-\SpecialStringTok{    }\SpecialCharTok{\textbackslash{}end}\SpecialStringTok{\{array\}}
+\SpecialStringTok{    }\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{array}\NormalTok{\}}
 \SpecialStringTok{    }\SpecialCharTok{\textbackslash{}right}\SpecialStringTok{] \textbackslash{}]}
 \end{Highlighting}
 \end{Shaded}
@@ -833,7 +838,7 @@ As you progress through University, continuously update your CV and solicit feed
 \item
   Is it in reverse chronological order? Are the most important (usually recent) things first?
 \item
-  Have you talked about what you have actually done using prominent verbs, rather than just what you know? See \href{http://git.io/verbsfirst}{git.io/verbsfirst} for examples
+  Have you talked about what you have actually done using prominent verbs, rather than just what you know? See \href{https://www.cdyf.me/actioning.html}{cdyf.me/actioning.html} for examples
 \item
   Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 \item
@@ -841,7 +846,7 @@ As you progress through University, continuously update your CV and solicit feed
 \item
   Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like \href{http://careerset.io/manchester}{careerset.io/manchester} and \href{https://resume.io/}{resume.io}, what feedback do the robots give you? How can you make your CV more robot proof?
 \item
-  Find out more in the \emph{Debug your CV} \citep{debugcv} guide at \href{http://git.io/mycv}{git.io/mycv}
+  Find out more in the \emph{debugging your future} \citep{debugyourfuture} guide at \href{https://www.cdyf.me/debugging.html}{cdyf.me/debugging.html}
 \end{enumerate}
 
 \hypertarget{cvconc}{%

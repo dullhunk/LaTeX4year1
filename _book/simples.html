@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Simple LaTeX documents | Getting started with LaTeX</title>
   <meta name="description" content="A resource for getting started with LaTeX" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21.4 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Simple LaTeX documents | Getting started with LaTeX" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="latex.html"/>
 <link rel="next" href="figref.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/header-attrs-2.6.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,7 +50,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
@@ -207,72 +206,72 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="shortest" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> A very short document</h2>
 <p>Open up your favourite editor<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, enter the following text, then save it as a file called <code>turing.tex</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="simples.html#cb1-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
-<span id="cb1-2"><a href="simples.html#cb1-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb1-3"><a href="simples.html#cb1-3"></a>Computational excursions</span>
-<span id="cb1-4"><a href="simples.html#cb1-4"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="simples.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
+<span id="cb1-2"><a href="simples.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb1-3"><a href="simples.html#cb1-3" aria-hidden="true" tabindex="-1"></a>Computational excursions</span>
+<span id="cb1-4"><a href="simples.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
 <p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> The <code>pdflatex</code> compiler is already installed on the Linux VM image for VirtualBox.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> For other operating systems you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="simples.html#cb2-1"></a><span class="co"># compile turing.tex</span></span>
-<span id="cb2-2"><a href="simples.html#cb2-2"></a>pdflatex turing.tex</span>
-<span id="cb2-3"><a href="simples.html#cb2-3"></a><span class="co"># open the pdf output</span></span>
-<span id="cb2-4"><a href="simples.html#cb2-4"></a>xdg<span class="op">-</span>open turing.pdf</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="simples.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compile turing.tex</span></span>
+<span id="cb2-2"><a href="simples.html#cb2-2" aria-hidden="true" tabindex="-1"></a>pdflatex turing.tex</span>
+<span id="cb2-3"><a href="simples.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># open the pdf output</span></span>
+<span id="cb2-4"><a href="simples.html#cb2-4" aria-hidden="true" tabindex="-1"></a>xdg<span class="sc">-</span>open turing.pdf</span></code></pre></div>
 <p>The first command outputs a pdf file from your <code>turing.tex</code> input using the <code>pdflatex</code> compiler. The second command opens the file you’ve created. If you list the directory contents, you’ll see that the compiler has also created an auxillary <code>*.aux</code> file and a <code>*.log</code> file which can be helpful when you’re debugging the compilation:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simples.html#cb3-1"></a><span class="co"># files created on compilation</span></span>
-<span id="cb3-2"><a href="simples.html#cb3-2"></a>turing.tex</span>
-<span id="cb3-3"><a href="simples.html#cb3-3"></a>turing.pdf</span>
-<span id="cb3-4"><a href="simples.html#cb3-4"></a>turing.aux</span>
-<span id="cb3-5"><a href="simples.html#cb3-5"></a>turing.log</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simples.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># files created on compilation</span></span>
+<span id="cb3-2"><a href="simples.html#cb3-2" aria-hidden="true" tabindex="-1"></a>turing.tex</span>
+<span id="cb3-3"><a href="simples.html#cb3-3" aria-hidden="true" tabindex="-1"></a>turing.pdf</span>
+<span id="cb3-4"><a href="simples.html#cb3-4" aria-hidden="true" tabindex="-1"></a>turing.aux</span>
+<span id="cb3-5"><a href="simples.html#cb3-5" aria-hidden="true" tabindex="-1"></a>turing.log</span></code></pre></div>
 </div>
 <div id="longer" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> A longer LaTeX document</h2>
 <p>Our <code>turing.tex</code> file is a very simple document, so let’s add some sections and fill them out a bit:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb4-1"><a href="simples.html#cb4-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
-<span id="cb4-2"><a href="simples.html#cb4-2"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb4-3"><a href="simples.html#cb4-3"></a></span>
-<span id="cb4-4"><a href="simples.html#cb4-4"></a></span>
-<span id="cb4-5"><a href="simples.html#cb4-5"></a><span class="kw">\section</span>{Algorithms: Cooking Up Programs}</span>
-<span id="cb4-6"><a href="simples.html#cb4-6"></a>A program specifies in the <span class="fu">\textbf</span>{exact syntax} of some programming language the computation one expects a computer to perform. The syntax is precise and unforgiving. The slightest error in the program as written may cause the computation to be in error or may halt altogether. The reason for this situation seems paradoxical on the surface: It is relatively easy to design a system that converts rigid syntax to computations; it is much harder to design a system that tolerates mistakes or accepts a broader range of program descriptions.</span>
-<span id="cb4-7"><a href="simples.html#cb4-7"></a></span>
-<span id="cb4-8"><a href="simples.html#cb4-8"></a><span class="kw">\section</span>{Finite automata: The Black Box}</span>
-<span id="cb4-9"><a href="simples.html#cb4-9"></a>It occasionally happens in industrial, military or educational settings that one is presented with a piece of electronic hardware whose exact function is uncertain or unknown. One way of discovering how the device works is to take it apart, piece by piece, and deduce its function by analysing the components and their interconnections. This is not always possible, however, nor is it always necessary. Given that the mystery machine has both input and output facilities, it may be possible to discover what it does without ever taking it apart. Since its appearance gives no clue about its function, we call it a <span class="fu">\textit</span>{black box}.</span>
-<span id="cb4-10"><a href="simples.html#cb4-10"></a></span>
-<span id="cb4-11"><a href="simples.html#cb4-11"></a><span class="kw">\section</span>{Systems of Logic: Boolean Bases}</span>
-<span id="cb4-12"><a href="simples.html#cb4-12"></a>In an age of computers and automation, almost every electronic device one can name incorporates at least one boolean function. For example, many current models of automobile will emit a high-pitched whine, buzz or other disturbing noise until their drivers fasten their seat belts. Such a device realises a boolean function of two variables.</span>
-<span id="cb4-13"><a href="simples.html#cb4-13"></a></span>
-<span id="cb4-14"><a href="simples.html#cb4-14"></a><span class="kw">\section</span>{Simulation: The Monte Carlo method}</span>
-<span id="cb4-15"><a href="simples.html#cb4-15"></a>In the quest to understand the many systems that comprise the modern world we turn increasingly to computer simulation. Whether the system is natural or artificial, frequently one or more of its components have such complex behaviour that the only feasible approach to approximating such behaviour is to assume that it is random.</span>
-<span id="cb4-16"><a href="simples.html#cb4-16"></a></span>
-<span id="cb4-17"><a href="simples.html#cb4-17"></a><span class="kw">\section</span>{Gödel&#39;s Theorem: Limits on Logic}</span>
-<span id="cb4-18"><a href="simples.html#cb4-18"></a>In the early 1930&#39;s, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete - that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.</span>
-<span id="cb4-19"><a href="simples.html#cb4-19"></a></span>
-<span id="cb4-20"><a href="simples.html#cb4-20"></a><span class="kw">\section</span>{Can machines think?}</span>
-<span id="cb4-21"><a href="simples.html#cb4-21"></a>Turing addressed the question ``Can machines think?&#39;&#39; in his 1950 paper <span class="fu">\textit</span>{Computing machinery and intelligence}.</span>
-<span id="cb4-22"><a href="simples.html#cb4-22"></a></span>
-<span id="cb4-23"><a href="simples.html#cb4-23"></a><span class="kw">\section</span>{But what is LaTeX good for?}</span>
-<span id="cb4-24"><a href="simples.html#cb4-24"></a>We&#39;re using this <span class="fu">\LaTeX\ </span>document to demonstrate some of its key strengths that you will find useful during and after University:</span>
-<span id="cb4-25"><a href="simples.html#cb4-25"></a></span>
-<span id="cb4-26"><a href="simples.html#cb4-26"></a><span class="kw">\begin</span>{<span class="ex">enumerate</span>}</span>
-<span id="cb4-27"><a href="simples.html#cb4-27"></a><span class="fu">\item</span> LaTeX can quickly create pdf files</span>
-<span id="cb4-28"><a href="simples.html#cb4-28"></a><span class="fu">\item</span> LaTeX uses professional typesetting</span>
-<span id="cb4-29"><a href="simples.html#cb4-29"></a><span class="fu">\item</span> LaTeX documents can be more legible, clear, and visually appealing to the reader than those created with word processing software</span>
-<span id="cb4-30"><a href="simples.html#cb4-30"></a><span class="kw">\end</span>{<span class="ex">enumerate</span>}</span>
-<span id="cb4-31"><a href="simples.html#cb4-31"></a></span>
-<span id="cb4-32"><a href="simples.html#cb4-32"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
-<p>The text here is excerpted from <em>The New Turing Omnibus: 66 excursions in Computer Science</em> <span class="citation">(Dewdney <a href="#ref-turingomnibus" role="doc-biblioref">2001</a>)</span>. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> calls the omnibus an “incredibly fun little book”. <span class="citation">(Atwood <a href="#ref-codinghorror" role="doc-biblioref">2007</a>)</span></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb4-1"><a href="simples.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>[a4paper]{<span class="ex">article</span>}</span>
+<span id="cb4-2"><a href="simples.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb4-3"><a href="simples.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="simples.html#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="simples.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Algorithms: Cooking Up Programs}</span>
+<span id="cb4-6"><a href="simples.html#cb4-6" aria-hidden="true" tabindex="-1"></a>A program specifies in the <span class="fu">\textbf</span>{exact syntax} of some programming language the computation one expects a computer to perform. The syntax is precise and unforgiving. The slightest error in the program as written may cause the computation to be in error or may halt altogether. The reason for this situation seems paradoxical on the surface: It is relatively easy to design a system that converts rigid syntax to computations; it is much harder to design a system that tolerates mistakes or accepts a broader range of program descriptions.</span>
+<span id="cb4-7"><a href="simples.html#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="simples.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Finite automata: The Black Box}</span>
+<span id="cb4-9"><a href="simples.html#cb4-9" aria-hidden="true" tabindex="-1"></a>It occasionally happens in industrial, military or educational settings that one is presented with a piece of electronic hardware whose exact function is uncertain or unknown. One way of discovering how the device works is to take it apart, piece by piece, and deduce its function by analysing the components and their interconnections. This is not always possible, however, nor is it always necessary. Given that the mystery machine has both input and output facilities, it may be possible to discover what it does without ever taking it apart. Since its appearance gives no clue about its function, we call it a <span class="fu">\textit</span>{black box}.</span>
+<span id="cb4-10"><a href="simples.html#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="simples.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Systems of Logic: Boolean Bases}</span>
+<span id="cb4-12"><a href="simples.html#cb4-12" aria-hidden="true" tabindex="-1"></a>In an age of computers and automation, almost every electronic device one can name incorporates at least one boolean function. For example, many current models of automobile will emit a high-pitched whine, buzz or other disturbing noise until their drivers fasten their seat belts. Such a device realises a boolean function of two variables.</span>
+<span id="cb4-13"><a href="simples.html#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="simples.html#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Simulation: The Monte Carlo method}</span>
+<span id="cb4-15"><a href="simples.html#cb4-15" aria-hidden="true" tabindex="-1"></a>In the quest to understand the many systems that comprise the modern world we turn increasingly to computer simulation. Whether the system is natural or artificial, frequently one or more of its components have such complex behaviour that the only feasible approach to approximating such behaviour is to assume that it is random.</span>
+<span id="cb4-16"><a href="simples.html#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="simples.html#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Gödel&#39;s Theorem: Limits on Logic}</span>
+<span id="cb4-18"><a href="simples.html#cb4-18" aria-hidden="true" tabindex="-1"></a>In the early 1930&#39;s, Kurt Gödel, a German mathematician, attempted to show that predicate calculus was complete - that one can obtain mechanically  (in principle, at least) a proof of any true formula expressed in that calculus. His failure to do this was crowned by the discovery that the task was impossible.</span>
+<span id="cb4-19"><a href="simples.html#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="simples.html#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{Can machines think?}</span>
+<span id="cb4-21"><a href="simples.html#cb4-21" aria-hidden="true" tabindex="-1"></a>Turing addressed the question ``Can machines think?&#39;&#39; in his 1950 paper <span class="fu">\textit</span>{Computing machinery and intelligence}.</span>
+<span id="cb4-22"><a href="simples.html#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="simples.html#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="kw">\section</span>{But what is LaTeX good for?}</span>
+<span id="cb4-24"><a href="simples.html#cb4-24" aria-hidden="true" tabindex="-1"></a>We&#39;re using this <span class="fu">\LaTeX\ </span>document to demonstrate some of its key strengths that you will find useful during and after University:</span>
+<span id="cb4-25"><a href="simples.html#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="simples.html#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">enumerate</span>}</span>
+<span id="cb4-27"><a href="simples.html#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="fu">\item</span> LaTeX can quickly create pdf files</span>
+<span id="cb4-28"><a href="simples.html#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="fu">\item</span> LaTeX uses professional typesetting</span>
+<span id="cb4-29"><a href="simples.html#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="fu">\item</span> LaTeX documents can be more legible, clear, and visually appealing to the reader than those created with word processing software</span>
+<span id="cb4-30"><a href="simples.html#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">enumerate</span>}</span>
+<span id="cb4-31"><a href="simples.html#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="simples.html#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
+<p>The text here is excerpted from <em>The New Turing Omnibus: 66 excursions in Computer Science</em> <span class="citation">(<a href="#ref-turingomnibus" role="doc-biblioref">Dewdney 2001</a>)</span>. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> calls the omnibus an “incredibly fun little book.” <span class="citation">(<a href="#ref-codinghorror" role="doc-biblioref">Atwood 2007</a>)</span></p>
 </div>
 <div id="ex1" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Exercise one: documentum</h2>
 <p>In your file <code>turing.tex</code> either cut-and-paste this longer text into your document or make your own sections and text. You could use text from <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum</a> at <a href="https://www.lipsum.com">lipsum.com</a> to fill out the page.</p>
 <p>Now, at the top of your document after the <code>\begin{document}</code> line and before first <code>\section</code>, add the following commands, each on their own line:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb5-1"><a href="simples.html#cb5-1"></a><span class="fu">\title</span>{The New Turing Omnibus}</span>
-<span id="cb5-2"><a href="simples.html#cb5-2"></a><span class="fu">\author</span>{A. K. Dewdney}</span>
-<span id="cb5-3"><a href="simples.html#cb5-3"></a><span class="fu">\maketitle</span></span>
-<span id="cb5-4"><a href="simples.html#cb5-4"></a><span class="fu">\tableofcontents</span></span>
-<span id="cb5-5"><a href="simples.html#cb5-5"></a><span class="fu">\newpage</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb5-1"><a href="simples.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\title</span>{The New Turing Omnibus}</span>
+<span id="cb5-2"><a href="simples.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\author</span>{A. K. Dewdney}</span>
+<span id="cb5-3"><a href="simples.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\maketitle</span></span>
+<span id="cb5-4"><a href="simples.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\tableofcontents</span></span>
+<span id="cb5-5"><a href="simples.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\newpage</span></span></code></pre></div>
 <p>The <code>title</code>, <code>author</code>, <code>tableofcontents</code> and <code>newpage</code> commands are self-explanatory. The <code>maketitle</code> automatically inserts today’s date. Your table of contents won’t be created until you run pdflatex <strong>twice</strong> because on the first run, LaTeX gathers and stores information about what to put in the table of contents, and only creates it on the second run.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="simples.html#cb6-1"></a><span class="co"># remember to run pdflatex twice for the table of contents</span></span>
-<span id="cb6-2"><a href="simples.html#cb6-2"></a>pdlfatex turing.tex</span>
-<span id="cb6-3"><a href="simples.html#cb6-3"></a>pdflatex turing.tex</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="simples.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remember to run pdflatex twice for the table of contents</span></span>
+<span id="cb6-2"><a href="simples.html#cb6-2" aria-hidden="true" tabindex="-1"></a>pdlfatex turing.tex</span>
+<span id="cb6-3"><a href="simples.html#cb6-3" aria-hidden="true" tabindex="-1"></a>pdflatex turing.tex</span></code></pre></div>
 </div>
 <div id="bold-italic-and-lists" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Bold, italic and lists</h2>
@@ -290,11 +289,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Turing addressed the question “Can machines think”… ✅</li>
 </ul>
 <p>In your <code>*.tex</code> file the correct version looks like this</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb7-1"><a href="simples.html#cb7-1"></a>Turing addressed the question ``Can machines think&#39;&#39;</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb7-1"><a href="simples.html#cb7-1" aria-hidden="true" tabindex="-1"></a>Turing addressed the question ``Can machines think&#39;&#39;</span></code></pre></div>
 <p>not</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb8-1"><a href="simples.html#cb8-1"></a>Turing addressed the question ``Can machines think``</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb8-1"><a href="simples.html#cb8-1" aria-hidden="true" tabindex="-1"></a>Turing addressed the question ``Can machines think``</span></code></pre></div>
 <p>or</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb9-1"><a href="simples.html#cb9-1"></a>Turing addressed the question &#39;&#39;Can machines think&#39;&#39;</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb9-1"><a href="simples.html#cb9-1" aria-hidden="true" tabindex="-1"></a>Turing addressed the question &#39;&#39;Can machines think&#39;&#39;</span></code></pre></div>
 <p>The difference is subtle in most web browsers, but it’s really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see <a href="https://fonts.google.com/">fonts.google.com</a> for example.</p>
 </div>
 <div id="concsimple" class="section level2" number="2.6">
@@ -310,12 +309,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-codinghorror">
-<p>Atwood, Jeff. 2007. “Practicing the Fundamentals: The New Turing Omnibus.” codinghorror.com. <a href="https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/">https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-codinghorror" class="csl-entry">
+Atwood, Jeff. 2007. <span>“<span>Practicing</span> the <span>Fundamentals</span>: <span>The</span> <span>New</span> <span>Turing</span> <span>Omnibus</span>.”</span> codinghorror.com. <a href="https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/">https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/</a>.
 </div>
-<div id="ref-turingomnibus">
-<p>Dewdney, A. K. 2001. <em>The New Turing Omnibus: 66 Excursions in Computer Science</em>. New York: Henry Holt. <a href="https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665">https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665</a>.</p>
+<div id="ref-turingomnibus" class="csl-entry">
+Dewdney, A. K. 2001. <em>The <span>New</span> <span>Turing</span> <span>Omnibus</span>: 66 Excursions in <span>Computer</span> <span>Science</span></em>. New York: Henry Holt. <a href="https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665">https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665</a>.
 </div>
 </div>
 <div class="footnotes">
