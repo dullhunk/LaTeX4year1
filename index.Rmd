@@ -20,7 +20,7 @@ Hello and welcome to the LaTeX lab manual, part of [COMP101](https://studentnet.
 ```{r latexproject-fig, echo = FALSE, fig.align = "center", out.width = "90%", fig.cap='(ref:captionlatex)'}
 knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")
 ```
-(ref:captionlatex) The LaTeX project logo by [Jonas Jacek](https://www.jonas.me/) CC BY 4.0 via Wikimedia Commons [w.wiki/oZs](https://w.wiki/oZs)
+(ref:captionlatex) The LaTeX project logo by [Jonas Jacek](https://www.jonas.me/) CC BY 4.0 via Wikimedia Commons [w.wiki/3Daw](https://w.wiki/3Daw)
 
 Reading this LaTeX manual and doing the five exercises it contains will enable you to develop your written communication skills so that you can:
 
