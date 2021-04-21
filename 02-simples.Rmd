@@ -11,7 +11,7 @@ Open up your favourite editor^[it is worth configuring your editor so that it is
 Computational excursions
 \end{document}
 ```
-To turn this into a pdf we need to use a LaTeX compiler, we're going to use `pdflatex`, though several other compilers are available.^[https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler] The `pdflatex` compiler is already installed on the Linux VM image for VirtualBox.^[https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM] For other operating systems you'll need to explore the options at [latex-project.org/get](https://www.latex-project.org/get/).
+To turn this into a pdf we need to use a LaTeX compiler, we're going to use `pdflatex`, though several other compilers are available.^[https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler] On Linux the `pdflatex` compiler is already installed and can be used from the command line.^[for example the Linux VM image for VirtualBox https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM] If you're not using Linux, you'll need to explore the options at [latex-project.org/get](https://www.latex-project.org/get/).
 
 ```{r eval=FALSE}
 # compile turing.tex
