@@ -6,7 +6,7 @@ You'll write many documents at University, but there is one document that is **r
 knitr::include_graphics("images/jake-ryan.png")
 ```
 
-(ref:captioncv) A fictitious example CV using an overleaf template. Would you invite Neil to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. This is just a screenshot, the pdf can be found at [cdyf.me/Neil_Pointer.pdf](https://www.cdyf.me/Neil_Pointer.pdf). There are [over 600 CV templates available on overleaf](https://www.overleaf.com/gallery/tagged/cv) for you to choose from.
+(ref:captioncv) A fictitious example CV using an overleaf template. Would you invite Neil to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. This is just a screenshot, the pdf can be found at [cdyf.me/Neil_Pointer.pdf](https://www.cdyf.me/Neil_Pointer.pdf). There are over 600 CV templates available to choose from at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv) for you to choose from.
 
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on several factors:
 
@@ -18,7 +18,7 @@ Creating a professional looking CV is particularly important, because it determi
 By opportunities we mean both immediate ones within the next 12 months as well as those further in the future. These opportunities might include:
 
 * Spring insights during easter next year^[see the essential guide to student insights at https://www.ratemyplacement.co.uk/insights] some of which have application deadlines before Christmas
-* Summer internships next year or during subsequent summers^[see where can I look for jobs? https://waggle.cs.manchester.ac.uk/waggle/search]
+* Summer internships next year or during subsequent summers. See where can I look for jobs? [@findingyourfuture]
 * Year long placements in your penultimate year, if you're considering doing [industrial experience](http://studentnet.cs.manchester.ac.uk/employment/placement/)
 * Graduate jobs or graduate schemes after graduation
 * Postgraduate study or research via masters or PhD etc
