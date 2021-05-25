@@ -18,6 +18,7 @@ To turn this into a pdf we need to use a LaTeX compiler, we're going to use `pdf
 pdflatex turing.tex
 # open the pdf output
 xdg-open turing.pdf
+# or just open turing.pdf on a mac
 ```
 
 The first command outputs a pdf file from your `turing.tex` input using the `pdflatex` compiler. The second command opens the file you've created. If you list the directory contents, you'll see that the compiler has also created an auxillary `*.aux` file and a `*.log` file which can be helpful when you're debugging the compilation:

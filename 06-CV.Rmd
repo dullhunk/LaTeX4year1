@@ -3,10 +3,10 @@
 You'll write many documents at University, but there is one document that is **really** important in a potentially life-changing way. Your curriculum vitae^[strictly speaking it should be vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
 
 ```{r cv-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap='(ref:captioncv)'}
-knitr::include_graphics("images/jake-ryan.jpg")
+knitr::include_graphics("images/jake-ryan.png")
 ```
 
-(ref:captioncv) An example CV using an overleaf template. Would you invite Jake to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. This CV by Jake Gutierrez and published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
+(ref:captioncv) A fictitious example CV using an overleaf template. Would you invite Neil to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. There are over 600 CV templates available on overleaf. This CV is based on a template by Jake Gutierrez published under an MIT license at [overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
 
 Creating a professional looking CV is particularly important, because it determines if you are invited to interview for opportunities you are applying for. The decision to interview is typically based on several factors:
 
