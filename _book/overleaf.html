@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Collaborative editing with overleaf | Getting started with LaTeX</title>
   <meta name="description" content="A resource for getting started with LaTeX" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Collaborative editing with overleaf | Getting started with LaTeX" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="maths.html"/>
 <link rel="next" href="cv.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +50,15 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXNVBPF');</script>
+<!-- End Google Tag Manager -->
 
 
 <style type="text/css">
@@ -228,7 +235,7 @@ div.csl-indent {
 <div id="overleaf" class="section level1" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Collaborative editing with overleaf</h1>
 <p>If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you’ll need to share your TeX on a server. Overleaf (<a href="https://www.overleaf.com/">overleaf.com</a>) allows you to do this, and is shown in the screenshot in Figure <a href="overleaf.html#fig:overleaf-fig">5.1</a>.</p>
-<div class="figure" style="text-align: center"><span id="fig:overleaf-fig"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:overleaf-fig"></span>
 <img src="images/Overleaf_v2_editing_page.jpg" alt="A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at w.wiki/omo" width="100%" />
 <p class="caption">
 Figure 5.1: A screenshot of overleaf showing the source TeX on the left hand side and the corresponding pdf on the right hand side. Screenshot by Dan Cherniy via Wikimedia Commons at <a href="https://w.wiki/omo">w.wiki/omo</a>
@@ -284,7 +291,6 @@ Tex, Layla. 2020. <span>“<span>LaTeX</span> – a Document Preparation System.
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -324,6 +330,10 @@ gitbook.start({
 "text": null
 },
 "download": ["latex4year1.pdf", "latex4year1.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

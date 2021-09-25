@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Getting started with LaTeX</title>
   <meta name="description" content="A resource for getting started with LaTeX" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Getting started with LaTeX" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 
 <link rel="next" href="latex.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +50,15 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXNVBPF');</script>
+<!-- End Google Tag Manager -->
 
 
 <style type="text/css">
@@ -228,12 +235,12 @@ div.csl-indent {
 <div id="header">
 <h1 class="title">Getting started with LaTeX</h1>
 <p class="author"><em>A laboratory manual edited by Duncan Hull</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>Last updated on 07 June, 2021</em></p>
+<p class="date"><em>Last updated on 25 September, 2021</em></p>
 </div>
 <div id="welcome" class="section level1 unnumbered">
 <h1>Welcome</h1>
 <p>Hello and welcome to the LaTeX lab manual, part of <a href="https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus/">COMP101</a> at the University of Manchester.</p>
-<div class="figure" style="text-align: center"><span id="fig:latexproject-fig"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:latexproject-fig"></span>
 <img src="images/1000px-LaTeX_project_logo_bird.svg.png" alt="The LaTeX project logo by Jonas Jacek CC BY 4.0 via Wikimedia Commons w.wiki/3Daw" width="90%" />
 <p class="caption">
 Figure 0.1: The LaTeX project logo by <a href="https://www.jonas.me/">Jonas Jacek</a> CC BY 4.0 via Wikimedia Commons <a href="https://w.wiki/3Daw">w.wiki/3Daw</a>
@@ -270,7 +277,6 @@ Figure 0.1: The LaTeX project logo by <a href="https://www.jonas.me/">Jonas Jace
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -310,6 +316,10 @@ gitbook.start({
 "text": null
 },
 "download": ["latex4year1.pdf", "latex4year1.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
