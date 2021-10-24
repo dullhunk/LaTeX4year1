@@ -47,7 +47,7 @@ As you progress through University, continuously update your CV and solicit feed
 1. Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 1. Have you quantified and provided evidence for the claims you make?
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
-1. Find out more in the *debugging your future* [@debugyourfuture] guide at [cdyf.me/debugging.html](https://www.cdyf.me/debugging.html)
+1. Find out more in the *debugging your future* checklist at [cdyf.me/debugging.html#checklist](https://www.cdyf.me/debugging.html#checklist) [@debugyourfuture]
 
 
 ## Summary {#cvconc}
