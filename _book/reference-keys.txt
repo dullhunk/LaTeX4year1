@@ -29,6 +29,9 @@ overleaf
 ex4
 overleafconc
 cv
+knocking
+startearly
+afterfirst
 ex5
 debugging-your-cv-checklist
 cvconc
