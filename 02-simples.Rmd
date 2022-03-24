@@ -101,7 +101,12 @@ Here's a few points to note about the text above:
 
 ## Quotation marks
 
-Proper open quotation marks (“ - looks a bit like a mini 66 ) and close quotation marks ( ” - mini 99) are different characters and not the same as straight quotes. Look carefully at the quotation marks in the text below:
+Typographic or “curly” quotation marks are different characters and *not* the same as straight quotes. They look nicer, but you have to remember that unlike straight quotes, open and close quotation marks are different characters:
+
+* open quote **“** which looks a bit like a miniature `66`
+* close quote **”** which looks a bit like a miniature `99`
+
+Look carefully at the quotation marks in the text below:
 
 
 * Turing addressed the question “Can machines think“... ❎

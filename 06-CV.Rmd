@@ -21,20 +21,22 @@ By *opportunities* we mean both immediate ones within the next 12 months as well
 
 ### First year opportunities {#startearly}
 
-During your first year of study
+During your first year of study, *opportunities* include:
 
 * Spring insights during easter next year
     + see [ratemyplacement.co.uk/insights](https://www.ratemyplacement.co.uk/insights) some of which have application deadlines before Christmas
     * see opportunities for first year students at [careers.manchester.ac.uk/findjobs/internships/1styearopps](https://www.careers.manchester.ac.uk/findjobs/internships/1styearopps/)
-* Summer internships next year or during subsequent summers.
+* Summer internships suitable for first years:
     + see internships (open to first years) at [gradcracker.com/search/computing-technology/work-placements-internships](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer%20-%20open%20to%201st%20years)
     + see the chapter on *[Finding your Future](https://www.cdyf.me/finding.html)* in *Coding your Future* [@findingyourfuture]
 
 ### Subsequent opportunities {#afterfirst}
 
-After your first year opportunities include:
+After your first year *opportunities* include:
 
 * Year long placements in your penultimate year, if you're considering doing [industrial experience](http://studentnet.cs.manchester.ac.uk/employment/placement/)
+* Summer internships (aimed at penultimate year students)
+        + there are usually around ten summer internships in the Department of Computer Science for example, these *normally* don't get advertised around April/May time
 * Graduate jobs or graduate schemes after graduation
 * Postgraduate study or research via masters or PhD etc
 
@@ -58,7 +60,7 @@ As you progress through University, continuously update your CV and solicit feed
 1. Does it look good, decent layout, easy to scan?
 1. Does it fit comfortably on one page (preferably) or two pages only? Not too cramped or gappy?
 1. Is it in reverse chronological order? Are the most important (usually recent) things first?
-1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See [cdyf.me/actioning.html](https://www.cdyf.me/actioning.html) for examples
+1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See  the *[Actioning your Future](https://www.cdyf.me/actioning.html)* chapter of *Coding your Future* for more examples
 1. Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 1. Have you quantified and provided evidence for the claims you make?
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
