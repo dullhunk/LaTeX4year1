@@ -6,7 +6,7 @@ now working at Microsoft Research, its development has long been taken over by a
 ```{r knuthport-fig, echo = FALSE, fig.show = "hold", out.width = "47%", fig.cap = "(ref:captionknuth)"}
 knitr::include_graphics(rep(c("images/Leslie_Lamport.jpg","images/KnuthAtOpenContentAlliance.jpg"),1))
 ```
-(ref:captionknuth) [Turing award](https://en.wikipedia.org/wiki/Turing_Award) winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons [w.wiki/3Daz](https://w.wiki/3Daz), Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons [w.wiki/3Day](https://w.wiki/3Day)
+(ref:captionknuth) [Turing award](https://en.wikipedia.org/wiki/Turing_Award) winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons [w.wiki/3Daz](https://w.wiki/3Daz), Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons [w.wiki/3Day](https://w.wiki/3Day). Is Donald Knuth the [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)? [@yoda]
 
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
