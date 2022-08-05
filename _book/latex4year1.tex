@@ -4,14 +4,13 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -34,14 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Getting started with LaTeX},
-  pdfauthor={A laboratory manual edited by Duncan Hull},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -82,7 +73,7 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -117,15 +108,23 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Getting started with LaTeX},
+  pdfauthor={A laboratory manual edited by Duncan Hull},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual edited by Duncan Hull}
-\date{Last updated on 25 April, 2022}
+\date{Last updated on 05 August, 2022}
 
 \begin{document}
 \maketitle
@@ -188,7 +187,7 @@ If you want to make suggestions for improvements that \textbf{don't} get attribu
 \chapter{What is LaTeX?}\label{latex}}
 
 LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is part of a mature and established toolchain that has been around since 1980's. \citep{knuth} Originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
-now working at Microsoft Research, its development has long been taken over by a world-wide LaTeX community. LaTeX is actually built on top of another system called TeX, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
+now working at Microsoft Research, its development has long been taken over by the open-source LaTeX community around the world. \href{https://en.wikipedia.org/wiki/LaTeX}{LaTeX} is actually built on top of another system called \href{https://en.wikipedia.org/wiki/TeX}{TeX}, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
 
 \begin{figure}
 \includegraphics[width=0.47\linewidth]{images/Leslie_Lamport} \includegraphics[width=0.47\linewidth]{images/KnuthAtOpenContentAlliance} \caption{\href{https://en.wikipedia.org/wiki/Turing_Award}{Turing award} winners Leslie Lamport and Donald Knuth created TeX and LaTeX during the 1980's. Lamport portrait by Leslie Lamport, GFDL via Wikimedia Commons \href{https://w.wiki/3Daz}{w.wiki/3Daz}, Knuth portrait by Jacob Appelbaum CC BY-SA via Wikimedia Commons \href{https://w.wiki/3Day}{w.wiki/3Day}. Is Donald Knuth the \href{https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html}{The Yoda of Silicon Valley}? \citep{yoda}}\label{fig:knuthport-fig}
@@ -201,7 +200,7 @@ LaTeX is typically used for technical documents but it can be used for almost an
 \hypertarget{not-a-word-processor}{%
 \section{NOT a word processor}\label{not-a-word-processor}}
 
-LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the content of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). If you're reading this in a web browser, view the source of this page \texttt{latex.html} as an example.
+LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the \emph{content} of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your cascading style-sheet: \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). This is a classic abstraction technique in computing by \href{https://en.wikipedia.org/wiki/Separation_of_concerns}{separation of concerns} (SoC). If you're reading this page in a web browser, view the source of this page \texttt{latex.html} as an example, the html only describes the content and says very little about its presentation, that is described separately in the cascading style sheet.
 
 LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
 
@@ -218,7 +217,7 @@ Let's start by creating a simple LaTeX document.
 \hypertarget{shortest}{%
 \section{A very short document}\label{shortest}}
 
-Open up your favourite editor\footnote{it is worth configuring your editor so that it is LaTeX aware, and can do \href{https://en.wikipedia.org/wiki/Syntax_highlighting}{syntax highlighting}, suggest auto-completions and spell-check for you. Tools like \href{https://atom.io/}{atom.io} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
+Open up your favourite text editor\footnote{it is worth configuring your editor so that it is LaTeX aware, and can do \href{https://en.wikipedia.org/wiki/Syntax_highlighting}{syntax highlighting}, suggest auto-completions and spell-check for you. Tools like \href{https://atom.io/}{atom.io} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -561,7 +560,7 @@ For everything else\footnote{There are many other types of BibTeX entries beside
 \NormalTok{  author       = \{Anon\},}
 \NormalTok{  title        = \{Alan Turing Google Scholar page\},}
 \NormalTok{  url          = \{https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ\},}
-\NormalTok{  year         = \{2020\},}
+\NormalTok{  year         = \{2022\},}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -753,7 +752,7 @@ Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Create and save a simple document using the overleaf tutorial \emph{creating a document in overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}~\\
+  Create and save a simple document using the overleaf tutorial \emph{creating a document in overleaf}\footnote{\url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}}\strut \\
 \item
   Note that overleaf allows you to store your TeX source in a git repository so you can use version control if you want to
 \item
