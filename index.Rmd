@@ -38,4 +38,4 @@ The source of this manual is available on github so if you have any comments or 
 
 Thanks to contributions from Hamza Latif ([\@ultrasockhead](https://github.com/ultrasockhead)).
 
-If you want to make suggestions for improvements that **don't** get attributed to your name, [email me](http://www.cs.man.ac.uk/~hulld/contact.html) directly.
+If you want to make suggestions for improvements that **don't** get attributed to your name, [email me](http://www.cs.man.ac.uk/~hulld/contact) directly.
