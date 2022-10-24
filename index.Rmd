@@ -36,6 +36,6 @@ This manual is a substantially revised version of earlier LaTeX lab manuals crea
 ## Improve this manual {-}
 The source of this manual is available on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
 
-Thanks to contributions from Hamza Latif ([\@ultrasockhead](https://github.com/ultrasockhead)).
+Thanks to contributions from Hamza Latif ([\@ultrasockhead](https://github.com/ultrasockhead)) and Saurav Maheshkar ([\@SauravMaheshkar](https://github.com/SauravMaheshkar))
 
 If you want to make suggestions for improvements that **don't** get attributed to your name, [email me](https://personalpages.manchester.ac.uk/staff/duncan.hull/contact) directly.

@@ -1,104 +1,0 @@
-  |                                                                              |                                                                      |   0%  |                                                                              |...                                                                   |   5%
-   inline R code fragments
-
-  |                                                                              |.......                                                               |  10%
-label: latexproject-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.align: chr "center"
- $ out.width: chr "90%"
- $ fig.cap  : chr "(ref:captionlatex)"
-
-  |                                                                              |..........                                                            |  14%
-  ordinary text without R code
-
-  |                                                                              |.............                                                         |  19%
-label: knuthport-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.show : chr "hold"
- $ out.width: chr "47%"
- $ fig.cap  : chr "(ref:captionknuth)"
-
-  |                                                                              |.................                                                     |  24%
-  ordinary text without R code
-
-  |                                                                              |....................                                                  |  29%
-label: unnamed-chunk-1 (with options) 
-List of 1
- $ eval: logi FALSE
-
-  |                                                                              |.......................                                               |  33%
-  ordinary text without R code
-
-  |                                                                              |...........................                                           |  38%
-label: unnamed-chunk-2 (with options) 
-List of 1
- $ eval: logi FALSE
-
-  |                                                                              |..............................                                        |  43%
-  ordinary text without R code
-
-  |                                                                              |.................................                                     |  48%
-label: unnamed-chunk-3 (with options) 
-List of 1
- $ eval: logi FALSE
-
-  |                                                                              |.....................................                                 |  52%
-  ordinary text without R code
-
-  |                                                                              |........................................                              |  57%
-label: wikipedian-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.align: chr "center"
- $ out.width: chr "70%"
- $ fig.cap  : chr "(ref:captionwikipedian)"
-
-  |                                                                              |...........................................                           |  62%
-  ordinary text without R code
-
-  |                                                                              |...............................................                       |  67%
-label: turing-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.align: chr "center"
- $ out.width: chr "40%"
- $ fig.cap  : chr "(ref:captionturing)"
-
-  |                                                                              |..................................................                    |  71%
-  ordinary text without R code
-
-  |                                                                              |.....................................................                 |  76%
-label: unnamed-chunk-4 (with options) 
-List of 2
- $ type  : chr "rmdimportant"
- $ engine: chr "block2"
-
-  |                                                                              |.........................................................             |  81%
-  ordinary text without R code
-
-  |                                                                              |............................................................          |  86%
-label: overleaf-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.align: chr "center"
- $ out.width: chr "100%"
- $ fig.cap  : chr "(ref:captionoverleaf)"
-
-  |                                                                              |...............................................................       |  90%
-  ordinary text without R code
-
-  |                                                                              |...................................................................   |  95%
-label: cv-fig (with options) 
-List of 4
- $ echo     : logi FALSE
- $ fig.align: chr "center"
- $ out.width: chr "100%"
- $ fig.cap  : chr "(ref:captioncv)"
-
-  |                                                                              |......................................................................| 100%
-   inline R code fragments
-
-
-/Applications/RStudio.app/Contents/MacOS/pandoc/pandoc +RTS -K512m -RTS latex4year1.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output latex4year1.html --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --metadata-file /var/folders/1r/n03xtjln62vbxs_v94txs26m0000gp/T//RtmpsLvOG2/file1179811c13a30 --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 3 --template /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/templates/gitbook.html --highlight-style pygments --number-sections --css style.css --include-in-header /var/folders/1r/n03xtjln62vbxs_v94txs26m0000gp/T//RtmpsLvOG2/rmarkdown-str117987c362726.html --mathjax --citeproc 
