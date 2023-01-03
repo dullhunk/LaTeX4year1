@@ -3,7 +3,7 @@
 Let's start by creating a simple LaTeX document.
 
 ## A very short document {#shortest}
-Open up your favourite text editor^[it is worth configuring your editor so that it is LaTeX aware, and can do [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), suggest auto-completions and spell-check for you. Tools like [atom.io](https://atom.io/) and [sublimetext](https://www.sublimetext.com/) and many others will do this for you], enter the following text, then save it as a file called `turing.tex`:
+Open up your favourite text editor^[it is worth configuring your editor so that it is LaTeX aware, and can do [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), suggest auto-completions and spell-check for you. Tools like [VS Code](https://code.visualstudio.com/) and [sublimetext](https://www.sublimetext.com/) and many others will do this for you], enter the following text, then save it as a file called `turing.tex`:
 
 ```tex
 \documentclass[a4paper]{article}
