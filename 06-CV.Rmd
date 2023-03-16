@@ -65,6 +65,7 @@ As you progress through University, continuously update your CV and solicit feed
 1. Have you quantified and provided evidence for the claims you make?
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.io/manchester](http://careerset.io/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
 1. Find out more in the *debugging your future* checklist at [cdyf.me/debugging#checklist](https://www.cdyf.me/debugging#checklist) [@debugyourfuture]
+1. If you're a University of Manchester student, take a look at the CV pathway from the careers service at [bit.ly/uomcvpathway](https://bit.ly/uomcvpathway) UoM login required
 
 
 ## Summary {#cvconc}
