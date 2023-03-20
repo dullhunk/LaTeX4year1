@@ -10,10 +10,10 @@ knitr::include_graphics(rep(c("images/Leslie_Lamport.jpg","images/KnuthAtOpenCon
 
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
-## NOT a word processor  
-LaTeX is *not* a word processor! Instead, LaTeX encourages you to concentrate on the *content* of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your cascading style-sheet: `*.css`) should be cleanly separated from the raw content (in your `*.html`). This is a classic abstraction technique in computing by [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) (SoC). If you're reading this page in a web browser, view the source of this page `latex.html` as an example, the html only describes the content and says very little about its presentation, that is described separately in the cascading style sheet.
+## LaTeX is NOT a word processor  
+By itself, LaTeX is *not* a word processor! Instead, LaTeX encourages you to concentrate on the *content* of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your cascading style-sheet: `*.css`) should be cleanly separated from the raw content (in your `*.html`). This is a classic abstraction technique in computing by [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) (SoC). If you're reading this page in a web browser, view the source of this page `latex.html` as an example, the html only describes the content and says very little about its presentation, that is described separately in the cascading style sheet.
 
-LaTeX is **not** a what you see is what you get ([WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)) system either. The raw document you edit (a `*.tex` file input) is not your final result (usually a `*.pdf` file output). It doesn't even come with a spell-checker, though there are many plug-ins you can use for that.
+LaTeX is **not** a what you see is what you get ([WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)) system either. The raw document you edit (a `*.tex` file input) is not your final result (usually a `*.pdf` file output). LaTeX doesn't even come with a spell-checker, though there are many plug-ins you can use for that, they are not built in.
 
 ## So what is LaTeX then?
 
