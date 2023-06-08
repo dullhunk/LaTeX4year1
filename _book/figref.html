@@ -233,7 +233,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="figref" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Cross-referencing, illustrating and citing<a href="figref.html#figref" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.</p>
+<p>LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and <code>cite</code> sources in your documents, see figure <a href="figref.html#fig:wikipedian-fig">3.1</a>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:wikipedian-fig"></span>
 <img src="images/wikipedian_protester.png" alt="It has always been important to cite your sources and LaTeX gives you the tools to cite properly. Wikipedian Protester cartoon by Randall Munroe at xkcd.com/285 published under a Creative Commons Attribution-NonCommercial 2.5 License" width="70%" />
 <p class="caption">
@@ -243,7 +243,7 @@ Figure 3.1: It has always been important to cite your sources and LaTeX gives yo
 
 <div id="cross-referencing" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Cross-referencing<a href="figref.html#cross-referencing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:</p>
+<p>LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections, tables and figures. To use the cross-referencing feature you simply insert the command:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb10-1"><a href="figref.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\label</span>{<span class="ex">mymarker</span>}</span></code></pre></div>
 <p>at the point in the document you want to refer to, and then use the command:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb11-1"><a href="figref.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\ref</span>{<span class="ex">mymarker</span>}</span></code></pre></div>
@@ -321,7 +321,7 @@ Figure 3.2: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> 
 <span id="cb19-5"><a href="figref.html#cb19-5" aria-hidden="true" tabindex="-1"></a>  year         = {2022},</span>
 <span id="cb19-6"><a href="figref.html#cb19-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>So to create the text:</p>
-<p>“<em>You can find Turing’s publications in Google scholar. <span class="citation">(<a href="#ref-googlescholar" role="doc-biblioref">Anon 2020</a>)</span>
+<p>“<em>You can find Turing’s publications in Google scholar. <span class="citation">(<a href="#ref-googlescholar" role="doc-biblioref">Anon 2023</a>)</span>
 His paper on the Entscheidungsproblem was published in 1937. <span class="citation">(<a href="#ref-turing" role="doc-biblioref">Turing 1937</a>)</span>
 He wrote about thinking machines in 1950. <span class="citation">(<a href="#ref-turing50" role="doc-biblioref">Turing 1950</a>)</span></em>”</p>
 <p>You add this to your tex file:</p>
@@ -347,7 +347,7 @@ He wrote about thinking machines in 1950. <span class="citation">(<a href="#ref-
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-googlescholar" class="csl-entry">
-Anon. 2020. <span>“<span>Alan</span> <span class="nocase">Turing’s</span> <span>Publications</span>.”</span> scholar.google.com. <a href="https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ">https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ</a>.
+Anon. 2023. <span>“<span>Alan</span> <span class="nocase">Turing’s</span> <span>Publications</span>.”</span> scholar.google.com. <a href="https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ">https://scholar.google.co.uk/citations?user=VWCHlwkAAAAJ</a>.
 </div>
 <div id="ref-turing" class="csl-entry">
 Turing, Alan. 1937. <span>“On Computable Numbers, with an Application to the Entscheidungsproblem.”</span> <em>Proceedings of the London Mathematical Society</em> s2-42 (1): 230–65. <a href="https://doi.org/10.1112/plms/s2-42.1.230">https://doi.org/10.1112/plms/s2-42.1.230</a>.

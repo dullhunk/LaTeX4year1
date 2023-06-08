@@ -1,6 +1,6 @@
 # Cross-referencing, illustrating and citing {#figref}
 
-LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and cite sources in your documents.
+LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and `cite` sources in your documents, see figure \@ref(fig:wikipedian-fig).
 
 ```{r wikipedian-fig, echo = FALSE, fig.align = "center", out.width = "70%", fig.cap='(ref:captionwikipedian)'}
 knitr::include_graphics("images/wikipedian_protester.png")
@@ -10,7 +10,7 @@ knitr::include_graphics("images/wikipedian_protester.png")
 
 ## Cross-referencing
 
-LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections and figures. To use the cross-referencing feature you simply insert the command:
+LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections, tables and figures. To use the cross-referencing feature you simply insert the command:
 
 ```tex
 \label{mymarker}

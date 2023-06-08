@@ -22,7 +22,7 @@ Login to [overleaf.com](https://www.overleaf.com/) and try the following:
 
 1. Create and save a simple document using the overleaf tutorial *creating a document in overleaf*^[https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf]  
 1. Note that overleaf allows you to store your TeX source in a git repository so you can use version control if you want to
-1. Browse the overleaf tutorials at [overleaf.com/learn](https://www.overleaf.com/learn) if you want to take things further
+1. Browse the overleaf tutorials at [overleaf.com/learn](https://www.overleaf.com/learn) and ask questions on forums like [tex.stackexchange.com](https://tex.stackexchange.com/) if you want to take things further
 
 ## Summary {#overleafconc}
 
