@@ -80,7 +80,7 @@ You can cite sources such as websites, books or journal articles in your documen
 ```tex
 \cite{alanturing}
 ```
-The metadata for the citations can be stored in a separate `*.bib file` using a format called BibTeX, in this case we'll use `turing.bib`. BibTeX provides citation types so books^[Using tools like https://www.ottobib.com can help you to quickly generate BibTeX entries from a given ISBN number] are described using the `@book` type like this:
+The metadata for the citations can be stored in a separate `*.bib file` using a format called BibTeX, in this case we'll use `turing.bib`. BibTeX provides citation types so books are described using the `@book` type like this:
 
 ```tex
 @Book{turingomnibus,
