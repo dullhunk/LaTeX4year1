@@ -15,7 +15,7 @@ description: "A resource for getting started with LaTeX"
 
 # Welcome {-}
 
-Hello and welcome to the LaTeX lab manual, part of [COMP101](https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus/) at the University of Manchester.
+Hello and welcome to the LaTeX lab manual, part of COMP101 at the University of Manchester.
 
 ```{r latexproject-fig, echo = FALSE, fig.align = "center", out.width = "90%", fig.cap='(ref:captionlatex)'}
 knitr::include_graphics("images/1000px-LaTeX_project_logo_bird.svg.png")

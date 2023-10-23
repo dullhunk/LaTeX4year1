@@ -140,7 +140,7 @@
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
 
-Hello and welcome to the LaTeX lab manual, part of \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP10120/syllabus/}{COMP101} at the University of Manchester.
+Hello and welcome to the LaTeX lab manual, part of COMP101 at the University of Manchester.
 
 \begin{figure}
 
@@ -633,7 +633,7 @@ To render the equation, you include this in your tex file:
 \end{Highlighting}
 \end{Shaded}
 
-You can probably work out how most of this creates the formula, but it won't be obvious that the \texttt{\textbackslash{}{[}} and \texttt{\textbackslash{}{]}} symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP11120/syllabus/}{COMP11120 Mathematical Techniques for Computer Science} in your first year and \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP26120/syllabus/}{COMP26120 Algorithms and Imperative Programming} in your second year.
+You can probably work out how most of this creates the formula, but it won't be obvious that the \texttt{\textbackslash{}{[}} and \texttt{\textbackslash{}{]}} symbols that enclose the formula mean typeset this as a displayed formula, giving it some vertical space from the surrounding text. If we'd used \texttt{\textbackslash{}(} and \texttt{\textbackslash{})} instead to enclose the formula it would appear in-line, like this: \(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\). It still looks very nice, and observe how it's automatically been resized to fit, and that the lines of text have had their spacing changed a bit. This all looks simple, but the implementation inside LaTeX and TeX is complex. It involves parsing the description of the formula to create a corresponding tree data structure, which is then recursively walked to work out the horizontal and vertical typographical spacings needed. You'll meet these ideas in COMP11120 Mathematical Techniques for Computer Science in your first year and COMP26120 Algorithms in your second year.
 
 Here's another example, taken from computer graphics, it's a local illumination model incorporating ambient, diffuse and specular reflection by multiple lights:
 
