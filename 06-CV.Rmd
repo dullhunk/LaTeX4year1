@@ -24,10 +24,11 @@ By *opportunities* we mean both immediate ones within the next 12 months as well
 During your first year of study, *opportunities* include:
 
 * Spring insights during easter next year
+    + see 
     + see [ratemyplacement.co.uk/insights](https://www.ratemyplacement.co.uk/insights) some of which have application deadlines before Christmas
-    * see opportunities for first year students at [careers.manchester.ac.uk/findjobs/internships/1styearopps](https://www.careers.manchester.ac.uk/findjobs/internships/1styearopps/)
+    * see insight events at [gradcracker.com/search/computing-technology/work-placements-internships?duration=Insight_Events](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Insight%20Events)
 * Summer internships suitable for first years:
-    + see internships (open to first years) at [gradcracker.com/search/computing-technology/work-placements-internships](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer%20-%20open%20to%201st%20years)
+    + see summer internships (open to first years) at [gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer-open_to_1st_years](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer%20-%20open%20to%201st%20years)
     + see the chapter on *[Finding your Future](https://www.cdyf.me/finding)* in *Coding your Future* [@findingyourfuture]
 
 ### Subsequent opportunities {#afterfirst}
@@ -65,7 +66,7 @@ As you progress through University, continuously update your CV and solicit feed
 1. Have you quantified and provided evidence for the claims you make?
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.com/manchester](http://careerset.com/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
 1. Find out more in the *debugging your future* checklist at [cdyf.me/debugging#checklist](https://www.cdyf.me/debugging#checklist) [@debugyourfuture]
-1. If you're a University of Manchester student, take a look at the CV pathway from the careers service at [bit.ly/uomcvpathway](https://bit.ly/uomcvpathway) UoM login required
+1. If you're a University of Manchester student, take a look at the CV pathway from the careers service at [bit.ly/uomcvpathway](https://bit.ly/uomcvpathway) which requires a `careerconnect.manchester.ac.uk` login - unfortunately *not* the same as your University credentials
 
 
 ## Summary {#cvconc}
