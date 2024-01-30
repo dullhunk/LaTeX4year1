@@ -15,21 +15,21 @@ Creating a professional looking CV is particularly important, because it determi
 * the quality and clarity of your written communication, how you describe yourself and your experience
 * the editing, what you've decided to leave in (and leave out) of your CV
 
-## Opportunity knocks {#knocking}
-By *opportunities* we mean both immediate ones within the next 12 months as well as those further in the future.
+## Using your CV to get a job interview {#knocking}
+By *opportunities* we mean both immediate ones within the next 12 months as well as those further in the future. To make the most of those opportunities, your CV needs to be persuasive enough to make an employer think they should invite you to interview.
 
 
-### First year opportunities {#startearly}
+### Job opportunities for first year students {#startearly}
 
-During your first year of study, *opportunities* include:
+During your first year of study, *opportunities* include insight events and summer internships:
 
-* Spring insights during easter next year
-    + see 
-    + see [ratemyplacement.co.uk/insights](https://www.ratemyplacement.co.uk/insights) some of which have application deadlines before Christmas
-    * see insight events at [gradcracker.com/search/computing-technology/work-placements-internships?duration=Insight_Events](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Insight%20Events)
-* Summer internships suitable for first years:
-    + see summer internships (open to first years) at [gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer-open_to_1st_years](https://www.gradcracker.com/search/computing-technology/work-placements-internships?duration=Summer%20-%20open%20to%201st%20years)
-    + see the chapter on *[Finding your Future](https://www.cdyf.me/finding)* in *Coding your Future* [@findingyourfuture]
+* Spring insights, usually occur during easter vacation, and require you to apply before (or shortly after) Christmas, see
+    + insight events at [bit.ly/gradcracker-spring-insights](https://bit.ly/gradcracker-spring-insights) 
+    + and [ratemyplacement.co.uk/insights](https://www.ratemyplacement.co.uk/insights) 
+
+* Summer internships suitable for first year, see:
+    + summer internships (open to first years) at [bit.ly/gradcracker-first-years](https://bit.ly/gradcracker-first-years)
+    + the chapter on *[Finding your Future](https://www.cdyf.me/finding)* in *Coding your Future* [@findingyourfuture] for other places you can look
 
 ### Subsequent opportunities {#afterfirst}
 
