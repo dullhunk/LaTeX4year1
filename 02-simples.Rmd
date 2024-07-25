@@ -128,7 +128,8 @@ Turing addressed the question ''Can machines think''
 ```
 
 
-The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to. Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example.
+The difference is subtle in most web browsers, but it's really noticeable in print and pdf so worth paying attention to.
+<!--Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example-->
 
 ## Summary {#concsimple}
 You've created a basic document in LaTeX and we've introduced some of its advantages:
