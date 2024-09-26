@@ -16,5 +16,6 @@ By itself, LaTeX is *not* a word processor! Instead, LaTeX encourages you to con
 LaTeX is **not** a what you see is what you get ([WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)) system either. The raw document you edit (a `*.tex` file input) is not your final result (usually a `*.pdf` file output). LaTeX doesn't even come with a spell-checker, though there are many plug-ins you can use for that, they are not built in.
 
 ## So what is LaTeX then?
+LaTeX is a professional typesetting software system. It can produce documents with a much higher standard of [typography](https://en.wikipedia.org/wiki/Typography) than your average Word processor is capable of. It also has some useful features to help you write scientific and technical documentation, as we will see. 
 
-The best way to understand LaTeX is to create some documents which we'll do in the next chapter.
+The best way to understand LaTeX is to create some simple documents which we'll do in the next chapter.
