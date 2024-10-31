@@ -1,4 +1,4 @@
-# Collaborative editing with overleaf {#overleaf}
+# Collaborative Editing in the Cloud with Overleaf {#overleaf}
 
 If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you'll need to share your TeX somehow. Sharing `*.tex` files by email or dropbox or whatever would be cumbersome. What you need is something like Google Docs for `*.tex`. Overleaf ([overleaf.com](https://www.overleaf.com/)) is one of several web applications that allows you to do this, shown in the screenshot in Figure \@ref(fig:overleaf-fig).
 

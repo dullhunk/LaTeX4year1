@@ -33,7 +33,7 @@ Reading this LaTeX manual and doing the five exercises it contains will enable y
 ## Acknowledgements {-}
 This manual is a substantially revised version of earlier LaTeX lab manuals created by [Ulrike Sattler](https://en.wikipedia.org/wiki/Ulrike_Sattler), [Graham Gough](https://www.linkedin.com/in/graham-gough-8421052b/), [Paul Waring](https://www.pwaring.com/), [Toby Howard](https://en.wikipedia.org/wiki/Toby_Howard) and [Steve Pettifer](https://en.wikipedia.org/wiki/Steve_Pettifer).
 
-## Improve this manual {-}
+## Improve this Manual {-}
 The source of this manual is available on github so if you have any comments or suggestions on how to improve it, you can [raise an issue](https://github.com/dullhunk/lateX4year1/issues) or [submit a pull request](https://github.com/dullhunk/LaTeX4year1/pulls). We'll credit every contribution, however small, because they all make a difference.
 
 Thanks to contributions from Hamza Latif ([\@ultrasockhead](https://github.com/ultrasockhead)) and Saurav Maheshkar ([\@SauravMaheshkar](https://github.com/SauravMaheshkar))

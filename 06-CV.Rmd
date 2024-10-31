@@ -1,4 +1,4 @@
-# Your curriculum vitae {#cv}
+# Your Curriculum Vitae {#cv}
 
 You'll write many documents at University, but there is one document that is **really** important in a potentially life-changing way. Your curriculum vitae^[strictly speaking it should be vitæ (not vitae) if you're being pedantic] or resume. An example CV is shown in Figure \@ref(fig:cv-fig).
 

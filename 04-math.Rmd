@@ -1,4 +1,4 @@
-# Doing the maths {#maths}
+# Doing the Maths {#maths}
 
 LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them.
 

@@ -1,4 +1,4 @@
-# Simple LaTeX documents {#simples}
+# Simple LaTeX Documents {#simples}
 
 Let's start by creating a simple LaTeX document.
 

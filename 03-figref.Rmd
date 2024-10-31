@@ -1,4 +1,4 @@
-# Cross-referencing, illustrating and citing {#figref}
+# Cross-referencing, Illustrating and Citing {#figref}
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and `cite` sources in your documents, see figure \@ref(fig:wikipedian-fig).
 
