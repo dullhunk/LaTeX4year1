@@ -5,7 +5,7 @@ fig:turing-fig
 fig:overleaf-fig
 fig:cv-fig
 latex
-latex-is-not-a-word-processor
+notword
 so-what-is-latex-then
 simples
 shortest

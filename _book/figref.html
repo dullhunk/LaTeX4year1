@@ -169,7 +169,7 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="1" data-path="latex.html"><a href="latex.html"><i class="fa fa-check"></i><b>1</b> What is LaTeX?</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#latex-is-not-a-word-processor"><i class="fa fa-check"></i><b>1.1</b> LaTeX is NOT a word processor</a></li>
+<li class="chapter" data-level="1.1" data-path="latex.html"><a href="latex.html#notword"><i class="fa fa-check"></i><b>1.1</b> LaTeX is NOT a word processor</a></li>
 <li class="chapter" data-level="1.2" data-path="latex.html"><a href="latex.html#so-what-is-latex-then"><i class="fa fa-check"></i><b>1.2</b> So what is LaTeX then?</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="simples.html"><a href="simples.html"><i class="fa fa-check"></i><b>2</b> Simple LaTeX Documents</a>
@@ -290,7 +290,7 @@ Figure 3.2: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> 
 </div>
 <div id="citations-and-footnotes" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Citations and footnotes<a href="figref.html#citations-and-footnotes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Footnotes<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> can be added to a document with <code>\footnote{}</code></p>
+<p>Footnotes<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> can be added to a document with <code>\footnote{}</code></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb15-1"><a href="figref.html#cb15-1" tabindex="-1"></a><span class="fu">\footnote</span>{This is a footnote about footnotes}</span></code></pre></div>
 <p>You can cite sources such as websites, books or journal articles in your document using the <code>\cite</code> command.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb16-1"><a href="figref.html#cb16-1" tabindex="-1"></a><span class="kw">\cite</span>{<span class="ex">alanturing</span>}</span></code></pre></div>
@@ -304,7 +304,7 @@ Figure 3.2: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> 
 <span id="cb17-7"><a href="figref.html#cb17-7" tabindex="-1"></a>  isbn = {9780805071665},</span>
 <span id="cb17-8"><a href="figref.html#cb17-8" tabindex="-1"></a>  url = {https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665}</span>
 <span id="cb17-9"><a href="figref.html#cb17-9" tabindex="-1"></a>}</span></code></pre></div>
-<p>and articles<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> use the <code>@article</code> type like this:</p>
+<p>and articles<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> use the <code>@article</code> type like this:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb18-1"><a href="figref.html#cb18-1" tabindex="-1"></a>@article{alanturing,</span>
 <span id="cb18-2"><a href="figref.html#cb18-2" tabindex="-1"></a>  doi = {10.1112/plms/s2-42.1.230},</span>
 <span id="cb18-3"><a href="figref.html#cb18-3" tabindex="-1"></a>  url = {https://doi.org/10.1112/plms/s2-42.1.230},</span>
@@ -317,7 +317,7 @@ Figure 3.2: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> 
 <span id="cb18-10"><a href="figref.html#cb18-10" tabindex="-1"></a>  title = {On Computable Numbers, with an Application to the Entscheidungsproblem},</span>
 <span id="cb18-11"><a href="figref.html#cb18-11" tabindex="-1"></a>  journal = {Proceedings of the London Mathematical Society}</span>
 <span id="cb18-12"><a href="figref.html#cb18-12" tabindex="-1"></a>}</span></code></pre></div>
-<p>For everything else<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> you can use the <code>@misc</code> type:</p>
+<p>For everything else<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> you can use the <code>@misc</code> type:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb19-1"><a href="figref.html#cb19-1" tabindex="-1"></a>@misc{googlescholar,</span>
 <span id="cb19-2"><a href="figref.html#cb19-2" tabindex="-1"></a>  author       = {Anon},</span>
 <span id="cb19-3"><a href="figref.html#cb19-3" tabindex="-1"></a>  title        = {Alan Turing Google Scholar page},</span>
@@ -362,10 +362,10 @@ Turing, Alan. 1937. <span>“On Computable Numbers, with an Application to the E
 </div>
 <div class="footnotes">
 <hr />
-<ol start="4">
-<li id="fn4"><p>This is a footnote about footnotes. Very meta.<a href="figref.html#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>BibTeX entries for journal articles can be automatically generated from persistent identifiers known as <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">digital object identifiers</a> or doi’s, such as <a href="https://doi2bib.org" class="uri">https://doi2bib.org</a> for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.<a href="figref.html#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>There are many other types of BibTeX entries besides articles, books and misc. See <a href="https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX" class="uri">https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX</a><a href="figref.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<ol start="5">
+<li id="fn5"><p>This is a footnote about footnotes. Very meta.<a href="figref.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>BibTeX entries for journal articles can be automatically generated from persistent identifiers known as <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">digital object identifiers</a> or doi’s, such as <a href="https://doi2bib.org" class="uri">https://doi2bib.org</a> for example. This saves you the unpleasant, time consuming and error prone task of typing them in by hand.<a href="figref.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>There are many other types of BibTeX entries besides articles, books and misc. See <a href="https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX" class="uri">https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX</a><a href="figref.html#fnref7" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
