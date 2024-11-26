@@ -128,7 +128,7 @@ Turing addressed the question ''Can machines think''
 ```
 
 
-You've probably never noticed these details because most word processing software^[Microsoft Word, Google Docs etc], automatically corrects quotations marks for you. Since LaTeX isn't a word processor (see section \@ref(notword)) it leaves your mistakes on the page for all to see. While the difference is subtle in most web browsers, it's really noticeable in print and pdf so worth paying attention to. 
+You've probably never noticed these details because most word processing software^[Microsoft Word, Google Docs etc] tends to auto-correct quotations marks for you. Since LaTeX isn't a word processor (see section \@ref(notword)) it leaves your mistakes on the page for all to see. These mistakes are really noticeable in a pdf file and/or printed, so they are worth paying attention to. 
 <!--Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example-->
 
 ## Summary {#concsimple}
