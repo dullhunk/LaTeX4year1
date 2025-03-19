@@ -116,7 +116,7 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
@@ -127,7 +127,7 @@
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual edited by Duncan Hull}
-\date{Last updated on 26 November, 2024}
+\date{Last updated on 19 March, 2025}
 
 \begin{document}
 \maketitle
@@ -136,8 +136,7 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{welcome}{%
-\chapter*{Welcome}\label{welcome}}
+\chapter*{Welcome}\label{welcome}
 \addcontentsline{toc}{chapter}{Welcome}
 
 Hello and welcome to the LaTeX lab manual, part of COMP101 at the University of Manchester.
@@ -170,14 +169,12 @@ Reading this LaTeX manual and doing the five exercises it contains will enable y
   Draft a CV using LaTeX templates
 \end{enumerate}
 
-\hypertarget{acknowledgements}{%
-\section*{Acknowledgements}\label{acknowledgements}}
+\section*{Acknowledgements}\label{acknowledgements}
 \addcontentsline{toc}{section}{Acknowledgements}
 
 This manual is a substantially revised version of earlier LaTeX lab manuals created by \href{https://en.wikipedia.org/wiki/Ulrike_Sattler}{Ulrike Sattler}, \href{https://www.linkedin.com/in/graham-gough-8421052b/}{Graham Gough}, \href{https://www.pwaring.com/}{Paul Waring}, \href{https://en.wikipedia.org/wiki/Toby_Howard}{Toby Howard} and \href{https://en.wikipedia.org/wiki/Steve_Pettifer}{Steve Pettifer}.
 
-\hypertarget{improve-this-manual}{%
-\section*{Improve this Manual}\label{improve-this-manual}}
+\section*{Improve this Manual}\label{improve-this-manual}
 \addcontentsline{toc}{section}{Improve this Manual}
 
 The source of this manual is available on github so if you have any comments or suggestions on how to improve it, you can \href{https://github.com/dullhunk/lateX4year1/issues}{raise an issue} or \href{https://github.com/dullhunk/LaTeX4year1/pulls}{submit a pull request}. We'll credit every contribution, however small, because they all make a difference.
@@ -186,8 +183,7 @@ Thanks to contributions from Hamza Latif (\href{https://github.com/ultrasockhead
 
 If you want to make suggestions for improvements that \textbf{don't} get attributed to your name, \href{https://personalpages.manchester.ac.uk/staff/duncan.hull/contact}{email me} directly.
 
-\hypertarget{latex}{%
-\chapter{What is LaTeX?}\label{latex}}
+\chapter{What is LaTeX?}\label{latex}
 
 LaTeX is a document preparation system for high-quality typesetting. \citep{latexproject} It is part of a mature and established toolchain that has been around since 1980's. \citep{knuth} Originally written by \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}, a computer scientist
 now working at Microsoft Research, its development has long been taken over by the open-source LaTeX community around the world. \href{https://en.wikipedia.org/wiki/LaTeX}{LaTeX} is actually built on top of another system called \href{https://en.wikipedia.org/wiki/TeX}{TeX}, a computer typesetting system designed by another influential Computer Scientist, \href{https://en.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} of Stanford University. Lamport and Knuth are shown in Figure \ref{fig:knuthport-fig}.
@@ -200,27 +196,23 @@ now working at Microsoft Research, its development has long been taken over by t
 
 LaTeX is typically used for technical documents but it can be used for almost any form of publishing, including writing CVs, letters, books, posters, presentations and much more. Whatever you create with LaTeX, one of its key strengths is making documents look professional in portable document format (pdf) using industrial-strength typesetting.
 
-\hypertarget{notword}{%
-\section{LaTeX is NOT a word processor}\label{notword}}
+\section{LaTeX is NOT a word processor}\label{notword}
 
 By itself, LaTeX is \emph{not} a word processor! Instead, LaTeX encourages you to concentrate on the \emph{content} of your documents, while it takes care of the details of its presentation. This is similar to the approach you've been using for creating web pages in COMP1010 where the style (in your cascading style-sheet: \texttt{*.css}) should be cleanly separated from the raw content (in your \texttt{*.html}). This is a classic abstraction technique in computing by \href{https://en.wikipedia.org/wiki/Separation_of_concerns}{separation of concerns} (SoC). If you're reading this page in a web browser, view the source of this page \texttt{latex.html} as an example, the html only describes the content and says very little about its presentation, that is described separately in the cascading style sheet.
 
 LaTeX is \textbf{not} a what you see is what you get (\href{https://en.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}) system either. The raw document you edit (a \texttt{*.tex} file input) is not your final result (usually a \texttt{*.pdf} file output). LaTeX doesn't even come with a spell-checker, though there are many plug-ins you can use for that, they are not built in.
 
-\hypertarget{so-what-is-latex-then}{%
-\section{So what is LaTeX then?}\label{so-what-is-latex-then}}
+\section{So what is LaTeX then?}\label{so-what-is-latex-then}
 
 LaTeX is a professional typesetting software system. It can produce documents with a much higher standard of \href{https://en.wikipedia.org/wiki/Typography}{typography} than your average Word processor is capable of. It also has some useful features to help you write scientific and technical documentation, as we will see.
 
 The best way to understand LaTeX is to create some simple documents which we'll do in the next chapter.
 
-\hypertarget{simples}{%
-\chapter{Simple LaTeX Documents}\label{simples}}
+\chapter{Simple LaTeX Documents}\label{simples}
 
 Let's start by creating a simple LaTeX document.
 
-\hypertarget{shortest}{%
-\section{A very short document}\label{shortest}}
+\section{A very short document}\label{shortest}
 
 Open up your favourite text editor\footnote{it is worth configuring your editor so that it is LaTeX aware, and can do \href{https://en.wikipedia.org/wiki/Syntax_highlighting}{syntax highlighting}, suggest auto-completions and spell-check for you. Tools like \href{https://code.visualstudio.com/}{VS Code} and \href{https://www.sublimetext.com/}{sublimetext} and many others will do this for you}, enter the following text, then save it as a file called \texttt{turing.tex}:
 
@@ -257,8 +249,7 @@ The first command outputs a pdf file from your \texttt{turing.tex} input using t
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{longer}{%
-\section{A longer LaTeX document}\label{longer}}
+\section{A longer LaTeX document}\label{longer}
 
 Our \texttt{turing.tex} file is a very simple document, so let's add some sections and fill them out a bit:
 
@@ -301,8 +292,7 @@ Our \texttt{turing.tex} file is a very simple document, so let's add some sectio
 
 The text here is excerpted from \emph{The New Turing Omnibus: 66 excursions in Computer Science} \citep{turingomnibus}. The Omnibus is a lovely introduction to the fundamentals of Computer Science that you might enjoy. In his book review, the software engineer \href{https://en.wikipedia.org/wiki/Jeff_Atwood}{Jeff Atwood} calls the omnibus an ``incredibly fun little book''. \citep{codinghorror}
 
-\hypertarget{ex1}{%
-\section{Exercise one: documentum}\label{ex1}}
+\section{Exercise one: documentum}\label{ex1}
 
 In your file \texttt{turing.tex} either cut-and-paste this longer text into your document or make your own sections and text. You could use text from \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Lorem ipsum} at \href{https://www.lipsum.com}{lipsum.com} to fill out the page.
 
@@ -328,8 +318,7 @@ The \texttt{title}, \texttt{author}, \texttt{tableofcontents} and \texttt{newpag
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{bold-italic-and-lists}{%
-\section{Bold, italic and lists}\label{bold-italic-and-lists}}
+\section{Bold, italic and lists}\label{bold-italic-and-lists}
 
 Here's a few points to note about the text above:
 
@@ -341,8 +330,7 @@ Here's a few points to note about the text above:
   Notice how lists are created with \texttt{\textbackslash{}item}s inside either \texttt{\textbackslash{}begin\{enumerate\}} for numbered lists or \texttt{\textbackslash{}begin\{itemize\}} for bulleted lists.
 \end{itemize}
 
-\hypertarget{quotation-marks}{%
-\section{Quotation marks}\label{quotation-marks}}
+\section{Quotation marks}\label{quotation-marks}
 
 Typographic or ``curly'' quotation marks are different characters and \emph{not} the same as straight quotes. They look nicer, but you have to remember that unlike straight quotes, open and close quotation marks are different characters:
 
@@ -390,8 +378,7 @@ or
 
 You've probably never noticed these details because most word processing software\footnote{Microsoft Word, Google Docs etc} tends to auto-correct quotations marks for you. Since LaTeX isn't a word processor (see section \ref{notword}) it leaves your mistakes on the page for all to see. These mistakes are really noticeable in a pdf file and/or printed, so they are worth paying attention to.
 
-\hypertarget{concsimple}{%
-\section{Summary}\label{concsimple}}
+\section{Summary}\label{concsimple}
 
 You've created a basic document in LaTeX and we've introduced some of its advantages:
 
@@ -407,8 +394,7 @@ You've created a basic document in LaTeX and we've introduced some of its advant
 
 Next we'll look at adding some cross-references, figures and citations. This is one thing that LaTeX does much better than your average word processing software which makes it great for editing larger and longer documents, such as your Bachelors, Masters or PhD thesis.
 
-\hypertarget{figref}{%
-\chapter{Cross-referencing, Illustrating and Citing}\label{figref}}
+\chapter{Cross-referencing, Illustrating and Citing}\label{figref}
 
 LaTeX has simple but powerful tools to allow you to cross-reference, illustrate and \texttt{cite} sources in your documents, see figure \ref{fig:wikipedian-fig}.
 
@@ -423,8 +409,7 @@ LaTeX has simple but powerful tools to allow you to cross-reference, illustrate 
 
 
 
-\hypertarget{cross-referencing}{%
-\section{Cross-referencing}\label{cross-referencing}}
+\section{Cross-referencing}\label{cross-referencing}
 
 LaTeX allows you to cross-reference almost anything in your document, including sections, sub-sections, tables and figures. To use the cross-referencing feature you simply insert the command:
 
@@ -458,8 +443,7 @@ when you want to refer to it. Obviously you replace the text \texttt{mymarker} w
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{illustrating-your-documents}{%
-\section{Illustrating your documents}\label{illustrating-your-documents}}
+\section{Illustrating your documents}\label{illustrating-your-documents}
 
 Documents without figures, images, pictures and graphs are pretty dull, so you'll want to illustrate your document with figures such as the one in Figure \ref{fig:turing-fig}, for example.
 
@@ -498,13 +482,11 @@ The \texttt{\textbackslash{}includegraphics} command is not built in to core LaT
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{ex2}{%
-\section{Exercise two: picture this}\label{ex2}}
+\section{Exercise two: picture this}\label{ex2}
 
 Create a document \texttt{image.tex}, that contains some text (maybe from Lorem Ipsum), together with a figure containing an image of your choice. Create a cross reference to the figure in the text.
 
-\hypertarget{citations-and-footnotes}{%
-\section{Citations and footnotes}\label{citations-and-footnotes}}
+\section{Citations and footnotes}\label{citations-and-footnotes}
 
 Footnotes\footnote{This is a footnote about footnotes. Very meta.} can be added to a document with \texttt{\textbackslash{}footnote\{\}}
 
@@ -608,20 +590,17 @@ When you compile you need to run \texttt{pdflatex} before and after running \tex
 
 If you find all the typing at the command line tedious, you could write a little bash script to automate this simple workflow including opening the pdf when it is created.
 
-\hypertarget{fingconc}{%
-\section{Summary}\label{fingconc}}
+\section{Summary}\label{fingconc}
 
 You have cross-referenced, illustrated, added citations and footnotes to your document. Next we'll look at doing some maths.
 
-\hypertarget{maths}{%
-\chapter{Doing the Maths}\label{maths}}
+\chapter{Doing the Maths}\label{maths}
 
 LaTeX provides powerful tools for typesetting mathematics and this chapter looks at some of them.
 
 If you can't see the equations and matrix below in your web browser, you'll need to use the pdf or epub version of this manual at \href{https://latex4year1.netlify.app/latex4year1.pdf}{latex4year1.pdf} or \href{https://latex4year1.netlify.app/latex4year1.epub}{latex4year1.epub}. Otherwise, if you can see the equation below, it is safe to read on\ldots{}
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\section{Equations}\label{equations}
 
 Consider this equation:
 
@@ -655,8 +634,7 @@ Try to match the LaTeX commands with the formula displayed above. You'll see lot
 
 The second use of curly brackets is to group things together to avoid ambiguities. In the example you can see \(\sum_{i=1}^M\), which creates a summation sign and its lower and upper limits: \(\sum_{i=1}^{M}\). We wrap the lower bound, \texttt{i=1} in curly brackets to group it into an indivisible unit. If we were to omit the brackets, writing \texttt{\textbackslash{}sum\_i=1\^{}M}, LaTeX would then produce \(\sum_i=1^M\), which is not at all what we want (even LaTeX can't always know what we really want).
 
-\hypertarget{matrix}{%
-\section{Matrices}\label{matrix}}
+\section{Matrices}\label{matrix}
 
 As well as equations, LaTeX can display matrices. This one expresses a particular 3D geometrical transformation:
 
@@ -691,8 +669,7 @@ There are some symbols that you might need (for example \texttt{\textbackslash{}
 LaTeX really shines at typesetting mathematics, we've really only scratched the surface here. For more have a look at
 \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{en.wikibooks.org/wiki/LaTeX/Mathematics} or books such as the \emph{Guide to LaTeX} by Helmut Kopka and Patrick W. Daly. \citep{kopka}
 
-\hypertarget{ex3}{%
-\section{Exercise three: you do the maths}\label{ex3}}
+\section{Exercise three: you do the maths}\label{ex3}
 
 Now for an exercise that involves some mathematics. Create a file \texttt{maths.tex} which typesets the following piece of text and mathematics:
 
@@ -713,13 +690,11 @@ For all natural numbers \(n ≥ 3\), there are no integers \(x,y,z\) satisfying 
 
 \[ x^n + y^n = z^n \]
 
-\hypertarget{mathconc}{%
-\section{Summary}\label{mathconc}}
+\section{Summary}\label{mathconc}
 
 We've briefly introduced typesetting mathematics in LaTeX with some equations and a matrix. LaTeX can handle a lot more maths than that but this gives you a flavour of what it can do. In the next chapter we'll look at collaborative authoring and editing in the cloud with overleaf.
 
-\hypertarget{overleaf}{%
-\chapter{Collaborative Editing in the Cloud with Overleaf}\label{overleaf}}
+\chapter{Collaborative Editing in the Cloud with Overleaf}\label{overleaf}
 
 If you are the sole author of a document, then compiling files on your local machine is fine. However, if you need to collaboratively co-author a document with other people, you'll need to share your TeX somehow. Sharing \texttt{*.tex} files by email or dropbox or whatever would be cumbersome. What you need is something like Google Docs for \texttt{*.tex}. Overleaf (\href{https://www.overleaf.com/}{overleaf.com}) is one of several web applications that allows you to do this, shown in the screenshot in Figure \ref{fig:overleaf-fig}.
 
@@ -748,8 +723,7 @@ Compared to LaTeX, overleaf is relatively new. Write Latex Limited, the company 
   Overleaf publish lots of tutorials to help you learn LaTeX
 \end{itemize}
 
-\hypertarget{ex4}{%
-\section{Exercise four: overleaf}\label{ex4}}
+\section{Exercise four: overleaf}\label{ex4}
 
 Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
 
@@ -764,13 +738,11 @@ Login to \href{https://www.overleaf.com/}{overleaf.com} and try the following:
   Browse the overleaf tutorials at \href{https://www.overleaf.com/learn}{overleaf.com/learn} and ask questions on forums like \href{https://tex.stackexchange.com/}{tex.stackexchange.com} if you want to take things further
 \end{enumerate}
 
-\hypertarget{overleafconc}{%
-\section{Summary}\label{overleafconc}}
+\section{Summary}\label{overleafconc}
 
 Overleaf provides a modern and convenient cloud based interface to tried and tested LaTeX tools, which have been around for over thirty years. \citep{knuth} It also allows you to share the source of your documents while providing some handy templates for common document types. Overleaf and the command line are just two popular interfaces to LaTeX amongst many others. \citep{latexproject} Which interface is ``best'' for you will largely depend on what kind of documents you are writing and what your workflow is. In the next chapter we will create a curriculum vitae using CV templates provided by overleaf.
 
-\hypertarget{cv}{%
-\chapter{Your Curriculum Vitae}\label{cv}}
+\chapter{Your Curriculum Vitae}\label{cv}
 
 You'll write many documents at University, but there is one document that is \textbf{really} important in a potentially life-changing way. Your curriculum vitae\footnote{strictly speaking it should be vitæ (not vitae) if you're being pedantic} or resume. An example CV is shown in Figure \ref{fig:cv-fig}.
 
@@ -799,13 +771,11 @@ Creating a professional looking CV is particularly important, because it determi
   the editing, what you've decided to leave in (and leave out) of your CV
 \end{itemize}
 
-\hypertarget{knocking}{%
-\section{Using your CV to get a job interview}\label{knocking}}
+\section{Using your CV to get a job interview}\label{knocking}
 
 By \emph{opportunities} we mean both immediate ones within the next 12 months as well as those further in the future. To make the most of those opportunities, your CV needs to be persuasive enough to make an employer think they should invite you to interview.
 
-\hypertarget{startearly}{%
-\subsection{Job opportunities for first year students}\label{startearly}}
+\subsection{Job opportunities for first year students}\label{startearly}
 
 During your first year of study, \emph{opportunities} include insight events and summer internships:
 
@@ -833,8 +803,7 @@ During your first year of study, \emph{opportunities} include insight events and
   \end{itemize}
 \end{itemize}
 
-\hypertarget{afterfirst}{%
-\subsection{Subsequent opportunities}\label{afterfirst}}
+\subsection{Subsequent opportunities}\label{afterfirst}
 
 After your first year \emph{opportunities} include:
 
@@ -853,8 +822,7 @@ After your first year \emph{opportunities} include:
 
 Any time you invest in creating a convincing CV will pay off in the long run. Yes, you've only just started University, so might not have much to talk about just yet, but it's never too early to make a start.
 
-\hypertarget{ex5}{%
-\section{Exercise five: your CV}\label{ex5}}
+\section{Exercise five: your CV}\label{ex5}
 
 Create a basic CV which tells your story, in particular:
 
@@ -870,8 +838,17 @@ Create a basic CV which tells your story, in particular:
 
 You can do this using the ready-made templates at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}. Have a good look around, there are over 600 templates to choose from.
 
-\hypertarget{debugging-your-cv-checklist}{%
-\section{Debugging your CV checklist}\label{debugging-your-cv-checklist}}
+\section{Beware of weird LaTeX templates}\label{weird}
+
+LaTeX and packages like \texttt{hyperref} which can be found in some of the CV templates above, sometimes default to weird and unusual styles. A good example of this is drawing an ugly cyan box around hyperlinks using \texttt{urlcolor-cyan}. This looks horrible, but you can over-ride by using something like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}href}\NormalTok{\{https://www.cdyf.me\}\{}\FunctionTok{\textbackslash{}textcolor}\NormalTok{\{blue\}\{}\FunctionTok{\textbackslash{}underline}\NormalTok{\{cdyf.me\}\}\}}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Debugging your CV checklist}\label{debugging-your-cv-checklist}
 
 As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you'll need a ``beta release'' (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs \textbf{can be fatal} because most employers typically have to deal with lots of applicants. Here's a check list of some common bugs we have seen in students CVs:
 
@@ -902,8 +879,7 @@ As you progress through University, continuously update your CV and solicit feed
   If you're a University of Manchester student, take a look at the CV pathway from the careers service at \href{https://bit.ly/uomcvpathway}{bit.ly/uomcvpathway} which requires a \texttt{careerconnect.manchester.ac.uk} login - unfortunately \emph{not} the same as your University credentials
 \end{enumerate}
 
-\hypertarget{cvconc}{%
-\section{Summary}\label{cvconc}}
+\section{Summary}\label{cvconc}
 
 Your curriculum vitae is a \emph{really} important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can.
 
@@ -921,12 +897,10 @@ In the meantime, enjoy exploring and using LaTeX to create professional document
 
 \ldots and more.
 
-\hypertarget{appendix-appendix}{%
-\appendix}
+\appendix
 
 
-\hypertarget{typography}{%
-\chapter{Typography}\label{typography}}
+\chapter{Typography}\label{typography}
 
 A mostly empty placeholder appendix which will cover some typographical details about \href{https://en.wikipedia.org/wiki/Kerning}{kerning} and \href{https://en.wikipedia.org/wiki/Orthographic_ligature}{ligatures} etc.
 

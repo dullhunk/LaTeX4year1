@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Your Curriculum Vitae | Getting started with LaTeX</title>
   <meta name="description" content="A resource for getting started with LaTeX" />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Your Curriculum Vitae | Getting started with LaTeX" />
   <meta property="og:type" content="book" />
@@ -56,7 +56,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +66,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -128,6 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -209,8 +210,9 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.2" data-path="cv.html"><a href="cv.html#afterfirst"><i class="fa fa-check"></i><b>6.1.2</b> Subsequent opportunities</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="cv.html"><a href="cv.html#ex5"><i class="fa fa-check"></i><b>6.2</b> Exercise five: your CV</a></li>
-<li class="chapter" data-level="6.3" data-path="cv.html"><a href="cv.html#debugging-your-cv-checklist"><i class="fa fa-check"></i><b>6.3</b> Debugging your CV checklist</a></li>
-<li class="chapter" data-level="6.4" data-path="cv.html"><a href="cv.html#cvconc"><i class="fa fa-check"></i><b>6.4</b> Summary</a></li>
+<li class="chapter" data-level="6.3" data-path="cv.html"><a href="cv.html#weird"><i class="fa fa-check"></i><b>6.3</b> Beware of weird LaTeX templates</a></li>
+<li class="chapter" data-level="6.4" data-path="cv.html"><a href="cv.html#debugging-your-cv-checklist"><i class="fa fa-check"></i><b>6.4</b> Debugging your CV checklist</a></li>
+<li class="chapter" data-level="6.5" data-path="cv.html"><a href="cv.html#cvconc"><i class="fa fa-check"></i><b>6.5</b> Summary</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="typography.html"><a href="typography.html"><i class="fa fa-check"></i><b>A</b> Typography</a></li>
@@ -294,8 +296,13 @@ Figure 6.1: A fictitious example CV using an overleaf template. Would you invite
 </ul>
 <p>You can do this using the ready-made templates at <a href="https://www.overleaf.com/gallery/tagged/cv">overleaf.com/gallery/tagged/cv</a>. Have a good look around, there are over 600 templates to choose from.</p>
 </div>
-<div id="debugging-your-cv-checklist" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> Debugging your CV checklist<a href="cv.html#debugging-your-cv-checklist" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="weird" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Beware of weird LaTeX templates<a href="cv.html#weird" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>LaTeX and packages like <code>hyperref</code> which can be found in some of the CV templates above, sometimes default to weird and unusual styles. A good example of this is drawing an ugly cyan box around hyperlinks using <code>urlcolor-cyan</code>. This looks horrible, but you can over-ride by using something like this:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb26-1"><a href="cv.html#cb26-1" tabindex="-1"></a><span class="fu">\href</span>{https://www.cdyf.me}{<span class="fu">\textcolor</span>{blue}{<span class="fu">\underline</span>{cdyf.me}}}</span></code></pre></div>
+</div>
+<div id="debugging-your-cv-checklist" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Debugging your CV checklist<a href="cv.html#debugging-your-cv-checklist" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs <strong>can be fatal</strong> because most employers typically have to deal with lots of applicants. Here’s a check list of some common bugs we have seen in students CVs:</p>
 <ol style="list-style-type: decimal">
 <li>Is your year of graduation, degree program, University and expected (or achieved) degree classification clear?</li>
@@ -311,8 +318,8 @@ Figure 6.1: A fictitious example CV using an overleaf template. Would you invite
 <li>If you’re a University of Manchester student, take a look at the CV pathway from the careers service at <a href="https://bit.ly/uomcvpathway">bit.ly/uomcvpathway</a> which requires a <code>careerconnect.manchester.ac.uk</code> login - unfortunately <em>not</em> the same as your University credentials</li>
 </ol>
 </div>
-<div id="cvconc" class="section level2 hasAnchor" number="6.4">
-<h2><span class="header-section-number">6.4</span> Summary<a href="cv.html#cvconc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="cvconc" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Summary<a href="cv.html#cvconc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Your curriculum vitae is a <em>really</em> important document and it will most likely take many iterations to get it right. We recommend you start working on it sooner rather than later and get feedback from as many different people (and bots) as you reasonably can.</p>
 <p>In the meantime, enjoy exploring and using LaTeX to create professional documents for:</p>
 <ul>
@@ -343,7 +350,7 @@ appendix with stuff from SRP
 
 
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-debugyourfuture" class="csl-entry">
 Hull, Duncan. 2024a. <span>“Debugging Your Future.”</span> In <em>Coding Your Future: A Guidebook for Students</em>. University of Manchester; github.com. <a href="https://www.cdyf.me/debugging">https://www.cdyf.me/debugging</a>.
 </div>

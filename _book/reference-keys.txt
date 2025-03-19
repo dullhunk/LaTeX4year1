@@ -33,6 +33,7 @@ knocking
 startearly
 afterfirst
 ex5
+weird
 debugging-your-cv-checklist
 cvconc
 typography

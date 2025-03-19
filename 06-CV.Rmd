@@ -53,6 +53,15 @@ Create a basic CV which tells your story, in particular:
 
 You can do this using the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Have a good look around, there are over 600 templates to choose from.
 
+## Beware of weird LaTeX templates {#weird}
+
+LaTeX and packages like `hyperref` which can be found in some of the CV templates above, sometimes default to weird and unusual styles. A good example of this is drawing an ugly cyan box around hyperlinks using `urlcolor-cyan`. This looks horrible, but you can over-ride by using something like this: 
+
+```tex
+\href{https://www.cdyf.me}{\textcolor{blue}{\underline{cdyf.me}}}
+```
+
+
 ## Debugging your CV checklist
 As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because most employers typically have to deal with lots of applicants. Here's a check list of some common bugs we have seen in students CVs:
 
@@ -67,6 +76,9 @@ As you progress through University, continuously update your CV and solicit feed
 1. Is your CV robot proof? Many large employers use automated applicant tracking systems that use software to screen CVs long before a human ever sees them. You can feed your CV through software like [careerset.com/manchester](http://careerset.com/manchester) and [resume.io](https://resume.io/), what feedback do the robots give you? How can you make your CV more robot proof?
 1. Find out more in the *debugging your future* checklist at [cdyf.me/debugging#checklist](https://www.cdyf.me/debugging#checklist) [@debugyourfuture]
 1. If you're a University of Manchester student, take a look at the CV pathway from the careers service at [bit.ly/uomcvpathway](https://bit.ly/uomcvpathway) which requires a `careerconnect.manchester.ac.uk` login - unfortunately *not* the same as your University credentials
+
+
+
 
 
 ## Summary {#cvconc}
