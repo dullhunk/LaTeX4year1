@@ -55,11 +55,12 @@ You can do this using the ready-made templates at [overleaf.com/gallery/tagged/c
 
 ## Beware of weird LaTeX templates {#weird}
 
-LaTeX and packages like `hyperref` which can be found in some of the CV templates above, sometimes default to weird and unusual styles. A good example of this is drawing an ugly cyan box around hyperlinks using `urlcolor-cyan`. This looks horrible, but you can over-ride by using something like this: 
+LaTeX packages like [hyperref](https://www.overleaf.com/learn/latex/Hyperlinks) are used in several of the CV templates above. They sometimes default to weird and unusual styles, such as drawing an ugly cyan box around hyperlinks using `urlcolor-cyan`. This looks horrible, but you can over-ride by using something like this: 
 
 ```tex
 \href{https://www.cdyf.me}{\textcolor{blue}{\underline{cdyf.me}}}
 ```
+
 
 
 ## Debugging your CV checklist

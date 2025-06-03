@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Your Curriculum Vitae | Getting started with LaTeX</title>
   <meta name="description" content="A resource for getting started with LaTeX" />
-  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Your Curriculum Vitae | Getting started with LaTeX" />
   <meta property="og:type" content="book" />
@@ -298,7 +298,7 @@ Figure 6.1: A fictitious example CV using an overleaf template. Would you invite
 </div>
 <div id="weird" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Beware of weird LaTeX templates<a href="cv.html#weird" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>LaTeX and packages like <code>hyperref</code> which can be found in some of the CV templates above, sometimes default to weird and unusual styles. A good example of this is drawing an ugly cyan box around hyperlinks using <code>urlcolor-cyan</code>. This looks horrible, but you can over-ride by using something like this:</p>
+<p>LaTeX packages like <a href="https://www.overleaf.com/learn/latex/Hyperlinks">hyperref</a> are used in several of the CV templates above. They sometimes default to weird and unusual styles, such as drawing an ugly cyan box around hyperlinks using <code>urlcolor-cyan</code>. This looks horrible, but you can over-ride by using something like this:</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb26-1"><a href="cv.html#cb26-1" tabindex="-1"></a><span class="fu">\href</span>{https://www.cdyf.me}{<span class="fu">\textcolor</span>{blue}{<span class="fu">\underline</span>{cdyf.me}}}</span></code></pre></div>
 </div>
 <div id="debugging-your-cv-checklist" class="section level2 hasAnchor" number="6.4">
@@ -384,42 +384,43 @@ Hull, Duncan. 2024a. <span>“Debugging Your Future.”</span> In <em>Coding You
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/dullhunk/LaTeX4year1/edit/master/06-CV.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["latex4year1.pdf", "latex4year1.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": true,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": true,
+    "all": ["facebook", "linkedin", "whatsapp", "github"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/dullhunk/LaTeX4year1/edit/master/06-CV.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["latex4year1.pdf", "latex4year1.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  },
+  "info": true
 });
 });
 </script>
