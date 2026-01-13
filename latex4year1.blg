@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: latex4year1.aux
+The style file: apalike.bst
+Database file #1: book.bib
+Warning--I'm ignoring kopka's extra "year" field
+--line 33 of file book.bib
+You've used 11 entries,
+            1935 wiz_defined-function locations,
+            532 strings with 4810 characters,
+and the built_in function-call counts, 3251 in all, are:
+= -- 322
+> -- 83
+< -- 11
++ -- 31
+- -- 24
+* -- 226
+:= -- 599
+add.period$ -- 32
+call.type$ -- 11
+change.case$ -- 65
+chr.to.int$ -- 10
+cite$ -- 11
+duplicate$ -- 149
+empty$ -- 253
+format.name$ -- 37
+if$ -- 630
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 55
+num.names$ -- 33
+pop$ -- 60
+preamble$ -- 1
+purify$ -- 67
+quote$ -- 0
+skip$ -- 108
+stack$ -- 0
+substring$ -- 188
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 0
+while$ -- 26
+width$ -- 0
+write$ -- 138
+(There was 1 warning)

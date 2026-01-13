@@ -1,0 +1,55 @@
+\begin{thebibliography}{}
+
+\bibitem[Anon, 2024]{googlescholar}
+Anon (2024).
+\newblock {Alan} {Turing's} {Publications}.
+
+\bibitem[Atwood, 2007]{codinghorror}
+Atwood, J. (2007).
+\newblock {Practicing} the {Fundamentals}: {The} {New} {Turing} {Omnibus}.
+
+\bibitem[Dewdney, 2001]{turingomnibus}
+Dewdney, A.~K. (2001).
+\newblock {\em The {New} {Turing} {Omnibus}: 66 excursions in {Computer} {Science}}.
+\newblock Henry Holt, New York.
+
+\bibitem[Hull, 2024a]{debugyourfuture}
+Hull, D. (2024a).
+\newblock Debugging your future.
+\newblock In {\em Coding Your Future: A Guidebook for Students}. University of Manchester, github.com.
+
+\bibitem[Hull, 2024b]{findingyourfuture}
+Hull, D. (2024b).
+\newblock Finding your future.
+\newblock In {\em Coding Your Future: A Guidebook for Students}. University of Manchester, github.com.
+
+\bibitem[Knuth, 1984]{knuth}
+Knuth, D. (1984).
+\newblock {\em The {TeXbook}}.
+\newblock Addison-Wesley, Boston, Massachusetts.
+
+\bibitem[Kopka and Daly, 2003]{kopka}
+Kopka, H. and Daly, P.~W. (2003).
+\newblock {\em Guide to {LaTeX}}.
+\newblock Addison-Wesley, Boston, Massachusetts, fourth edition edition.
+
+\bibitem[Roberts, 2018]{yoda}
+Roberts, S. (2018).
+\newblock The yoda of silicon valley: Donald knuth, master of algorithms, reflects on 50 years of his opus-in-progress, “the art of computer programming.”.
+\newblock {\em New York Times}.
+
+\bibitem[Tex, 2023]{latexproject}
+Tex, L. (2023).
+\newblock {LaTeX} – a document preparation system.
+
+\bibitem[Turing, 1937]{turing}
+Turing, A. (1937).
+\newblock On computable numbers, with an application to the entscheidungsproblem.
+\newblock {\em Proceedings of the London Mathematical Society}, s2-42(1):230--265.
+
+\bibitem[Turing, 1950]{turing50}
+Turing, A. (1950).
+\newblock I.{\textemdash}{Computing} {Machinery} and {Intelligence}.
+\newblock {\em Mind}, {LIX}(236):433--460.
+
+\end{thebibliography}

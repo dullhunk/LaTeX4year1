@@ -1,0 +1,36 @@
+\contentsline {chapter}{Welcome}{5}{chapter*.2}%
+\contentsline {section}{Acknowledgements}{5}{section*.3}%
+\contentsline {section}{Improve this Manual}{6}{section*.4}%
+\contentsline {chapter}{\numberline {1}What is LaTeX?}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}LaTeX is NOT a word processor}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}So what is LaTeX then?}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Simple LaTeX Documents}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}A very short document}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}A longer LaTeX document}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Exercise one: documentum}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Bold, italic and lists}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Quotation marks}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Summary}{13}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Cross-referencing, Illustrating and Citing}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cross-referencing}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Illustrating your documents}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Exercise two: picture this}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Citations and footnotes}{17}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Summary}{19}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Doing the Maths}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Equations}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Matrices}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Exercise three: you do the maths}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Summary}{24}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Collaborative Editing in the Cloud with Overleaf}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Exercise four: overleaf}{26}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Summary}{26}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Your Curriculum Vitae}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Using your CV to get a job interview}{27}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Job opportunities for first year students}{27}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Subsequent opportunities}{29}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Exercise five: your CV}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Beware of weird LaTeX templates}{30}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Debugging your CV checklist}{30}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Summary}{31}{section.6.5}%
+\contentsline {chapter}{\numberline {A}Typography}{33}{appendix.A}%

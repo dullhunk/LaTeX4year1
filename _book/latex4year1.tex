@@ -1,10 +1,11 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
 ]{book}
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -35,7 +36,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -88,21 +88,24 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -111,11 +114,6 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -127,7 +125,7 @@
 
 \title{Getting started with LaTeX}
 \author{A laboratory manual edited by Duncan Hull}
-\date{Last updated on 03 June, 2025}
+\date{Last updated on 13 January, 2026}
 
 \begin{document}
 \maketitle
@@ -752,7 +750,7 @@ You'll write many documents at University, but there is one document that is \te
 
 }
 
-\caption{A fictitious example CV using an overleaf template. Would you invite Neil to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. This is just a screenshot, the pdf can be found at \href{https://www.cdyf.me/Neil_Pointer.pdf}{cdyf.me/Neil\_Pointer.pdf}. There are over 600 CV templates available to choose from at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv} for you to choose from.}\label{fig:cv-fig}
+\caption{A fictitious example CV using an overleaf template. Would you invite Neil to interview based on his CV? This is what your CV needs to do, convince a decision maker they really need to contact you to find out more. This is just a screenshot, the pdf can be found at \href{https://www.cdyf.me/Neil_Pointer.pdf}{cdyf.me/Neil\_Pointer.pdf}. There are over 600 CV templates available to choose from at \href{https://www.overleaf.com/gallery/tagged/cv}{overleaf.com/gallery/tagged/cv}}\label{fig:cv-fig}
 \end{figure}
 
 
@@ -904,6 +902,6 @@ In the meantime, enjoy exploring and using LaTeX to create professional document
 
 A mostly empty placeholder appendix which will cover some typographical details about \href{https://en.wikipedia.org/wiki/Kerning}{kerning} and \href{https://en.wikipedia.org/wiki/Orthographic_ligature}{ligatures} etc.
 
-  \bibliography{book.bib}
+\bibliography{book.bib}
 
 \end{document}
