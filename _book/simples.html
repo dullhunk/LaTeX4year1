@@ -129,7 +129,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -248,7 +247,8 @@ div.csl-indent {
 <span id="cb1-2"><a href="simples.html#cb1-2" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
 <span id="cb1-3"><a href="simples.html#cb1-3" tabindex="-1"></a>Computational excursions</span>
 <span id="cb1-4"><a href="simples.html#cb1-4" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code></pre></div>
-<p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> On Linux the <code>pdflatex</code> compiler is already installed and can be used from the command line.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> If you’re not using Linux, you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
+<p>To turn this into a pdf we need to use a LaTeX compiler, we’re going to use <code>pdflatex</code>, though several other compilers are available.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> On Linux the <code>pdflatex</code> compiler is already installed and can be used from the command line. If you’re not using Linux, you’ll need to explore the options at <a href="https://www.latex-project.org/get/">latex-project.org/get</a>.</p>
+<!--^[for example the Linux VM image for VirtualBox https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM]-->
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="simples.html#cb2-1" tabindex="-1"></a><span class="co"># compile turing.tex</span></span>
 <span id="cb2-2"><a href="simples.html#cb2-2" tabindex="-1"></a>pdflatex turing.tex</span>
 <span id="cb2-3"><a href="simples.html#cb2-3" tabindex="-1"></a><span class="co"># open the pdf output</span></span>
@@ -338,7 +338,7 @@ div.csl-indent {
 <div class="sourceCode" id="cb8"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb8-1"><a href="simples.html#cb8-1" tabindex="-1"></a>Turing addressed the question ``Can machines think``</span></code></pre></div>
 <p>or</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb9-1"><a href="simples.html#cb9-1" tabindex="-1"></a>Turing addressed the question &#39;&#39;Can machines think&#39;&#39;</span></code></pre></div>
-<p>You’ve probably never noticed these details because most word processing software<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> tends to auto-correct quotations marks for you. Since LaTeX isn’t a word processor (see section <a href="latex.html#notword">1.1</a>) it leaves your mistakes on the page for all to see. These mistakes are really noticeable in a pdf file and/or printed, so they are worth paying attention to.
+<p>You’ve probably never noticed these details because most word processing software<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> tends to auto-correct quotations marks for you. Since LaTeX isn’t a word processor (see section <a href="latex.html#notword">1.1</a>) it leaves your mistakes on the page for all to see. These mistakes are really noticeable in a pdf file and/or printed, so they are worth paying attention to.
 <!--Historically, web browsers have had poor typography, although its getting better all the time, see [fonts.google.com](https://fonts.google.com/) for example--></p>
 </div>
 <div id="concsimple" class="section level2 hasAnchor" number="2.6">
@@ -355,12 +355,12 @@ div.csl-indent {
 </div>
 </div>
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-codinghorror" class="csl-entry">
-Atwood, Jeff. 2007. <span>“<span>Practicing</span> the <span>Fundamentals</span>: <span>The</span> <span>New</span> <span>Turing</span> <span>Omnibus</span>.”</span> codinghorror.com. <a href="https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/">https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/</a>.
+Atwood, Jeff. 2007. <em><span>Practicing</span> the <span>Fundamentals</span>: <span>The</span> <span>New</span> <span>Turing</span> <span>Omnibus</span></em>. Codinghorror.com. <a href="https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/">https://blog.codinghorror.com/practicing-the-fundamentals-the-new-turing-omnibus/</a>.
 </div>
 <div id="ref-turingomnibus" class="csl-entry">
-Dewdney, A. K. 2001. <em>The <span>New</span> <span>Turing</span> <span>Omnibus</span>: 66 Excursions in <span>Computer</span> <span>Science</span></em>. New York: Henry Holt. <a href="https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665">https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665</a>.
+Dewdney, A. K. 2001. <em>The <span>New</span> <span>Turing</span> <span>Omnibus</span>: 66 Excursions in <span>Computer</span> <span>Science</span></em>. Henry Holt. <a href="https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665">https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-0805071665</a>.
 </div>
 </div>
 <div class="footnotes">
@@ -368,8 +368,7 @@ Dewdney, A. K. 2001. <em>The <span>New</span> <span>Turing</span> <span>Omnibus<
 <ol start="1">
 <li id="fn1"><p>it is worth configuring your editor so that it is LaTeX aware, and can do <a href="https://en.wikipedia.org/wiki/Syntax_highlighting">syntax highlighting</a>, suggest auto-completions and spell-check for you. Tools like <a href="https://code.visualstudio.com/">VS Code</a> and <a href="https://www.sublimetext.com/">sublimetext</a> and many others will do this for you<a href="simples.html#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p><a href="https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler" class="uri">https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler</a><a href="simples.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>for example the Linux VM image for VirtualBox <a href="https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM" class="uri">https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM</a><a href="simples.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Microsoft Word, Google Docs etc<a href="simples.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Microsoft Word, Google Docs etc<a href="simples.html#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
