@@ -23,15 +23,16 @@ By *opportunities* we mean both immediate ones within the next 12 months as well
 
 During your first year of study, *opportunities* include insight days, spring week and summer internships:
 
-* Spring insights, usually occur during easter vacation, and require you to apply before (or shortly after) Christmas, they very in length from hours to weeks see
+* Spring insights, usually occur during easter vacation, and require you to apply before (or shortly after) Christmas, they vary in length from hours to weeks see
     + insight events at [bit.ly/gradcracker-spring-insights](https://bit.ly/gradcracker-spring-insights) 
-    + and [higherin.com/schemes/insights-spring-weeks](https://higherin.com/schemes/insights-spring-weeks) 
+    + higherin [higherin.com/schemes/insights-spring-weeks](https://higherin.com/schemes/insights-spring-weeks) 
     + The Bright Network [brightnetwork.co.uk](https://www.brightnetwork.co.uk/)
-    + Forage [theforage.com/](https://www.theforage.com/)
+    + The Forage [theforage.com](https://www.theforage.com/)
     + ... and the rest see below
 
 * Summer internships suitable for first year, see:
     + summer internships (open to first years) at [bit.ly/gradcracker-first-years](https://bit.ly/gradcracker-first-years), adjust the `PLACEMENT DURATION` parameter in the search
+    + The Wednesday Waggle [waggle.cs.manchester.ac.uk](https://waggle.cs.manchester.ac.uk/)
     + the chapter on *Finding Your Future* at [cdyf.me/finding](https://www.cdyf.me/finding) in *Coding your Future* [@findingyourfuture] for other places you can look
 
 ### Subsequent opportunities {#afterfirst}
@@ -44,7 +45,7 @@ After your first year *opportunities* include:
 * Graduate jobs or graduate schemes after graduation
 * Postgraduate study or research via masters or PhD etc
 
-Any time you invest in creating a convincing CV will pay off in the long run. Yes, you've only just started University, so might not have much to talk about just yet, but it's never too early to make a start and it will help you identify where the gaps are.
+Any time you invest in creating a convincing CV will pay off in the long run. Yes, you've only just started University, so might not have much to talk about just yet, but it's never too early to make a start and it will help you identify where the gaps are at a time when you can do something about filling them.
 
 ## Exercise five: your CV {#ex5}
 
@@ -92,7 +93,7 @@ Your curriculum vitae is a *really* important document and it will most likely t
 
 In the meantime, enjoy exploring and using LaTeX to create professional documents for:
 
-* your individual COMP101 coursework (see blackboard)
+* your individual COMP101 coursework, see [canvas.manchester.ac.uk](https://canvas.manchester.ac.uk/)
 * your CV / resume
 * your third year project dissertation. It might seem a long way off now but it comes around very quickly!
 
