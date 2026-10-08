@@ -60,14 +60,20 @@ Create a basic CV which tells your story so far. We suggest you start with aroun
 
 You can use the ready-made templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Have a good look around, there are over 600 templates to choose from.
 
-## Beware of weird LaTeX templates {#weird}
+## Blue hyperlinks? {#weird}
 
-LaTeX packages like [hyperref](https://www.overleaf.com/learn/latex/Hyperlinks) are used in several of the CV templates above. They sometimes default to weird and unusual styles, such as drawing an ugly cyan box around hyperlinks using `urlcolor-cyan`. This looks horrible, but you can over-ride by using something like this: 
+A common convention used for indicating that hyperlinks are clickable is to underline them and make them blue. However, some LaTeX packages don't follow this convention, for example  [hyperref](https://www.overleaf.com/learn/latex/Hyperlinks) is used in several of the CV templates at [overleaf.com/gallery/tagged/cv](https://www.overleaf.com/gallery/tagged/cv). Hyperref will often default to weird and unusual styles, such as drawing an ugly cyan box around your hyperlinks using `urlcolor-cyan`. This looks pretty horrible, but if you need to, you can over-ride by using something like this: 
 
 ```tex
 \href{https://www.cdyf.me}{\textcolor{blue}{\underline{cdyf.me}}}
 ```
 
+This will make it much clearer to your readers ... 
+
+1. that the text is a clickable hyperlink 
+1. _exactly_ what you are linking to
+
+Links can provide important evidence on your CV without taking up lots of valuable space.
 
 
 ## Debugging your CV checklist
@@ -78,11 +84,11 @@ As you progress through University, continuously update your CV and solicit feed
 1. Does it look good, decent layout, easy to scan?
 1. Does it fit comfortably on one page (preferably) or two pages only? Not too cramped or gappy?
 1. Is it in reverse chronological order? Are the most important (usually recent) things first?
-1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See  the *[Verbalising Your Future](https://www.cdyf.me/verbalising)* chapter of *Coding your Future* for more examples
+1. Have you talked about what you have actually done using prominent verbs, rather than just what you know? See  the *[Verbalising Your Future](https://www.cdyf.me/verbalising)* chapter of *Coding Your Future* for more examples
 1. Have you mentioned disciplines you are studying now and throughout the current academic year, not just courses you have finished?
 1. Have you quantified and provided evidence for the claims you make?
-1. Is your CV robot and AI proof? Many large employers use automated Applicant Tracking Systems (ATS): software that screens CVs long before a human ever sees them. Once you've anonymised it, you can get feedback from bots and AI like [careerset.com/manchester](http://careerset.com/manchester), [resume.io](https://resume.io/) and your favourite LLM. What feedback do the robots give you? How can you make your CV more robot proof? What prompts can you use to get constructive and critical feedback?
-1. Find out more in the *Debugging Your Future* checklist at [cdyf.me/debugging#checklist](https://www.cdyf.me/debugging#checklist) [@debugyourfuture]
+1. Is your CV robot and AI proof? Many large employers use automated Applicant Tracking Systems (ATS): software that screens CVs long before a human ever sees them. Once you've anonymised it, you can get feedback from bots and AI like [careerset.com/manchester](http://careerset.com/manchester), the trackr-bot [app.the-trackr.com/ai-cv-review](https://app.the-trackr.com/ai-cv-review) and your favourite LLMs (once you've anonymised it and removed any personal information). What feedback do the robots give you? How can you make your CV more robot and AI proof? What are the best prompts to get constructive and critical feedback?
+1. If you'd like to find out more, see the *Debugging Your Future* checklists at [cdyf.me/debugging#checklist](https://www.cdyf.me/debugging#checklist) [@debugyourfuture]
 1. Explore the advice and services provided by the careers service at [www.careers.manchester.ac.uk/applicationsinterviews/cv](https://www.careers.manchester.ac.uk/applicationsinterviews/cv/)
 
 
