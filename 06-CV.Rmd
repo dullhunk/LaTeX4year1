@@ -73,8 +73,8 @@ This will make it much clearer to your readers ...
 1. that the text is a clickable hyperlink 
 1. _exactly_ what you are linking to
 
-Links can provide important evidence on your CV without taking up lots of valuable space.
 
+Explicit links will work in print too, if your CV ever gets printed on paper. In print and online, judicious use of selected [hyperlinks](https://en.wikipedia.org/wiki/Hyperlink) can provide important evidence on your CV without taking up lots of valuable space.
 
 ## Debugging your CV checklist
 As you progress through University, continuously update your CV and solicit feedback from as many people as you can. Your fellow students, personal tutors, friends, family and anyone else you trust can all give you valuable feedback. There will be opportunities to debug your CV later, but you’ll need a “beta release” (version 1.0) of your CV to get started. The best time to start debugging is now, so that you can squash any bugs before employers see them. Innocent bugs **can be fatal** because most employers typically have to deal with lots of applicants. Here's a check list of some common bugs we have seen in students CVs:
